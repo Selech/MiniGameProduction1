@@ -251,8 +251,9 @@ GameObject:
   - 33: {fileID: 1070792627}
   - 65: {fileID: 1070792626}
   - 23: {fileID: 1070792625}
+  - 114: {fileID: 1070792629}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: TheBike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,3 +320,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &1070792629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1070792624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e02354d9d48dfb344b02be4a60c53430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
