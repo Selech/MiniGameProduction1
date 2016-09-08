@@ -10,6 +10,8 @@ public class CamFollow : MonoBehaviour {
 	public bool smoothRotation = true;
 	public bool followBehind = true;
 	public float rotationDamping = 10.0f;
+	public float xOffset = 1;
+
 
 	void FixedUpdate () {
 		Follow ();
