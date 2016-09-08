@@ -23,13 +23,5 @@ public class CarriableController : MonoBehaviour {
 	void OnJointBreak(float breakForce){
 		Debug.Log (breakForce);
 	}
-//
-//	void OnCollisionEnter(Collision collision) {
-//		GameObject c = collision.gameObject;
-//		Debug.Log (c.name);
-//		if (c.name.Contains("Carriable")) {
-//			var joint = gameObject.AddComponent<FixedJoint> ();
-//			joint.connectedBody = c.GetComponent<Rigidbody>();
-//		}
-//	}
+
 }
