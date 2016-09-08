@@ -18,7 +18,7 @@ public class TestManager : MonoBehaviour {
 	void SpawnShit()
 	{
 		if (o != null) {
-			GameObject b = (GameObject)Instantiate (o, Vector3.zero, Quaternion.identity);
+			//GameObject b = (GameObject)Instantiate (o, Vector3.zero, Quaternion.identity);
 		} else {
 			print ("no object to spawn");
 		}
