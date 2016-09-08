@@ -30,6 +30,7 @@ public class CamFollow : MonoBehaviour {
 		if (smoothRotation) {
 			Quaternion wantedRotation = Quaternion.LookRotation(target.position - transform.position, target.up);
 			wantedRotation.z = 0;
+
 			transform.rotation = Quaternion.Slerp (transform.rotation, wantedRotation, Time.deltaTime * rotationDamping);
 		}
 		else transform.LookAt (target, target.up);
