@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class deleteAfter3 : MonoBehaviour {
+public class TriggerEvent : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -10,6 +10,9 @@ public class deleteAfter3 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if(Input.GetButtonDown("Fire1"))
+		{
+			EventManager.TriggerEvent ("TestEvent");
+		}
 	}
 }
