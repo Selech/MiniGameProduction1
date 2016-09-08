@@ -94,6 +94,7 @@ public class GameManager : MonoBehaviour {
 		EventManager.TriggerEvent ("BeginGame");
 		hasGameStarted = true;
 		InitGamePlayResume ();
+		SpawnPlayer ();
 	}
 
 	void RestartGame()
