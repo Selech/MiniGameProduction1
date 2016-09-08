@@ -39,12 +39,11 @@ public class PlayerController : MonoBehaviour {
 		rotationAngle /= 500;
 
 		transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x + rotationAngle, transform.position.y, transform.position.z), 1/strafeReduction);
-		Debug.Log (rotationAngle);
 		transform.Translate(new Vector3(0f, 0f, forwardSpeed));
 
 	}
 
 	void Jump(){
-		this.GetComponent<Rigidbody> ().AddForce (new Vector3(0,1,0), ForceMode.VelocityChange);
+		this.GetComponent<Rigidbody> ().AddForce (new Vector3(0,2,0), ForceMode.VelocityChange);
 	}
 }
