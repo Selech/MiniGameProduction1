@@ -1,0 +1,15 @@
+1 - Install the Google USB driver if not installed already:
+
+	https://developer.android.com/studio/run/win-usb.html
+
+2 - Download the Java JDK from here: Windowsx64
+
+	http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+3 - Download the Android SDK from this website: (Its all the down the bottom of the page)
+
+	https://developer.android.com/studio/index.html
+
+4 - Start program "Android SDK Manager" and install the the packages included. (Should be around 13 packages)
+
+	"Control that Google USB Driver is checked at the bottom of the package list" 
