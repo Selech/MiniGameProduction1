@@ -490,6 +490,7 @@ GameObject:
   - 33: {fileID: 1095708278}
   - 65: {fileID: 1095708277}
   - 23: {fileID: 1095708276}
+  - 114: {fileID: 1095708280}
   m_Layer: 0
   m_Name: Object Detector
   m_TagString: Box collider
@@ -558,6 +559,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!114 &1095708280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1095708275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce10f2f7ef3f3714cb1c63bb5b13a795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxCollider: {fileID: 1095708275}
 --- !u!1 &1278212361
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,9 +647,8 @@ GameObject:
   - 23: {fileID: 1402818470}
   - 54: {fileID: 1402818475}
   - 114: {fileID: 1402818474}
-  - 114: {fileID: 1402818476}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Speaker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -729,18 +741,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &1402818476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1402818469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce10f2f7ef3f3714cb1c63bb5b13a795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boxCollider: {fileID: 1095708275}
 --- !u!1 &1654785625
 GameObject:
   m_ObjectHideFlags: 0
