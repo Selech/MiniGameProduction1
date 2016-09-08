@@ -13,12 +13,16 @@ public class GameManager : MonoBehaviour {
 
 	public GameState _GameState;
 
-	public float currentTime;
-	public int currentCarriablesAmount=3;
+	[HideInInspector] public float currentTime;
+	public float maxTimeCompletion = 1000f;
+
+	[Range(1,10)] public int currentCarriablesAmount=3;
 	public Transform startPos;
 
-	public bool isPaused = false;
-	public bool hasGameStarted = false;
+	[HideInInspector] public bool isPaused = false;
+	[HideInInspector] public bool hasGameStarted = false;
+
+	public string pauseGameButton = "Cancel";
 	#endregion
 
 	#region Sinleton Methods
@@ -46,6 +50,17 @@ public class GameManager : MonoBehaviour {
 	#endregion
 
 	#region System Methods
+
+	void OnEnable()
+	{
+		EventManager.StartListening ("LoseCarriableEvent",LoseCarriable);
+	}
+
+	void OnDisable()
+	{
+		EventManager.StopListening ("LoseCarriableEvent",LoseCarriable);
+	}
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -57,20 +72,65 @@ public class GameManager : MonoBehaviour {
 	{
 		if(hasGameStarted)
 		{
-			UpdateTime ();
+			if(Input.GetButtonDown(pauseGameButton))
+			{
+				TogglePause ();
+			}
+		
+			if(!isPaused)
+			{
+				UpdateTime ();
+			}
 		}
 	}
 	#endregion
 
 	#region Custom Methods
 
+	#region General Methods
 	// begin game once all references have been made
 	void StartGame()
 	{
 		EventManager.TriggerEvent ("BeginGame");
 		hasGameStarted = true;
+		InitGamePlayResume ();
 	}
 
+	void RestartGame()
+	{
+		ResetSettings ();
+		EventManager.TriggerEvent ("ResetGame");
+	}
+
+	//toggle paused game on input
+	void TogglePause()
+	{
+		
+		isPaused = !isPaused;
+
+		if(isPaused)
+		{
+			
+			PauseGame ();
+		}
+		else 
+		{
+			ResumeGame();
+		}
+
+	}
+
+	void PauseGame()
+	{
+		EventManager.TriggerEvent ("PauseGame");
+		InitGamePlayPause ();
+	}
+
+	void ResumeGame()
+	{
+		EventManager.TriggerEvent ("ResumeGame");
+		InitGamePlayResume ();
+	}
 
 	void SpawnPlayer()
 	{
@@ -88,14 +148,31 @@ public class GameManager : MonoBehaviour {
 		currentTime = 0;
 	}
 
+	//change game state
+	void InitGamePlayPause(){
+		_GameState = GameState.Paused;
+	}
+
+	//change game state
+	void InitGamePlayResume(){
+		_GameState = GameState.Playing;
+	}
+	#endregion
+
+	#region GamePlay Methods
 	//once game has began, start calculating time
 	void UpdateTime()
 	{
 		currentTime += Time.time;
+
+		if(currentTime>maxTimeCompletion)
+		{
+			RestartGame ();
+		}
 	}
 
 	//decrement carriable counter
-	void LoseCarriable()
+	public void LoseCarriable()
 	{
 		currentCarriablesAmount--;
 		CheckForEndGame ();
@@ -106,10 +183,11 @@ public class GameManager : MonoBehaviour {
 	{
 		if(currentCarriablesAmount<=0)
 		{
-			ResetSettings ();
-			EventManager.TriggerEvent ("ResetGame");
+			RestartGame ();
 		}
 	}
+	#endregion
+
 
 	#endregion
 }
