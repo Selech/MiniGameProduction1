@@ -12,7 +12,7 @@ public class CamFollow : MonoBehaviour {
 	public float rotationDamping = 10.0f;
 	public float xOffset = 1;
 
-	void Awake()
+	void OnEnable()
 	{
 		if(target == null)
 		{
