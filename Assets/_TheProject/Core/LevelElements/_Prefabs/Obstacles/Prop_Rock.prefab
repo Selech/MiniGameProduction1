@@ -102,5 +102,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ecd73a2d745e6e42af1f509cbbc6190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyOnCollision: 0
+  destroyOnCollision: 1
   force: 2
