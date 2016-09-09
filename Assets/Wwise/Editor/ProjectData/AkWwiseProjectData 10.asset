@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb2d98578ed201440aad1d238b15ca80, type: 3}
-  m_Name: AkWwiseProjectData 3
+  m_Name: AkWwiseProjectData 10
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
@@ -114,7 +114,7 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D4ABC6EF-B040-4737-8005-810B436F5933}'
-    m_lastTimePsrt1: 1630680949
+    m_lastTimePsrt1: -817139961
     m_lastTimePart2: -1999382362
     List:
     - Name: UnitySB
