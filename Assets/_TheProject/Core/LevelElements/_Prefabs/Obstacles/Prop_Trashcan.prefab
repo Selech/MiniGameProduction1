@@ -57,7 +57,7 @@ GameObject:
   - 4: {fileID: 4000014129434038}
   - 114: {fileID: 114000010237885680}
   m_Layer: 0
-  m_Name: group1
+  m_Name: Prop_Trashcan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
