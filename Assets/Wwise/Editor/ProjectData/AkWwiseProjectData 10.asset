@@ -12,11 +12,128 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData 10
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
+<<<<<<< HEAD
   EventWwu: []
   AuxBusWwu: []
   StateWwu: []
   SwitchWwu: []
   BankWwu: []
+=======
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{FCFFA91E-B225-442C-9C27-0DE8A95F2202}'
+    m_lastTimePsrt1: -634771029
+    m_lastTimePart2: -1999382371
+    List:
+    - Name: Play_Ambience
+      Path: Default Work Unit\Play_Ambience
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Ambience
+        ObjectType: 3
+      ID: 278617630
+      Guid: 0575f89ebf546045ba74ad8f6b161a1d
+      maxAttenuation: 0
+    - Name: Play_Bell
+      Path: Default Work Unit\Play_Bell
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Bell
+        ObjectType: 3
+      ID: 1945722105
+      Guid: 88bc792378a63b4491a387de5b342ef0
+      maxAttenuation: 0
+    - Name: Play_Collision
+      Path: Default Work Unit\Play_Collision
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Collision
+        ObjectType: 3
+      ID: 1553219250
+      Guid: a5f7b53bc87ae3489632c2443892bafe
+      maxAttenuation: 0
+    - Name: Play_horns1
+      Path: Default Work Unit\Play_horns1
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_horns1
+        ObjectType: 3
+      ID: 1561013401
+      Guid: 023fc7b97527594dad7de80e3cb676a3
+      maxAttenuation: 0
+    - Name: Play_Pedal
+      Path: Default Work Unit\Play_Pedal
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Pedal
+        ObjectType: 3
+      ID: -1695148630
+      Guid: 58103b08abd1364aac549f201f7d2d41
+      maxAttenuation: 0
+    - Name: Play_test
+      Path: Default Work Unit\Play_test
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_test
+        ObjectType: 3
+      ID: -1107460150
+      Guid: eb3cc946d27d164bbdbb760c156fcedc
+      maxAttenuation: 0
+    - Name: Stop_Pedal
+      Path: Default Work Unit\Stop_Pedal
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Pedal
+        ObjectType: 3
+      ID: 1731467220
+      Guid: 5981e21f9cd35c44bf2b39c19015d209
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}'
+    m_lastTimePsrt1: 521151267
+    m_lastTimePart2: -1999382380
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{F3A5A0B9-89AD-4F63-87DB-922EAD240549}'
+    m_lastTimePsrt1: 540669683
+    m_lastTimePart2: -1999382380
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{94BBBD5F-FAA8-478E-A74A-D11000E0AABD}'
+    m_lastTimePsrt1: 540759761
+    m_lastTimePart2: -1999382380
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{D4ABC6EF-B040-4737-8005-810B436F5933}'
+    m_lastTimePsrt1: -817139961
+    m_lastTimePart2: -1999382362
+    List:
+    - Name: UnitySB
+      Path: Default Work Unit\UnitySB
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UnitySB
+        ObjectType: 7
+      ID: 399307055
+      Guid: c6a61107e6afc44aaaab6b2db71dee31
+>>>>>>> development
   ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
