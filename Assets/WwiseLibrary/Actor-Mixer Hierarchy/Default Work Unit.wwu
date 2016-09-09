@@ -238,7 +238,7 @@
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-7</Value>
+								<Value>-14</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -350,7 +350,7 @@
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>5</Value>
+								<Value>7</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -662,11 +662,6 @@
 				<Sound Name="Cycling" ID="{82AD191B-CA9B-4C99-9E2F-2E5582B537BA}" ShortID="262688816" Type="SoundFX">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-3</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -728,12 +723,17 @@
 									<Modifier Name="" ID="{28560603-20E6-41CC-9334-972D6D920129}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="177"/>
-											<Property Name="Min" Type="Real64" Value="-177"/>
+											<Property Name="Max" Type="Real64" Value="227"/>
+											<Property Name="Min" Type="Real64" Value="-227"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
 							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>

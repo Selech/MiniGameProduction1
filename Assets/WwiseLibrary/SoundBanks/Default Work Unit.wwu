@@ -8,6 +8,7 @@
 						<ObjectRef Name="Play_Bell" ID="{2379BC88-A678-443B-91A3-87DE5B342EF0}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Pedal" ID="{1FE28159-D39C-445C-BF2B-39C19015D209}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ambience" ID="{9EF87505-54BF-4560-BA74-AD8F6B161A1D}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Collision" ID="{3BB5F7A5-7AC8-48E3-9632-C2443892BAFE}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Pedal" ID="{083B1058-D1AB-4A36-AC54-9F201F7D2D41}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_test" ID="{46C93CEB-7DD2-4B16-BDBB-760C156FCEDC}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>

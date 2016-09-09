@@ -123,14 +123,14 @@ public class GameManager : MonoBehaviour {
 		SpawnPlayer ();
 	}
 
-	void RestartGame()
+	public void RestartGame()
 	{
 		ResetSettings ();
 		EventManager.TriggerEvent (_eventsContainer.resetGame);
 	}
 
 	//toggle paused game on input
-	void TogglePause()
+	public void TogglePause()
 	{
 		
 		isPaused = !isPaused;
@@ -175,17 +175,20 @@ public class GameManager : MonoBehaviour {
 		hasGameStarted = false;
 
 		currentTime = 0;
+		Time.timeScale = 1;
 		SpawnPlayer ();
 	}
 
 	//change game state
 	void InitGamePlayPause(){
 		_GameState = GameState.Paused;
+		Time.timeScale = 0;
 	}
 
 	//change game state
 	void InitGamePlayResume(){
 		_GameState = GameState.Playing;
+		Time.timeScale = 1;
 	}
 	#endregion
 

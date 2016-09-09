@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="118">
 	<RootPaths>
-		<ProjectRoot>/Users/Christian/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/z:/Volumes/Macintosh HD/Google Drive/SharedFolder_ExternalAssets/Sound/Mini1/</ProjectRoot>
-		<SourceFilesRoot>/Users/Christian/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/z:/Volumes/Macintosh HD/Google Drive/SharedFolder_ExternalAssets/Sound/Mini1/.cache/Windows/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/Christian/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/z:/Volumes/Macintosh HD/Google Drive/SharedFolder_ExternalAssets/Sound/Mini1/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ProjectRoot>/Users/Christian/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/z:/Volumes/Macintosh HD/DADIU/GIT/Minigame1/Assets/WwiseLibrary/</ProjectRoot>
+		<SourceFilesRoot>/Users/Christian/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/z:/Volumes/Macintosh HD/DADIU/GIT/Minigame1/Assets/WwiseLibrary/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/Christian/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/z:/Volumes/Macintosh HD/DADIU/GIT/Minigame1/Assets/WwiseLibrary/GeneratedSoundBanks/Windows/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/Christian/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/z:/Volumes/Macintosh HD/Google Drive/SharedFolder_ExternalAssets/Sound/Mini1/GeneratedSoundBanks/Windows/</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/Christian/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/z:/Volumes/Macintosh HD/DADIU/GIT/Minigame1/Assets/WwiseLibrary/GeneratedSoundBanks/Windows/</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -18,9 +18,10 @@
 			<IncludedEvents>
 				<Event Id="278617630" Name="Play_Ambience" ObjectPath="\Events\Default Work Unit\Play_Ambience"/>
 				<Event Id="1945722105" Name="Play_Bell" ObjectPath="\Events\Default Work Unit\Play_Bell"/>
+				<Event Id="1553219250" Name="Play_Collision" ObjectPath="\Events\Default Work Unit\Play_Collision"/>
 				<Event Id="2599818666" Name="Play_Pedal" ObjectPath="\Events\Default Work Unit\Play_Pedal"/>
 				<Event Id="3187507146" Name="Play_test" ObjectPath="\Events\Default Work Unit\Play_test"/>
-				<Event Id="1731467220" Name="Stop_Pedal" ObjectPath="\Events\Default Work Unit\Stop_Pedal"/>
+				<Event Id="1731467220" Name="Stop_Pedal" ObjectPath="\Events\Default Work Unit\Stop_Pedal" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="24799722" Language="SFX">
@@ -34,6 +35,10 @@
 				<File Id="98646268" Language="SFX">
 					<ShortName>14 Car, Interior, Horn--4 Blasts.wav</ShortName>
 					<Path>SFX/14 Car, Interior, Horn--4 Blasts_844E6D30.wem</Path>
+				</File>
+				<File Id="187524640" Language="SFX">
+					<ShortName>Collision2.wav</ShortName>
+					<Path>SFX/Collision2_844E6D30.wem</Path>
 				</File>
 				<File Id="216305355" Language="SFX">
 					<ShortName>pedal4.wav</ShortName>
@@ -70,6 +75,10 @@
 				<File Id="881668295" Language="SFX">
 					<ShortName>Ambience3.wav</ShortName>
 					<Path>SFX/Ambience3_844E6D30.wem</Path>
+				</File>
+				<File Id="883776519" Language="SFX">
+					<ShortName>Collision1.wav</ShortName>
+					<Path>SFX/Collision1_844E6D30.wem</Path>
 				</File>
 				<File Id="942912805" Language="SFX">
 					<ShortName>08 Horn--Sounded Twice.wav</ShortName>
