@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CarriableCollider : MonoBehaviour {
 
+	public float secondsToDestroy = 2;
 
 	/// <summary>
 	/// Raises the collision enter event for the Carriable prefab. 
@@ -31,7 +32,7 @@ public class CarriableCollider : MonoBehaviour {
 	IEnumerator HandleCollisionCo()
 	{
 		EventManager.TriggerEvent ("LoseCarriableEvent");
-		yield return new WaitForSeconds(2);
+		yield return new WaitForSeconds(secondsToDestroy);
 		Destroy(this.gameObject);
 	}
 }
