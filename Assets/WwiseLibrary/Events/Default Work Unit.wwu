@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" SchemaVersion="72">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Ambience" ID="{9EF87505-54BF-4560-BA74-AD8F6B161A1D}">
+					<ChildrenList>
+						<Action Name="Play" ID="{9D5824CD-1AF1-4B79-B022-0418D30B4C74}" ShortID="384645237" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{84B47F6D-CC02-4CFF-96C4-D8BB403B3F6E}" Global="false">
+									<ObjectRef Name="Ambience" ID="{E2E1FB06-C7A1-432B-965B-FFC304242A2D}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{1A7D401F-EA8D-4737-A9AC-CD3791D4CF48}" ShortID="535532890" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1DD6BBF2-DD2C-4D78-BD26-4630DF2B2529}" Global="false">
+									<ObjectRef Name="horns1" ID="{967D96E8-A71D-480E-8A44-AD1186D99274}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{3F0A997E-CC2E-44EC-91E6-B8FA349CCF83}" ShortID="369349760" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{CBA0528E-B7E2-43E5-AC6D-1560A2342E28}" Global="false">
+									<ObjectRef Name="Horns1" ID="{21B53288-217A-496A-8349-39A57A679B71}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_test" ID="{46C93CEB-7DD2-4B16-BDBB-760C156FCEDC}">
+					<ChildrenList>
+						<Action Name="Play" ID="{FF611BB2-515C-4E1A-90A2-C4645B04B712}" ShortID="948953194" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{907CDFFB-0CD0-4E50-8C93-4AD04269799F}" Global="false">
+									<ObjectRef Name="36-25 Landrover--Safari Diesel_Horn," ID="{9810B2AC-C60E-45A0-95BD-4397A1AA1C92}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pedal" ID="{083B1058-D1AB-4A36-AC54-9F201F7D2D41}">
+					<ChildrenList>
+						<Action Name="Play" ID="{924BBF0C-351A-4160-ABC0-22D729ABC9E7}" ShortID="148861999" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{15662E46-9F41-4BB9-8F9D-5DC4B8653C14}" Global="false">
+									<ObjectRef Name="Pedal" ID="{8C8DA58D-9019-4C8E-BF15-F3FF49CA17D9}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{C987BB05-B7DD-4F5F-9F00-D55453B81189}" ShortID="271561915" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{62F0708F-4651-43CD-A254-1901B1934355}" Global="false">
+									<ObjectRef Name="Cycling" ID="{82AD191B-CA9B-4C99-9E2F-2E5582B537BA}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Bell" ID="{2379BC88-A678-443B-91A3-87DE5B342EF0}">
+					<ChildrenList>
+						<Action Name="Play" ID="{82E0B60E-CEFD-4E1D-90E1-437B2CE747DA}" ShortID="332228749" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{2E0358CA-B0A1-4C6E-A0A6-A5FB21C770E4}" Global="false">
+									<ObjectRef Name="Bell" ID="{3E47AB93-5BDD-4513-A8B4-FD790D0A4AA1}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Pedal" ID="{1FE28159-D39C-445C-BF2B-39C19015D209}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{F300DB3C-399B-476F-BF42-9BECFA264D7B}" ShortID="465684690" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{5A11A40C-B5ED-4BF3-87CF-85CC85E28C8B}" Global="false">
+									<ObjectRef Name="Pedal" ID="{8C8DA58D-9019-4C8E-BF15-F3FF49CA17D9}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{02E4B5B6-6D95-4388-95C7-84F68AF072DD}" ShortID="976416673" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{6D73794A-557F-45DC-906E-A3A98865AB0B}" Global="false">
+									<ObjectRef Name="Cycling" ID="{82AD191B-CA9B-4C99-9E2F-2E5582B537BA}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Collision" ID="{3BB5F7A5-7AC8-48E3-9632-C2443892BAFE}">
+					<ChildrenList>
+						<Action Name="Play" ID="{405C3D6C-1196-480A-9496-CB6C63F8A40E}" ShortID="953886580" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{0743FEB3-AC66-4A19-871E-CCCBC5EEA359}" Global="false">
+									<ObjectRef Name="Collision" ID="{9F97DD71-A358-4237-815A-FD7121D4A22D}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_horns1" ID="{B9C73F02-2775-4D59-AD7D-E80E3CB676A3}">
+					<ChildrenList>
+						<Action Name="Play" ID="{4E19DB4E-C55D-49AA-8AFB-97C9941E3587}" ShortID="331318787" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3BD02B60-F568-4109-B88A-007F1819C438}" Global="false">
+									<ObjectRef Name="horns1" ID="{967D96E8-A71D-480E-8A44-AD1186D99274}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
