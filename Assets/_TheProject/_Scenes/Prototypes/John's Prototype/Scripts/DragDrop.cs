@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DragAndDrop : MonoBehaviour {
+public class DragDrop : MonoBehaviour {
 
 	float distance = 10;
 
