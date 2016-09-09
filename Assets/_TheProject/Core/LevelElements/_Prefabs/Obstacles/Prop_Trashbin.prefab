@@ -22,6 +22,7 @@ GameObject:
   - 33: {fileID: 33000012098528480}
   - 23: {fileID: 23000010076978698}
   - 64: {fileID: 64000012761642398}
+  - 114: {fileID: 114000011279193686}
   m_Layer: 0
   m_Name: Prop_Trashbin
   m_TagString: Untagged
@@ -90,3 +91,16 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300002, guid: 84807753fd641aa43b3a4e0bdb68a8f6, type: 3}
+--- !u!114 &114000011279193686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013808500966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ecd73a2d745e6e42af1f509cbbc6190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyOnCollision: 1
+  force: 2
