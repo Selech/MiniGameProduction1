@@ -12,8 +12,16 @@ public class CamFollow : MonoBehaviour {
 	public float rotationDamping = 10.0f;
 	public float xOffset = 1;
 
+	void Awake()
+	{
+		if(target == null)
+		{
+			target = GameObject.FindGameObjectWithTag ("Player").transform;
+		}
+	}
 
-	void FixedUpdate () {
+	void FixedUpdate () 
+	{
 		Follow ();
 	}
 
