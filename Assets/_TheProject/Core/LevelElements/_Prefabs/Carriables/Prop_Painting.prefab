@@ -22,6 +22,7 @@ GameObject:
   - 33: {fileID: 33000011115629406}
   - 23: {fileID: 23000013193572878}
   - 114: {fileID: 114000013665152004}
+  - 65: {fileID: 65000011065497594}
   m_Layer: 0
   m_Name: Prop_Painting
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013527918486}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.208821, y: 0.021023363, z: 0}
+  m_LocalPosition: {x: -0.47333646, y: 0.021537704, z: -13.374138}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -78,6 +79,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013527918486}
   m_Mesh: {fileID: 4300004, guid: f460b4f486b243c468d81c4858d9caad, type: 3}
+--- !u!65 &65000011065497594
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013527918486}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 168.3023, y: 5.257235, z: 107.33047}
+  m_Center: {x: -0.0000038146973, y: 0.47484708, z: 0}
 --- !u!114 &114000013665152004
 MonoBehaviour:
   m_ObjectHideFlags: 1
