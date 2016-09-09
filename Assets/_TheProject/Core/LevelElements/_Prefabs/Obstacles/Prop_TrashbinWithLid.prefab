@@ -56,6 +56,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000014129434038}
   - 114: {fileID: 114000010237885680}
+  - 114: {fileID: 114000012878698696}
   m_Layer: 0
   m_Name: Prop_TrashbinWithLid
   m_TagString: Untagged
@@ -213,3 +214,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyOnCollision: 1
   force: 2
+--- !u!114 &114000012878698696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012619358608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ecd73a2d745e6e42af1f509cbbc6190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyOnCollision: 1
+  force: 0

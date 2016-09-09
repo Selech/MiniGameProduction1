@@ -22,6 +22,7 @@ GameObject:
   - 33: {fileID: 33000011353016056}
   - 23: {fileID: 23000010236440400}
   - 114: {fileID: 114000014001219172}
+  - 114: {fileID: 114000010046347062}
   m_Layer: 0
   m_Name: Prop_Sign
   m_TagString: Untagged
@@ -78,6 +79,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012381674906}
   m_Mesh: {fileID: 4300000, guid: f460b4f486b243c468d81c4858d9caad, type: 3}
+--- !u!114 &114000010046347062
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012381674906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ecd73a2d745e6e42af1f509cbbc6190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyOnCollision: 1
+  force: 0
 --- !u!114 &114000014001219172
 MonoBehaviour:
   m_ObjectHideFlags: 1
