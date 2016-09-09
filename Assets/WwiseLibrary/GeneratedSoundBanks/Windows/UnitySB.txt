@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	278617630	Play_Ambience			\Default Work Unit\Play_Ambience	
+	1553219250	Play_Collision			\Default Work Unit\Play_Collision	
 	1731467220	Stop_Pedal			\Default Work Unit\Stop_Pedal	
 	1945722105	Play_Bell			\Default Work Unit\Play_Bell	
 	2599818666	Play_Pedal			\Default Work Unit\Play_Pedal	
@@ -12,20 +13,22 @@ Effect plug-ins	ID	Name	Type				Notes
 	1865172355	New_Wwise_Gain	Wwise Gain			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	24799722	36-26 Landrover--Safari Diesel_Horn,3	Z:\Volumes\Macintosh HD\Google Drive\SharedFolder_ExternalAssets\Sound\Mini1\.cache\Windows\SFX\36-26 Landrover--Safari Diesel_Horn,3_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\horns1\Horns1\36-26 Landrover--Safari Diesel_Horn,3		125662
-	69790071	pedal1	Z:\Volumes\Macintosh HD\Google Drive\SharedFolder_ExternalAssets\Sound\Mini1\.cache\Windows\SFX\pedal1_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal1		9430
-	98646268	14 Car, Interior, Horn--4 Blasts	Z:\Volumes\Macintosh HD\Google Drive\SharedFolder_ExternalAssets\Sound\Mini1\.cache\Windows\SFX\14 Car, Interior, Horn--4 Blasts_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\horns1\Horns1\14 Car, Interior, Horn--4 Blasts		150462
-	216305355	pedal4	Z:\Volumes\Macintosh HD\Google Drive\SharedFolder_ExternalAssets\Sound\Mini1\.cache\Windows\SFX\pedal4_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal4		9912
-	233114623	Ambience2	Z:\Volumes\Macintosh HD\Google Drive\SharedFolder_ExternalAssets\Sound\Mini1\.cache\Windows\SFX\Ambience2_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience2		843073
-	265004707	pedal3	Z:\Volumes\Macintosh HD\Google Drive\SharedFolder_ExternalAssets\Sound\Mini1\.cache\Windows\SFX\pedal3_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal3		10757
-	307491067	09 Horn, Angry Motorist	Z:\Volumes\Macintosh HD\Google Drive\SharedFolder_ExternalAssets\Sound\Mini1\.cache\Windows\SFX\09 Horn, Angry Motorist_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\horns1\Horns1\09 Horn, Angry Motorist		40653
-	334703236	Cycling	Z:\Volumes\Macintosh HD\Google Drive\SharedFolder_ExternalAssets\Sound\Mini1\.cache\Windows\SFX\Cycling_63DD582A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cycling		200123
-	528757210	pedal6	Z:\Volumes\Macintosh HD\Google Drive\SharedFolder_ExternalAssets\Sound\Mini1\.cache\Windows\SFX\pedal6_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal6		10527
-	568708346	pedal5	Z:\Volumes\Macintosh HD\Google Drive\SharedFolder_ExternalAssets\Sound\Mini1\.cache\Windows\SFX\pedal5_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal5		11336
-	868637415	36-25 Landrover--Safari Diesel_Horn,	Z:\Volumes\Macintosh HD\Google Drive\SharedFolder_ExternalAssets\Sound\Mini1\.cache\Windows\SFX\36-25 Landrover--Safari Diesel_Horn,_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\horns1\Horns1\36-25 Landrover--Safari Diesel_Horn,		97174
-	881668295	Ambience3	Z:\Volumes\Macintosh HD\Google Drive\SharedFolder_ExternalAssets\Sound\Mini1\.cache\Windows\SFX\Ambience3_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience3		817225
-	942912805	08 Horn--Sounded Twice	Z:\Volumes\Macintosh HD\Google Drive\SharedFolder_ExternalAssets\Sound\Mini1\.cache\Windows\SFX\08 Horn--Sounded Twice_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\horns1\Horns1\08 Horn--Sounded Twice		106441
-	946732094	pedal2	Z:\Volumes\Macintosh HD\Google Drive\SharedFolder_ExternalAssets\Sound\Mini1\.cache\Windows\SFX\pedal2_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal2		10147
-	1052367920	Bell	Z:\Volumes\Macintosh HD\Google Drive\SharedFolder_ExternalAssets\Sound\Mini1\.cache\Windows\SFX\Bell_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bell		10711
-	1057270782	Ambience1	Z:\Volumes\Macintosh HD\Google Drive\SharedFolder_ExternalAssets\Sound\Mini1\.cache\Windows\SFX\Ambience1_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience1		851010
+	24799722	36-26 Landrover--Safari Diesel_Horn,3	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\36-26 Landrover--Safari Diesel_Horn,3_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\horns1\Horns1\36-26 Landrover--Safari Diesel_Horn,3		125662
+	69790071	pedal1	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\pedal1_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal1		9430
+	98646268	14 Car, Interior, Horn--4 Blasts	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\14 Car, Interior, Horn--4 Blasts_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\horns1\Horns1\14 Car, Interior, Horn--4 Blasts		150462
+	187524640	Collision2	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Collision2_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collision\Collision2		7714
+	216305355	pedal4	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\pedal4_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal4		9912
+	233114623	Ambience2	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Ambience2_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience2		843073
+	265004707	pedal3	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\pedal3_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal3		10757
+	307491067	09 Horn, Angry Motorist	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\09 Horn, Angry Motorist_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\horns1\Horns1\09 Horn, Angry Motorist		40653
+	334703236	Cycling	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Cycling_63DD582A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cycling		200123
+	528757210	pedal6	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\pedal6_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal6		10527
+	568708346	pedal5	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\pedal5_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal5		11336
+	868637415	36-25 Landrover--Safari Diesel_Horn,	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\36-25 Landrover--Safari Diesel_Horn,_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\horns1\Horns1\36-25 Landrover--Safari Diesel_Horn,		97174
+	881668295	Ambience3	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Ambience3_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience3		817225
+	883776519	Collision1	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Collision1_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collision\Collision1		7703
+	942912805	08 Horn--Sounded Twice	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\08 Horn--Sounded Twice_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\horns1\Horns1\08 Horn--Sounded Twice		106441
+	946732094	pedal2	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\pedal2_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal2		10147
+	1052367920	Bell	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Bell_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bell		10711
+	1057270782	Ambience1	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Ambience1_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience1		851010
 
