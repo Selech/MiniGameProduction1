@@ -23,13 +23,13 @@ public class Test_PlayerMovement : MonoBehaviour
 	void OnEnable()
 	{
 		//EventManager.StartListening ("LoseCarriableEvent",LoseCarriable);
-		EventManager.StartListening ("HitObstacle",Collide);
+		EventManager.StartListening (GameManager.Instance._eventsContainer.obstacleHit,Collide);
 	}
 
 	void OnDisable()
 	{
 		//EventManager.StopListening ("LoseCarriableEvent",LoseCarriable);
-		EventManager.StopListening ("HitObstacle",Collide);
+		EventManager.StopListening (GameManager.Instance._eventsContainer.obstacleHit,Collide);
 	}
 
 	// Update is called once per frame
@@ -67,7 +67,8 @@ public class Test_PlayerMovement : MonoBehaviour
 
 	void Collide()
 	{
+		forceUp = GameManager.Instance.obstacleForceAddUp;
 		rigid.AddForce (Vector3.up*forceUp,ForceMode.Impulse);
-		print ("hit obstacle");
+		//print ("hit obstaclez");
 	}
 }

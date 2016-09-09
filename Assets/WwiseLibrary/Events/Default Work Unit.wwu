@@ -97,6 +97,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_horns1" ID="{B9C73F02-2775-4D59-AD7D-E80E3CB676A3}">
+					<ChildrenList>
+						<Action Name="Play" ID="{4E19DB4E-C55D-49AA-8AFB-97C9941E3587}" ShortID="331318787" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3BD02B60-F568-4109-B88A-007F1819C438}" Global="false">
+									<ObjectRef Name="horns1" ID="{967D96E8-A71D-480E-8A44-AD1186D99274}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
