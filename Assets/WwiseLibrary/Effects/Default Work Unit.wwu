@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{892D244E-D540-4566-BFD4-6D589BDF64EA}" SchemaVersion="72">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{892D244E-D540-4566-BFD4-6D589BDF64EA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Wwise_Gain" ID="{DA82F393-B0CE-4057-978F-65D71C470EFA}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<PropertyList>
+						<Property Name="FullBandGain" Type="Real32" Value="9.5"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Gain_01" ID="{E15C3110-9599-4265-88B8-C5A3F03BC554}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<PropertyList>
+						<Property Name="FullBandGain" Type="Real32" Value="9"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>
