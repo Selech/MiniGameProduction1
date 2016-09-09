@@ -2,10 +2,15 @@
 using System.Collections;
 
 public class CarriableController : MonoBehaviour {
-	HingeJoint joint;
+	FixedJoint joint;
+	GameObject connectedBody;
 
-	void Update(){
-		joint = GetComponent<HingeJoint> ();
-		Debug.Log (joint.angle);
+	void Start(){
+		joint = GetComponent<FixedJoint> ();
+		connectedBody = joint.connectedBody.gameObject;
+	}
+
+	void OnJointBreak(){
+		connectedBody.GetComponent<FixedJoint> ().breakForce = 80;
 	}
 }
