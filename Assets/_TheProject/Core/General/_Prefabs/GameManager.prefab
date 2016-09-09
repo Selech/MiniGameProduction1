@@ -204,7 +204,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011445540300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -16.76}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -442,12 +442,16 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011131761750}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85ab583e69a9cfb47b83f51d03bd8b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _GameState: 1
+  playerPrefab: {fileID: 1000010355120728, guid: af3c2006a8f45fa4d9b963856b28ab88,
+    type: 2}
+  playerCamera: {fileID: 1000012462158176, guid: 1f77012443e972a48a0f5a12013ca3b9,
+    type: 2}
   _eventsContainer:
     beginGame: BeginGame
     obstacleHit: ObstacleHitEvent
@@ -555,7 +559,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 0d1bd3d27fbade840acb87e7337d6481, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
