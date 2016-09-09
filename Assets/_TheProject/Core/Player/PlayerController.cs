@@ -26,7 +26,6 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
-		Debug.Log (Input.acceleration.x);
 		var target = Quaternion.Euler (0, 0, -Input.acceleration.x * rotationMultiplier);
 		transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime*rotationSpeed);
 
