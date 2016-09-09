@@ -452,7 +452,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyOnCollision: 1
   force: 0
---- !u!1001 &834240544
+--- !u!1001 &847936548
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -490,14 +490,6 @@ Prefab:
     - target: {fileID: 4000010684476688, guid: fe1bb9b622b7e3841b244519fbdfb721, type: 2}
       propertyPath: m_RootOrder
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000011916169316, guid: fe1bb9b622b7e3841b244519fbdfb721, type: 2}
-      propertyPath: m_Name
-      value: Background Image
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011805176620, guid: fe1bb9b622b7e3841b244519fbdfb721, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fe1bb9b622b7e3841b244519fbdfb721, type: 2}
@@ -604,30 +596,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 959959456}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1018634243 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000011131761750, guid: fe1bb9b622b7e3841b244519fbdfb721,
-    type: 2}
-  m_PrefabInternal: {fileID: 834240544}
---- !u!114 &1018634244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1018634243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e8ab12987949a7479760b790f64329b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  valueGuid: c6a61107e6afc44aaaab6b2db71dee31
-  bankName: UnitySB
-  loadAsynchronous: 0
-  decodeBank: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
 --- !u!1 &1206183762 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000011794945794, guid: 176175dc05c8a2845aadb6623a2fcab4,
