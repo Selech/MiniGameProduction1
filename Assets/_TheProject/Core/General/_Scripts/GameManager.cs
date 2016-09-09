@@ -182,7 +182,7 @@ public class GameManager : MonoBehaviour {
 	//change game state
 	void InitGamePlayPause(){
 		_GameState = GameState.Paused;
-		Time.timeScale = 0;
+		Time.timeScale = Mathf.Epsilon;
 	}
 
 	//change game state
@@ -196,7 +196,7 @@ public class GameManager : MonoBehaviour {
 	//once game has began, start calculating time
 	void UpdateTime()
 	{
-		currentTime += Time.time;
+		currentTime += Time.deltaTime;
 		HUD_TimeText.text = "Elapsed Time "+(currentTime/60).ToString ("F1");
 
 
