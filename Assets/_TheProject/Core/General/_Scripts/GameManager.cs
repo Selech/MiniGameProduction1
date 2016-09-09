@@ -83,13 +83,13 @@ public class GameManager : MonoBehaviour {
 	void OnEnable()
 	{
 		EventManager.StartListening (_eventsContainer.loseCarriable,LoseCarriable);
-		EventManager.StartListening (_eventsContainer.obstacleHit,RestartGame);
+//		EventManager.StartListening (_eventsContainer.obstacleHit,RestartGame);
 	}
 
 	void OnDisable()
 	{
 		EventManager.StopListening (_eventsContainer.loseCarriable,LoseCarriable);
-		EventManager.StopListening (_eventsContainer.obstacleHit,RestartGame);
+//		EventManager.StopListening (_eventsContainer.obstacleHit,RestartGame);
 	}
 
 	// Use this for initialization

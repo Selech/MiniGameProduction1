@@ -21,9 +21,8 @@ GameObject:
   - 4: {fileID: 4000012497690488}
   - 33: {fileID: 33000010695674010}
   - 23: {fileID: 23000011964386184}
-  - 64: {fileID: 64000013036464542}
   - 114: {fileID: 114000014236310284}
-  - 114: {fileID: 114000010947908004}
+  - 65: {fileID: 65000010690634736}
   m_Layer: 0
   m_Name: Prop_Cone
   m_TagString: Untagged
@@ -80,8 +79,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012768844002}
   m_Mesh: {fileID: 4300012, guid: 84807753fd641aa43b3a4e0bdb68a8f6, type: 3}
---- !u!64 &64000013036464542
-MeshCollider:
+--- !u!65 &65000010690634736
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -90,21 +89,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 4300012, guid: 84807753fd641aa43b3a4e0bdb68a8f6, type: 3}
---- !u!114 &114000010947908004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012768844002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ecd73a2d745e6e42af1f509cbbc6190, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyOnCollision: 1
-  force: 0
+  m_Size: {x: 67.32526, y: 79.54739, z: 65.1769}
+  m_Center: {x: 0.8060088, y: 40.97787, z: -0.565211}
 --- !u!114 &114000014236310284
 MonoBehaviour:
   m_ObjectHideFlags: 1
