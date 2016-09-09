@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public enum GameState
 {
@@ -21,6 +23,7 @@ public class GameManager : MonoBehaviour {
 
 	[HideInInspector] public bool isPaused = false;
 	[HideInInspector] public bool hasGameStarted = false;
+	public Text timeText;
 
 	public string pauseGameButton = "Cancel";
 	#endregion
@@ -44,7 +47,6 @@ public class GameManager : MonoBehaviour {
 	void Awake()
 	{
 		_instance = this;
-
 	}
 
 	#endregion
@@ -54,11 +56,13 @@ public class GameManager : MonoBehaviour {
 	void OnEnable()
 	{
 		EventManager.StartListening ("LoseCarriableEvent",LoseCarriable);
+		EventManager.StartListening ("HitObstacle",RestartGame);
 	}
 
 	void OnDisable()
 	{
 		EventManager.StopListening ("LoseCarriableEvent",LoseCarriable);
+		EventManager.StopListening ("HitObstacle",RestartGame);
 	}
 
 	// Use this for initialization
@@ -94,6 +98,7 @@ public class GameManager : MonoBehaviour {
 		EventManager.TriggerEvent ("BeginGame");
 		hasGameStarted = true;
 		InitGamePlayResume ();
+		SpawnPlayer ();
 	}
 
 	void RestartGame()
@@ -164,6 +169,8 @@ public class GameManager : MonoBehaviour {
 	void UpdateTime()
 	{
 		currentTime += Time.time;
+		timeText.text = "Elapsed Time "+(currentTime/60).ToString ("F1");
+
 
 		if(currentTime>maxTimeCompletion)
 		{

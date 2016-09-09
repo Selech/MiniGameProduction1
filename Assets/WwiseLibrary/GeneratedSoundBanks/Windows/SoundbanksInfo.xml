@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="118">
+	<RootPaths>
+		<ProjectRoot>/Users/Christian/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/z:/Volumes/Macintosh HD/Google Drive/SharedFolder_ExternalAssets/Sound/Mini1/</ProjectRoot>
+		<SourceFilesRoot>/Users/Christian/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/z:/Volumes/Macintosh HD/Google Drive/SharedFolder_ExternalAssets/Sound/Mini1/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/Christian/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/z:/Volumes/Macintosh HD/Google Drive/SharedFolder_ExternalAssets/Sound/Mini1/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/Christian/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/z:/Volumes/Macintosh HD/Google Drive/SharedFolder_ExternalAssets/Sound/Mini1/GeneratedSoundBanks/Windows/</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="399307055" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\UnitySB</ObjectPath>
+			<ShortName>UnitySB</ShortName>
+			<Path>UnitySB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="278617630" Name="Play_Ambience" ObjectPath="\Events\Default Work Unit\Play_Ambience"/>
+				<Event Id="1945722105" Name="Play_Bell" ObjectPath="\Events\Default Work Unit\Play_Bell"/>
+				<Event Id="2599818666" Name="Play_Pedal" ObjectPath="\Events\Default Work Unit\Play_Pedal"/>
+				<Event Id="3187507146" Name="Play_test" ObjectPath="\Events\Default Work Unit\Play_test"/>
+				<Event Id="1731467220" Name="Stop_Pedal" ObjectPath="\Events\Default Work Unit\Stop_Pedal"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="24799722" Language="SFX">
+					<ShortName>36-26 Landrover--Safari Diesel_Horn,3.wav</ShortName>
+					<Path>SFX/36-26 Landrover--Safari Diesel_Horn,3_844E6D30.wem</Path>
+				</File>
+				<File Id="69790071" Language="SFX">
+					<ShortName>pedal1.wav</ShortName>
+					<Path>SFX/pedal1_844E6D30.wem</Path>
+				</File>
+				<File Id="98646268" Language="SFX">
+					<ShortName>14 Car, Interior, Horn--4 Blasts.wav</ShortName>
+					<Path>SFX/14 Car, Interior, Horn--4 Blasts_844E6D30.wem</Path>
+				</File>
+				<File Id="216305355" Language="SFX">
+					<ShortName>pedal4.wav</ShortName>
+					<Path>SFX/pedal4_844E6D30.wem</Path>
+				</File>
+				<File Id="233114623" Language="SFX">
+					<ShortName>Ambience2.wav</ShortName>
+					<Path>SFX/Ambience2_844E6D30.wem</Path>
+				</File>
+				<File Id="265004707" Language="SFX">
+					<ShortName>pedal3.wav</ShortName>
+					<Path>SFX/pedal3_844E6D30.wem</Path>
+				</File>
+				<File Id="307491067" Language="SFX">
+					<ShortName>09 Horn, Angry Motorist.wav</ShortName>
+					<Path>SFX/09 Horn, Angry Motorist_844E6D30.wem</Path>
+				</File>
+				<File Id="334703236" Language="SFX">
+					<ShortName>Cycling.wav</ShortName>
+					<Path>SFX/Cycling_63DD582A.wem</Path>
+				</File>
+				<File Id="528757210" Language="SFX">
+					<ShortName>pedal6.wav</ShortName>
+					<Path>SFX/pedal6_844E6D30.wem</Path>
+				</File>
+				<File Id="568708346" Language="SFX">
+					<ShortName>pedal5.wav</ShortName>
+					<Path>SFX/pedal5_844E6D30.wem</Path>
+				</File>
+				<File Id="868637415" Language="SFX">
+					<ShortName>36-25 Landrover--Safari Diesel_Horn,.wav</ShortName>
+					<Path>SFX/36-25 Landrover--Safari Diesel_Horn,_844E6D30.wem</Path>
+				</File>
+				<File Id="881668295" Language="SFX">
+					<ShortName>Ambience3.wav</ShortName>
+					<Path>SFX/Ambience3_844E6D30.wem</Path>
+				</File>
+				<File Id="942912805" Language="SFX">
+					<ShortName>08 Horn--Sounded Twice.wav</ShortName>
+					<Path>SFX/08 Horn--Sounded Twice_844E6D30.wem</Path>
+				</File>
+				<File Id="946732094" Language="SFX">
+					<ShortName>pedal2.wav</ShortName>
+					<Path>SFX/pedal2_844E6D30.wem</Path>
+				</File>
+				<File Id="1052367920" Language="SFX">
+					<ShortName>Bell.wav</ShortName>
+					<Path>SFX/Bell_844E6D30.wem</Path>
+				</File>
+				<File Id="1057270782" Language="SFX">
+					<ShortName>Ambience1.wav</ShortName>
+					<Path>SFX/Ambience1_844E6D30.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
