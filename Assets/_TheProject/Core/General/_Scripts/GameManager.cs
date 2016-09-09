@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public enum GameState
 {
@@ -7,25 +9,53 @@ public enum GameState
 	Paused
 }
 
+[System.Serializable]
+public class EventsContainer
+{
+	public string beginGame = "BeginGame";	
+	public string obstacleHit = "ObstacleHitEvent";
+	public string resetGame = "ResetGame";
+	public string loseCarriable = "LoseCarriableEvent";
+	public string pauseGame = "PauseGame";
+	public string resumeGame = "ResumeGame";
+}
+
 public class GameManager : MonoBehaviour {
 
 	#region Variables
 
 	public GameState _GameState;
+	public GameObject playerPrefab;
+	public GameObject playerCamera;
+
+	private GameObject curPlayer;
+
+	[SerializeField]
+	public EventsContainer _eventsContainer = new EventsContainer();
 
 	[HideInInspector] public float currentTime;
-	public float maxTimeCompletion = 1000f;
+	public float maxTimeCompletion = 10f;
 
-	[Range(1,10)] public int currentCarriablesAmount=3;
-	public Transform startPos;
+	[Range(0,10)] public int startCarriablesAmount=3;
+	public int currentCarriablesAmount;
+	public Transform startPositionSpawn;
 
 	[HideInInspector] public bool isPaused = false;
 	[HideInInspector] public bool hasGameStarted = false;
+	public Text HUD_TimeText;
 
+	//used for testing
 	public string pauseGameButton = "Cancel";
+
+	#region data refs
+
+	public float obstacleForceAddUp;
+
 	#endregion
 
-	#region Sinleton Methods
+	#endregion
+
+	#region Sinleton Setup
 
 	private static GameManager _instance;
 	public static GameManager Instance
@@ -44,7 +74,6 @@ public class GameManager : MonoBehaviour {
 	void Awake()
 	{
 		_instance = this;
-
 	}
 
 	#endregion
@@ -53,12 +82,14 @@ public class GameManager : MonoBehaviour {
 
 	void OnEnable()
 	{
-		EventManager.StartListening ("LoseCarriableEvent",LoseCarriable);
+		EventManager.StartListening (_eventsContainer.loseCarriable,LoseCarriable);
+//		EventManager.StartListening (_eventsContainer.obstacleHit,RestartGame);
 	}
 
 	void OnDisable()
 	{
-		EventManager.StopListening ("LoseCarriableEvent",LoseCarriable);
+		EventManager.StopListening (_eventsContainer.loseCarriable,LoseCarriable);
+//		EventManager.StopListening (_eventsContainer.obstacleHit,RestartGame);
 	}
 
 	// Use this for initialization
@@ -91,19 +122,20 @@ public class GameManager : MonoBehaviour {
 	// begin game once all references have been made
 	void StartGame()
 	{
-		EventManager.TriggerEvent ("BeginGame");
+		EventManager.TriggerEvent (_eventsContainer.beginGame);
 		hasGameStarted = true;
 		InitGamePlayResume ();
+		SpawnPlayer ();
 	}
 
-	void RestartGame()
+	public void RestartGame()
 	{
 		ResetSettings ();
-		EventManager.TriggerEvent ("ResetGame");
+		EventManager.TriggerEvent (_eventsContainer.resetGame);
 	}
 
 	//toggle paused game on input
-	void TogglePause()
+	public void TogglePause()
 	{
 		
 		isPaused = !isPaused;
@@ -122,22 +154,34 @@ public class GameManager : MonoBehaviour {
 
 	void PauseGame()
 	{
-		EventManager.TriggerEvent ("PauseGame");
+		EventManager.TriggerEvent (_eventsContainer.pauseGame);
 		InitGamePlayPause ();
 	}
 
 	void ResumeGame()
 	{
-		EventManager.TriggerEvent ("ResumeGame");
+		EventManager.TriggerEvent (_eventsContainer.resumeGame);
 		InitGamePlayResume ();
 	}
 
 	void SpawnPlayer()
 	{
-		//reset carriables and time
-		GameObject player = GameObject.FindGameObjectWithTag("Player");
-		player.transform.position = startPos.position;
-		player.transform.rotation = startPos.rotation;
+
+		if (curPlayer == null) {
+
+			GameObject go = (GameObject)Instantiate (playerPrefab) as GameObject;
+			GameObject cam = (GameObject)Instantiate (playerCamera) as GameObject;
+
+			CamFollow cf = cam.GetComponent<CamFollow> ();
+			cf.target = go.transform;
+
+			//reset carriables and time
+			//		GameObject player = GameObject.FindGameObjectWithTag("Player");
+			curPlayer = go;
+		} 
+			
+		curPlayer.transform.position = startPositionSpawn.position;
+		curPlayer.transform.rotation = startPositionSpawn.rotation;
 	}
 
 	//reset settings on player spawn
@@ -145,17 +189,24 @@ public class GameManager : MonoBehaviour {
 	{
 		isPaused = false;
 		hasGameStarted = false;
+
 		currentTime = 0;
+		Time.timeScale = 1;
+		SpawnPlayer ();
+
+		currentCarriablesAmount = startCarriablesAmount;
 	}
 
 	//change game state
 	void InitGamePlayPause(){
 		_GameState = GameState.Paused;
+		Time.timeScale = Mathf.Epsilon;
 	}
 
 	//change game state
 	void InitGamePlayResume(){
 		_GameState = GameState.Playing;
+		Time.timeScale = 1;
 	}
 	#endregion
 
@@ -163,7 +214,9 @@ public class GameManager : MonoBehaviour {
 	//once game has began, start calculating time
 	void UpdateTime()
 	{
-		currentTime += Time.time;
+		currentTime += Time.deltaTime;
+		HUD_TimeText.text = "Elapsed Time "+(currentTime/60).ToString ("F1");
+
 
 		if(currentTime>maxTimeCompletion)
 		{
@@ -176,6 +229,7 @@ public class GameManager : MonoBehaviour {
 	{
 		currentCarriablesAmount--;
 		CheckForEndGame ();
+
 	}
 
 	//check if counter is 0 so that the game can be reset
@@ -183,6 +237,8 @@ public class GameManager : MonoBehaviour {
 	{
 		if(currentCarriablesAmount<=0)
 		{
+			
+			currentCarriablesAmount = 0;
 			RestartGame ();
 		}
 	}

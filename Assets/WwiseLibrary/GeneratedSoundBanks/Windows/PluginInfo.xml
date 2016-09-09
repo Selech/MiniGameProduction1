@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PluginInfo Project="Mini1" Platform="Windows" BasePlatform="Windows">
+	<Plugins>
+		<Plugin Name="Wwise Gain" ID="9109507" DLL="AkGain"/>
+	</Plugins>
+</PluginInfo>

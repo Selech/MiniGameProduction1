@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6992B1C2-40A0-49EA-8448-A17710A4C386}" SchemaVersion="72">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{6992B1C2-40A0-49EA-8448-A17710A4C386}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="horns1" ID="{967D96E8-A71D-480E-8A44-AD1186D99274}" ShortID="665534778">
+					<PropertyList>
+						<Property Name="InitialDelay" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{CC51A89B-EA6F-4DC9-8905-A632A0BCBF11}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="1061"/>
+											<Property Name="Min" Type="Real64" Value="-568"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="OutputBusLowpass" Type="int16">
+							<ValueList>
+								<Value>28</Value>
+							</ValueList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Horns1" ID="{21B53288-217A-496A-8349-39A57A679B71}" ShortID="250321927">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="09 Horn, Angry Motorist" ID="{893402CC-735D-4887-BAA9-29E4AE499488}" ShortID="594936795" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="09 Horn, Angry Motorist" ID="{C96BE1D5-6D21-481C-A5A0-B3940764072D}" ShortID="307491067">
+											<Language>SFX</Language>
+											<AudioFile>09 Horn, Angry Motorist.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="41-19 Diesel Trains Enigne horn - on" ID="{13610670-6080-40E4-BEAE-51DAEB824C72}" ShortID="89517878">
+											<Language>SFX</Language>
+											<AudioFile>41-19 Diesel Trains Enigne horn - on.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="41-20 Diesel Trains Engine horn, two" ID="{ADB63D58-57BB-440F-B58A-234671E162C4}" ShortID="560565859">
+											<Language>SFX</Language>
+											<AudioFile>41-20 Diesel Trains Engine horn, two.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="36-24 Landrover--Safari Diesel_Horn," ID="{1AB99446-36C8-4FE9-A307-9218B879FDAD}" ShortID="102715689">
+											<Language>SFX</Language>
+											<AudioFile>36-24 Landrover--Safari Diesel_Horn,.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="36-26 Landrover--Safari Diesel_Horn," ID="{D582C900-F53B-41FF-8275-56EA739B7C9F}" ShortID="853253761">
+											<Language>SFX</Language>
+											<AudioFile>36-26 Landrover--Safari Diesel_Horn,.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="36-24 Landrover--Safari Diesel_Horn,_01" ID="{21FCC6F5-FEC0-45BB-8D23-7B4D637F9BEF}" ShortID="29861579">
+											<Language>SFX</Language>
+											<AudioFile>36-24 Landrover--Safari Diesel_Horn,.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="102715689"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="36-25 Landrover--Safari Diesel_Horn," ID="{52B51569-468D-4DC5-B8E8-61C2F59081D7}" ShortID="699144282">
+											<Language>SFX</Language>
+											<AudioFile>36-25 Landrover--Safari Diesel_Horn,.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="868637415"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="36-24 Landrover--Safari Diesel_Horn,1" ID="{9026A9B4-D87B-4DE9-B6B2-EA94038DA7A9}" ShortID="696318953">
+											<Language>SFX</Language>
+											<AudioFile>36-24 Landrover--Safari Diesel_Horn,1.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="36-25 Landrover--Safari Diesel_Horn,2" ID="{B9FEE85D-FDA2-411A-94AB-7C4821F029F3}" ShortID="900488647">
+											<Language>SFX</Language>
+											<AudioFile>36-25 Landrover--Safari Diesel_Horn,2.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="36-26 Landrover--Safari Diesel_Horn,3" ID="{433562FA-DC92-41CF-82F6-03AE903F8260}" ShortID="24799722">
+											<Language>SFX</Language>
+											<AudioFile>36-26 Landrover--Safari Diesel_Horn,3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="09 Horn, Angry Motorist" ID="{C96BE1D5-6D21-481C-A5A0-B3940764072D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="36-25 Landrover--Safari Diesel_Horn," ID="{9810B2AC-C60E-45A0-95BD-4397A1AA1C92}" ShortID="100993501" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="36-25 Landrover--Safari Diesel_Horn," ID="{CC369701-D1BE-4ECF-A05F-2D33FB060AE1}" ShortID="868637415">
+											<Language>SFX</Language>
+											<AudioFile>36-25 Landrover--Safari Diesel_Horn,.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="36-25 Landrover--Safari Diesel_Horn," ID="{CC369701-D1BE-4ECF-A05F-2D33FB060AE1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="08 Horn--Sounded Twice" ID="{9F668E5C-6CEA-4C16-9555-D0809C27C286}" ShortID="381583224" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="08 Horn--Sounded Twice" ID="{83E9ED28-486E-4EFD-B663-E2B08B13A0AB}" ShortID="942912805">
+											<Language>SFX</Language>
+											<AudioFile>08 Horn--Sounded Twice.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="08 Horn--Sounded Twice" ID="{83E9ED28-486E-4EFD-B663-E2B08B13A0AB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="14 Car, Interior, Horn--4 Blasts" ID="{72177502-6129-492C-97CE-9470D9DE4AE7}" ShortID="215830840" Type="SoundFX">
+									<PropertyList>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="14 Car, Interior, Horn--4 Blasts" ID="{8C5CA758-3E92-4785-A03B-B8B8FF425044}" ShortID="98646268">
+											<Language>SFX</Language>
+											<AudioFile>14 Car, Interior, Horn--4 Blasts.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="14 Car, Interior, Horn--4 Blasts" ID="{8C5CA758-3E92-4785-A03B-B8B8FF425044}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="36-26 Landrover--Safari Diesel_Horn,3" ID="{B1BF6F32-0B93-4978-B18A-8A85E6C87072}" ShortID="875656256" Type="SoundFX">
+									<PropertyList>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="36-26 Landrover--Safari Diesel_Horn,3" ID="{F245DC44-B013-4A2A-895A-8022E4215E0D}" ShortID="924890477">
+											<Language>SFX</Language>
+											<AudioFile>36-26 Landrover--Safari Diesel_Horn,3.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="24799722"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="36-26 Landrover--Safari Diesel_Horn,3" ID="{F245DC44-B013-4A2A-895A-8022E4215E0D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<Playlist>
+						<ItemRef Name="Horns1" ID="{21B53288-217A-496A-8349-39A57A679B71}"/>
+					</Playlist>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Ambience" ID="{E2E1FB06-C7A1-432B-965B-FFC304242A2D}" ShortID="274699983">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>8</Value>
+							</ValueList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="6"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-14</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Ambience1" ID="{BC693F8E-85EA-4B90-96CE-511DE51CC9BC}" ShortID="233581677" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience1" ID="{B56511CA-7CBB-46A3-85FA-493904F0FE94}" ShortID="1057270782">
+									<Language>SFX</Language>
+									<AudioFile>Ambience1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience1" ID="{B56511CA-7CBB-46A3-85FA-493904F0FE94}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambience2" ID="{F84FEE57-356A-4AC9-9CCF-5F77BAB24CB0}" ShortID="726886524" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience2" ID="{57624E8F-412B-4D54-9156-E4B3076BDACA}" ShortID="233114623">
+									<Language>SFX</Language>
+									<AudioFile>Ambience2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience2" ID="{57624E8F-412B-4D54-9156-E4B3076BDACA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambience3" ID="{C3E645FF-EA8A-490F-A14A-3FFA4AFDEB29}" ShortID="283855455" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience3" ID="{9DB1DDE9-23E7-4D08-B57A-A6600C712A21}" ShortID="881668295">
+									<Language>SFX</Language>
+									<AudioFile>Ambience3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience3" ID="{9DB1DDE9-23E7-4D08-B57A-A6600C712A21}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Pedal" ID="{8C8DA58D-9019-4C8E-BF15-F3FF49CA17D9}" ShortID="26504951">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>16</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{215ED71F-90AD-4381-AB52-B45951B18B9D}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="8"/>
+											<Property Name="Min" Type="Real64" Value="-6"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="OutputBusLowpass" Type="int16">
+							<ValueList>
+								<Value>9</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{5C51D9A8-581F-49EE-812C-5363B49983D4}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="177"/>
+											<Property Name="Min" Type="Real64" Value="-101"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="pedal1" ID="{62B64D60-1AEC-4671-80AF-2E35C2EB07CD}" ShortID="774827411" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{25442631-79CD-42E7-BAD9-762BAAD3A2CB}" ShortID="581630306">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Speed" ID="{9439F9D0-676E-4978-AE46-D2192E5DD6FA}" WorkUnitID="{E4FDA951-4F24-4429-95B0-D2F22A0B5C08}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{F577273E-5C2B-4EE0-9890-A03DF0858687}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0.4</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pedal1" ID="{B9D7E656-8B21-404B-9DFF-81AED4009EDC}" ShortID="69790071">
+									<Language>SFX</Language>
+									<AudioFile>pedal1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pedal1" ID="{B9D7E656-8B21-404B-9DFF-81AED4009EDC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="pedal2" ID="{1B41310D-478F-40F8-A0D7-8CC391288727}" ShortID="672895320" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{4211A0E5-8515-4196-8718-2DF3E7D78173}" ShortID="665491393">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Speed" ID="{9439F9D0-676E-4978-AE46-D2192E5DD6FA}" WorkUnitID="{E4FDA951-4F24-4429-95B0-D2F22A0B5C08}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{F7F801C3-5D1F-4D01-BC0D-706EBBC07E48}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0.4</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pedal2" ID="{13013493-4D43-450C-92DB-5B2C126C7270}" ShortID="946732094">
+									<Language>SFX</Language>
+									<AudioFile>pedal2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pedal2" ID="{13013493-4D43-450C-92DB-5B2C126C7270}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="pedal3" ID="{35779043-151D-4E11-AEB5-2762546922B7}" ShortID="802563324" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{491250F0-BE55-49B0-8B5D-C6ACC2CDEE3E}" ShortID="794108292">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Speed" ID="{9439F9D0-676E-4978-AE46-D2192E5DD6FA}" WorkUnitID="{E4FDA951-4F24-4429-95B0-D2F22A0B5C08}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{06B09996-192B-4044-B8F7-EADA3F9153DF}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0.4</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pedal3" ID="{A8A59B9B-4B88-4F77-A20A-8E2186356B9D}" ShortID="265004707">
+									<Language>SFX</Language>
+									<AudioFile>pedal3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pedal3" ID="{A8A59B9B-4B88-4F77-A20A-8E2186356B9D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="pedal4" ID="{0B044C92-BFB0-4D25-8672-F7A7F85AC69A}" ShortID="674003449" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{3A291019-4918-4CF6-A08C-FFD7D2B52829}" ShortID="631455638">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Speed" ID="{9439F9D0-676E-4978-AE46-D2192E5DD6FA}" WorkUnitID="{E4FDA951-4F24-4429-95B0-D2F22A0B5C08}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{7915D173-1B50-4700-8F6B-F05662F89492}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0.4</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pedal4" ID="{B9D2F5A2-2BEB-4183-800B-ABD3E50210AA}" ShortID="216305355">
+									<Language>SFX</Language>
+									<AudioFile>pedal4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pedal4" ID="{B9D2F5A2-2BEB-4183-800B-ABD3E50210AA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="pedal5" ID="{0C44270F-2957-4F12-AD00-FB11025E4D87}" ShortID="322583897" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{8975579B-A1C6-45D4-8167-995747559C2A}" ShortID="931051992">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Speed" ID="{9439F9D0-676E-4978-AE46-D2192E5DD6FA}" WorkUnitID="{E4FDA951-4F24-4429-95B0-D2F22A0B5C08}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{752DAA56-132D-4C6D-BD40-F0F92FC32E0C}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0.4</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pedal5" ID="{121849DF-4FBD-4788-B095-A07CF925A7D6}" ShortID="568708346">
+									<Language>SFX</Language>
+									<AudioFile>pedal5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pedal5" ID="{121849DF-4FBD-4788-B095-A07CF925A7D6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="pedal6" ID="{9D1F5646-5466-481C-8F3D-C465AEADEA08}" ShortID="196307112" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{B344D85E-FBB6-4A8D-95D6-B22418C9D1D6}" ShortID="244480129">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Speed" ID="{9439F9D0-676E-4978-AE46-D2192E5DD6FA}" WorkUnitID="{E4FDA951-4F24-4429-95B0-D2F22A0B5C08}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{ABC5B7A8-9796-4DAA-AAA8-C7994A3DD60A}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0.4</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pedal6" ID="{6C665409-AE13-407B-9B6B-63D8E419DEFB}" ShortID="528757210">
+									<Language>SFX</Language>
+									<AudioFile>pedal6.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pedal6" ID="{6C665409-AE13-407B-9B6B-63D8E419DEFB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="Cycling" ID="{82AD191B-CA9B-4C99-9E2F-2E5582B537BA}" ShortID="262688816" Type="SoundFX">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+							<ObjectRef Name="New_Wwise_Gain" ID="{DA82F393-B0CE-4057-978F-65D71C470EFA}" WorkUnitID="{892D244E-D540-4566-BFD4-6D589BDF64EA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Cycling" ID="{FCDA32F4-D083-495C-B0A3-3DA5DD4273B6}" ShortID="334703236">
+							<Language>SFX</Language>
+							<AudioFile>Cycling.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Cycling" ID="{FCDA32F4-D083-495C-B0A3-3DA5DD4273B6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Bell" ID="{3E47AB93-5BDD-4513-A8B4-FD790D0A4AA1}" ShortID="985076835" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Bell" ID="{22C2A25B-77CC-41F0-B7DB-A1B58DA3703B}" ShortID="1052367920">
+							<Language>SFX</Language>
+							<AudioFile>Bell.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Bell" ID="{22C2A25B-77CC-41F0-B7DB-A1B58DA3703B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="Collision" ID="{9F97DD71-A358-4237-815A-FD7121D4A22D}" ShortID="755936894">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{4036A5F5-7A8A-4A9F-981C-ACBB47DBDB7C}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="37"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{28560603-20E6-41CC-9334-972D6D920129}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="227"/>
+											<Property Name="Min" Type="Real64" Value="-227"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Collision1" ID="{3EEB6B3D-4391-4013-9FCE-3DD5DD8EE5FB}" ShortID="203577550" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Collision1" ID="{036E47B4-EBFD-47FD-9DBC-98AD84A87F11}" ShortID="883776519">
+									<Language>SFX</Language>
+									<AudioFile>Collision1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Collision1" ID="{036E47B4-EBFD-47FD-9DBC-98AD84A87F11}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Collision2" ID="{C4569DDB-D447-4EF0-99E1-2AA8E238ED70}" ShortID="934365080" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Collision2" ID="{194562AC-1208-42CC-8E44-8B5DA2448FD3}" ShortID="187524640">
+									<Language>SFX</Language>
+									<AudioFile>Collision2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Collision2" ID="{194562AC-1208-42CC-8E44-8B5DA2448FD3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
