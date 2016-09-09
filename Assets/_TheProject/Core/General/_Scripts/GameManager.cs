@@ -25,6 +25,11 @@ public class GameManager : MonoBehaviour {
 	#region Variables
 
 	public GameState _GameState;
+	public GameObject playerPrefab;
+	public GameObject playerCamera;
+
+	private GameObject curPlayer;
+
 	[SerializeField]
 	public EventsContainer _eventsContainer = new EventsContainer();
 
@@ -161,11 +166,22 @@ public class GameManager : MonoBehaviour {
 
 	void SpawnPlayer()
 	{
-		//reset carriables and time
-		GameObject player = GameObject.FindGameObjectWithTag("Player");
-		player.transform.position = startPositionSpawn.position;
-		player.transform.rotation = startPositionSpawn.rotation;
-		currentCarriablesAmount = startCarriablesAmount;
+
+		if (curPlayer == null) {
+
+			GameObject go = (GameObject)Instantiate (playerPrefab) as GameObject;
+			GameObject cam = (GameObject)Instantiate (playerCamera) as GameObject;
+
+			CamFollow cf = cam.GetComponent<CamFollow> ();
+			cf.target = go.transform;
+
+			//reset carriables and time
+			//		GameObject player = GameObject.FindGameObjectWithTag("Player");
+			curPlayer = go;
+		} 
+			
+		curPlayer.transform.position = startPositionSpawn.position;
+		curPlayer.transform.rotation = startPositionSpawn.rotation;
 	}
 
 	//reset settings on player spawn
@@ -177,6 +193,8 @@ public class GameManager : MonoBehaviour {
 		currentTime = 0;
 		Time.timeScale = 1;
 		SpawnPlayer ();
+
+		currentCarriablesAmount = startCarriablesAmount;
 	}
 
 	//change game state
