@@ -131,6 +131,8 @@ public class GameManager : MonoBehaviour {
 	public void RestartGame()
 	{
 		ResetSettings ();
+		Time.timeScale = 1;
+		hasGameStarted = true;
 		EventManager.TriggerEvent (_eventsContainer.resetGame);
 	}
 
@@ -164,6 +166,19 @@ public class GameManager : MonoBehaviour {
 		InitGamePlayResume ();
 	}
 
+	//reset settings on player spawn
+	void ResetSettings()
+	{
+		isPaused = false;
+		hasGameStarted = false;
+
+		currentTime = 0.0f;
+		HUD_TimeText.text = "Elapsed Time "+(currentTime).ToString ("F2");
+
+		SpawnPlayer ();
+		currentCarriablesAmount = startCarriablesAmount;
+	}
+
 	void SpawnPlayer()
 	{
 
@@ -184,19 +199,6 @@ public class GameManager : MonoBehaviour {
 		curPlayer.transform.rotation = startPositionSpawn.rotation;
 	}
 
-	//reset settings on player spawn
-	void ResetSettings()
-	{
-		isPaused = false;
-		hasGameStarted = false;
-
-		currentTime = 0;
-		Time.timeScale = 1;
-		SpawnPlayer ();
-
-		currentCarriablesAmount = startCarriablesAmount;
-	}
-
 	//change game state
 	void InitGamePlayPause(){
 		_GameState = GameState.Paused;
@@ -215,7 +217,7 @@ public class GameManager : MonoBehaviour {
 	void UpdateTime()
 	{
 		currentTime += Time.deltaTime;
-		HUD_TimeText.text = "Elapsed Time "+(currentTime/60).ToString ("F1");
+		HUD_TimeText.text = "Elapsed Time "+(currentTime/60).ToString ("F2");
 
 
 		if(currentTime>maxTimeCompletion)
