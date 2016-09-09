@@ -3,14 +3,13 @@ using System.Collections;
 
 public class CamFollow : MonoBehaviour {
 
-	public Transform target;
-	public float distance = 3.0f;
-	public float height = 3.0f;
-	public float damping = 5.0f;
+	[HideInInspector]public Transform target;
+	[Range(1,20)] public float distance = 3.0f;
+	[Range(1,20)] public float height = 3.0f;
+	[Range(0.1f,30)] public float damping = 5.0f;
+	[Range(0.1f,30)] public float rotationDamping = 10.0f;
 	public bool smoothRotation = true;
 	public bool followBehind = true;
-	public float rotationDamping = 10.0f;
-	public float xOffset = 1;
 
 	void OnEnable()
 	{
@@ -22,7 +21,12 @@ public class CamFollow : MonoBehaviour {
 
 	void FixedUpdate () 
 	{
-		Follow ();
+		if (target != null) {
+			Follow ();
+			
+		} else {
+			print ("no target assigned for camera to follow");
+		}
 	}
 
 	void Follow()

@@ -25,6 +25,11 @@ public class GameManager : MonoBehaviour {
 	#region Variables
 
 	public GameState _GameState;
+	public GameObject playerPrefab;
+	public GameObject playerCamera;
+
+	private GameObject curPlayer;
+
 	[SerializeField]
 	public EventsContainer _eventsContainer = new EventsContainer();
 
@@ -78,13 +83,13 @@ public class GameManager : MonoBehaviour {
 	void OnEnable()
 	{
 		EventManager.StartListening (_eventsContainer.loseCarriable,LoseCarriable);
-		EventManager.StartListening (_eventsContainer.obstacleHit,RestartGame);
+//		EventManager.StartListening (_eventsContainer.obstacleHit,RestartGame);
 	}
 
 	void OnDisable()
 	{
 		EventManager.StopListening (_eventsContainer.loseCarriable,LoseCarriable);
-		EventManager.StopListening (_eventsContainer.obstacleHit,RestartGame);
+//		EventManager.StopListening (_eventsContainer.obstacleHit,RestartGame);
 	}
 
 	// Use this for initialization
@@ -123,14 +128,14 @@ public class GameManager : MonoBehaviour {
 		SpawnPlayer ();
 	}
 
-	void RestartGame()
+	public void RestartGame()
 	{
 		ResetSettings ();
 		EventManager.TriggerEvent (_eventsContainer.resetGame);
 	}
 
 	//toggle paused game on input
-	void TogglePause()
+	public void TogglePause()
 	{
 		
 		isPaused = !isPaused;
@@ -161,11 +166,22 @@ public class GameManager : MonoBehaviour {
 
 	void SpawnPlayer()
 	{
-		//reset carriables and time
-		GameObject player = GameObject.FindGameObjectWithTag("Player");
-		player.transform.position = startPositionSpawn.position;
-		player.transform.rotation = startPositionSpawn.rotation;
-		currentCarriablesAmount = startCarriablesAmount;
+
+		if (curPlayer == null) {
+
+			GameObject go = (GameObject)Instantiate (playerPrefab) as GameObject;
+			GameObject cam = (GameObject)Instantiate (playerCamera) as GameObject;
+
+			CamFollow cf = cam.GetComponent<CamFollow> ();
+			cf.target = go.transform;
+
+			//reset carriables and time
+			//		GameObject player = GameObject.FindGameObjectWithTag("Player");
+			curPlayer = go;
+		} 
+			
+		curPlayer.transform.position = startPositionSpawn.position;
+		curPlayer.transform.rotation = startPositionSpawn.rotation;
 	}
 
 	//reset settings on player spawn
@@ -175,17 +191,22 @@ public class GameManager : MonoBehaviour {
 		hasGameStarted = false;
 
 		currentTime = 0;
+		Time.timeScale = 1;
 		SpawnPlayer ();
+
+		currentCarriablesAmount = startCarriablesAmount;
 	}
 
 	//change game state
 	void InitGamePlayPause(){
 		_GameState = GameState.Paused;
+		Time.timeScale = Mathf.Epsilon;
 	}
 
 	//change game state
 	void InitGamePlayResume(){
 		_GameState = GameState.Playing;
+		Time.timeScale = 1;
 	}
 	#endregion
 
@@ -193,7 +214,7 @@ public class GameManager : MonoBehaviour {
 	//once game has began, start calculating time
 	void UpdateTime()
 	{
-		currentTime += Time.time;
+		currentTime += Time.deltaTime;
 		HUD_TimeText.text = "Elapsed Time "+(currentTime/60).ToString ("F1");
 
 

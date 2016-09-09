@@ -20,11 +20,17 @@ public class PlayerController : MonoBehaviour {
 	[Range(0.01f,0.3f)]
 	public float deadZone = 0.1f;
 
+	void Start(){
+		AkSoundEngine.PostEvent ("Play_Pedal",this.gameObject);
+		AkSoundEngine.PostEvent ("Play_Ambience",this.gameObject);
+	}
+
 	void OnEnable(){
 		EventManager.StartListening (GameManager.Instance._eventsContainer.obstacleHit, Jump);
 	}
 
 	void OnDisable(){
+		AkSoundEngine.PostEvent ("Stop_Pedal",this.gameObject);
 		EventManager.StopListening (GameManager.Instance._eventsContainer.obstacleHit, Jump);
 	}
 
@@ -52,6 +58,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void Jump(){
+		AkSoundEngine.PostEvent ("Play_Collision", this.gameObject);
 		this.GetComponent<Rigidbody> ().AddForce (new Vector3(0,2,0), ForceMode.VelocityChange);
 	}
 }
