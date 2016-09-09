@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour {
 	[Range(0.01f,0.3f)]
 	public float deadZone = 0.1f;
 
+	public Rigidbody body;
+
 	void Start(){
 		AkSoundEngine.PostEvent ("Play_Pedal",this.gameObject);
 		AkSoundEngine.PostEvent ("Play_Ambience",this.gameObject);
@@ -59,6 +61,6 @@ public class PlayerController : MonoBehaviour {
 
 	void Jump(){
 		AkSoundEngine.PostEvent ("Play_Collision", this.gameObject);
-		this.GetComponent<Rigidbody> ().AddForce (new Vector3(0,2,0), ForceMode.VelocityChange);
+		body.AddForce (new Vector3(0,GameManager.Instance.obstacleForceAddUp,0), ForceMode.VelocityChange);
 	}
 }
