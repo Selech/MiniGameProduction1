@@ -9,16 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb2d98578ed201440aad1d238b15ca80, type: 3}
-  m_Name: AkWwiseProjectData 16
+  m_Name: AkWwiseProjectData 32
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
-<<<<<<< HEAD
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{FCFFA91E-B225-442C-9C27-0DE8A95F2202}'
-    m_lastTimePsrt1: 199556983
-    m_lastTimePart2: -1999382364
+    m_lastTimePsrt1: 71342087
+    m_lastTimePart2: -1999382368
     List:
     - Name: Play_Ambience
       Path: Default Work Unit\Play_Ambience
@@ -94,29 +93,29 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}'
-    m_lastTimePsrt1: 202643899
-    m_lastTimePart2: -1999382364
+    m_lastTimePsrt1: 74684094
+    m_lastTimePart2: -1999382368
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{F3A5A0B9-89AD-4F63-87DB-922EAD240549}'
-    m_lastTimePsrt1: 247926400
-    m_lastTimePart2: -1999382364
+    m_lastTimePsrt1: 98149878
+    m_lastTimePart2: -1999382368
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{94BBBD5F-FAA8-478E-A74A-D11000E0AABD}'
-    m_lastTimePsrt1: 248156594
-    m_lastTimePart2: -1999382364
+    m_lastTimePsrt1: 98300030
+    m_lastTimePart2: -1999382368
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D4ABC6EF-B040-4737-8005-810B436F5933}'
-    m_lastTimePsrt1: -1066660685
-    m_lastTimePart2: -1999382363
+    m_lastTimePsrt1: 505560693
+    m_lastTimePart2: -1999382362
     List:
     - Name: UnitySB
       Path: Default Work Unit\UnitySB
@@ -127,13 +126,6 @@ MonoBehaviour:
         ObjectType: 7
       ID: 399307055
       Guid: c6a61107e6afc44aaaab6b2db71dee31
-=======
-  EventWwu: []
-  AuxBusWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  BankWwu: []
->>>>>>> development
   ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
