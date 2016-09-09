@@ -18,6 +18,8 @@ public class EventsContainer
 	public string loseCarriable = "LoseCarriableEvent";
 	public string pauseGame = "PauseGame";
 	public string resumeGame = "ResumeGame";
+	public string winGame = "WinGame";
+	public string shakeCamera = "ShakeCamera";
 }
 
 public class GameManager : MonoBehaviour {
@@ -82,14 +84,14 @@ public class GameManager : MonoBehaviour {
 
 	void OnEnable()
 	{
-		EventManager.StartListening (_eventsContainer.loseCarriable,LoseCarriable);
-//		EventManager.StartListening (_eventsContainer.obstacleHit,RestartGame);
+		EventManager.StartListening (_eventsContainer.loseCarriable, LoseCarriable);
+		EventManager.StartListening (_eventsContainer.winGame, WinGame);
 	}
 
 	void OnDisable()
 	{
 		EventManager.StopListening (_eventsContainer.loseCarriable,LoseCarriable);
-//		EventManager.StopListening (_eventsContainer.obstacleHit,RestartGame);
+		EventManager.StopListening (_eventsContainer.winGame, WinGame);
 	}
 
 	// Use this for initialization
@@ -134,6 +136,10 @@ public class GameManager : MonoBehaviour {
 		Time.timeScale = 1;
 		hasGameStarted = true;
 		EventManager.TriggerEvent (_eventsContainer.resetGame);
+	}
+
+	void WinGame() {
+		RestartGame ();
 	}
 
 	//toggle paused game on input
