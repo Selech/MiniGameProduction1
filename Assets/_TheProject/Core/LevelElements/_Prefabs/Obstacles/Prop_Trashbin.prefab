@@ -21,8 +21,8 @@ GameObject:
   - 4: {fileID: 4000012686797732}
   - 33: {fileID: 33000012098528480}
   - 23: {fileID: 23000010076978698}
-  - 64: {fileID: 64000012761642398}
   - 114: {fileID: 114000011279193686}
+  - 65: {fileID: 65000013060881268}
   m_Layer: 0
   m_Name: Prop_Trashbin
   m_TagString: Untagged
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013808500966}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.43890023, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -79,8 +79,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013808500966}
   m_Mesh: {fileID: 4300002, guid: 84807753fd641aa43b3a4e0bdb68a8f6, type: 3}
---- !u!64 &64000012761642398
-MeshCollider:
+--- !u!65 &65000013060881268
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -89,8 +89,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 4300002, guid: 84807753fd641aa43b3a4e0bdb68a8f6, type: 3}
+  m_Size: {x: 3.4252176, y: 2.151226, z: 1.9879961}
+  m_Center: {x: 0.0059638917, y: -0.02163753, z: 0.039031506}
 --- !u!114 &114000011279193686
 MonoBehaviour:
   m_ObjectHideFlags: 1

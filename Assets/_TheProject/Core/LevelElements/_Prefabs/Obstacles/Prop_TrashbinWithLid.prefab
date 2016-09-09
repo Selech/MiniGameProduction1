@@ -57,6 +57,7 @@ GameObject:
   - 4: {fileID: 4000014129434038}
   - 114: {fileID: 114000010237885680}
   - 114: {fileID: 114000012878698696}
+  - 65: {fileID: 65000013732671182}
   m_Layer: 0
   m_Name: Prop_TrashbinWithLid
   m_TagString: Untagged
@@ -97,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012619358608}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.42, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -201,6 +202,18 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300004, guid: 84807753fd641aa43b3a4e0bdb68a8f6, type: 3}
+--- !u!65 &65000013732671182
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012619358608}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4797783, y: 2.3981147, z: 2.713168}
+  m_Center: {x: 0.07270109, y: 0.13109833, z: -0.23205757}
 --- !u!114 &114000010237885680
 MonoBehaviour:
   m_ObjectHideFlags: 1

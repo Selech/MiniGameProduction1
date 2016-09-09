@@ -9,6 +9,6 @@ public class ObstacleCollider : MonoBehaviour {
 	void OnCollisionEnter(Collision collision) {
 		GameManager.Instance.obstacleForceAddUp = force;
 		EventManager.TriggerEvent ("ObstacleHitEvent");
-		this.gameObject.SetActive (destroyOnCollision);
+		this.gameObject.SetActive (!destroyOnCollision);  
 	}
 }
