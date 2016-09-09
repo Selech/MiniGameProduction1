@@ -21,8 +21,8 @@ GameObject:
   - 4: {fileID: 4000012258704340}
   - 33: {fileID: 33000010747913450}
   - 23: {fileID: 23000014152274286}
-  - 64: {fileID: 64000012631664016}
   - 114: {fileID: 114000010277092816}
+  - 65: {fileID: 65000012449181280}
   m_Layer: 0
   m_Name: Prop_Plank
   m_TagString: Untagged
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012837148450}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.7185483, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.00500432, y: 0.008006914, z: 0.0050043208}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,8 +79,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012837148450}
   m_Mesh: {fileID: 4300016, guid: 84807753fd641aa43b3a4e0bdb68a8f6, type: 3}
---- !u!64 &64000012631664016
-MeshCollider:
+--- !u!65 &65000012449181280
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -89,8 +89,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 4300016, guid: 84807753fd641aa43b3a4e0bdb68a8f6, type: 3}
+  m_Size: {x: 43.03296, y: 9.67293, z: 409.10568}
+  m_Center: {x: -0.000017166138, y: -0.5726538, z: 0}
 --- !u!114 &114000010277092816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,5 +102,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ecd73a2d745e6e42af1f509cbbc6190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyOnCollision: 1
+  destroyOnCollision: 0
   force: 2

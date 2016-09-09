@@ -18,6 +18,8 @@ public class EventsContainer
 	public string loseCarriable = "LoseCarriableEvent";
 	public string pauseGame = "PauseGame";
 	public string resumeGame = "ResumeGame";
+	public string winGame = "WinGame";
+	public string shakeCamera = "ShakeCamera";
 }
 
 public class GameManager : MonoBehaviour {
@@ -82,14 +84,14 @@ public class GameManager : MonoBehaviour {
 
 	void OnEnable()
 	{
-		EventManager.StartListening (_eventsContainer.loseCarriable,LoseCarriable);
-		EventManager.StartListening (_eventsContainer.obstacleHit,RestartGame);
+		EventManager.StartListening (_eventsContainer.loseCarriable, LoseCarriable);
+		EventManager.StartListening (_eventsContainer.winGame, WinGame);
 	}
 
 	void OnDisable()
 	{
 		EventManager.StopListening (_eventsContainer.loseCarriable,LoseCarriable);
-		EventManager.StopListening (_eventsContainer.obstacleHit,RestartGame);
+		EventManager.StopListening (_eventsContainer.winGame, WinGame);
 	}
 
 	// Use this for initialization
@@ -131,7 +133,13 @@ public class GameManager : MonoBehaviour {
 	public void RestartGame()
 	{
 		ResetSettings ();
+		Time.timeScale = 1;
+		hasGameStarted = true;
 		EventManager.TriggerEvent (_eventsContainer.resetGame);
+	}
+
+	void WinGame() {
+		RestartGame ();
 	}
 
 	//toggle paused game on input
@@ -164,6 +172,19 @@ public class GameManager : MonoBehaviour {
 		InitGamePlayResume ();
 	}
 
+	//reset settings on player spawn
+	void ResetSettings()
+	{
+		isPaused = false;
+		hasGameStarted = false;
+
+		currentTime = 0.0f;
+		HUD_TimeText.text = "Elapsed Time "+(currentTime).ToString ("F2");
+
+		SpawnPlayer ();
+		currentCarriablesAmount = startCarriablesAmount;
+	}
+
 	void SpawnPlayer()
 	{
 
@@ -184,19 +205,6 @@ public class GameManager : MonoBehaviour {
 		curPlayer.transform.rotation = startPositionSpawn.rotation;
 	}
 
-	//reset settings on player spawn
-	void ResetSettings()
-	{
-		isPaused = false;
-		hasGameStarted = false;
-
-		currentTime = 0;
-		Time.timeScale = 1;
-		SpawnPlayer ();
-
-		currentCarriablesAmount = startCarriablesAmount;
-	}
-
 	//change game state
 	void InitGamePlayPause(){
 		_GameState = GameState.Paused;
@@ -215,7 +223,7 @@ public class GameManager : MonoBehaviour {
 	void UpdateTime()
 	{
 		currentTime += Time.deltaTime;
-		HUD_TimeText.text = "Elapsed Time "+(currentTime/60).ToString ("F1");
+		HUD_TimeText.text = "Elapsed Time "+(currentTime/60).ToString ("F2");
 
 
 		if(currentTime>maxTimeCompletion)
