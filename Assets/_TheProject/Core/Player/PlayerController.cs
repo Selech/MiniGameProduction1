@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		rotationAngle /= 500;
-
+		print (rotationAngle);
 		var x = Mathf.Abs (rotationAngle) > deadZone/500 && Mathf.Abs(body.velocity.x) > 0.00025 ? body.velocity.x + rotationAngle : 0;
 
 		body.velocity = new Vector3 (x, body.velocity.y, body.velocity.z);
@@ -107,7 +107,6 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		oldY = Input.acceleration.y;
-
 	}
 
 	void Jump(){
