@@ -11,8 +11,11 @@ public class CamFollow : MonoBehaviour {
 	public bool smoothRotation = true;
 	public bool followBehind = true;
 
+	[Range(0.05f,0.5f)] public float shakeForce = 0.1f;
+
 	void OnEnable()
 	{
+		EventManager.StartListening (GameManager.Instance._eventsContainer.shakeCamera, ShakeCamera);
 		if(target == null)
 		{
 			target = GameObject.FindGameObjectWithTag ("Player").transform;
@@ -27,6 +30,7 @@ public class CamFollow : MonoBehaviour {
 		} else {
 			print ("no target assigned for camera to follow");
 		}
+		EventManager.StopListening (GameManager.Instance._eventsContainer.shakeCamera, ShakeCamera);
 	}
 
 	void Follow()
@@ -46,5 +50,12 @@ public class CamFollow : MonoBehaviour {
 			transform.rotation = Quaternion.Slerp (transform.rotation, wantedRotation, Time.deltaTime * rotationDamping);
 		}
 		else transform.LookAt (target, target.up);
+	}
+
+	private void ShakeCamera(){
+		print ("Stuff");
+		var random = Random.Range (0,1);
+		var shakeVector = random == 0 ? new Vector3 (shakeForce,shakeForce,shakeForce) : new Vector3 (-shakeForce,-shakeForce,-shakeForce);
+		transform.Translate (this.transform.position + shakeVector);
 	}
 }
