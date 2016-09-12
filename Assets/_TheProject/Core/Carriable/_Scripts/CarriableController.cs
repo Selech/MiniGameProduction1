@@ -2,26 +2,17 @@
 using System.Collections;
 
 public class CarriableController : MonoBehaviour {
+	FixedJoint joint;
+	GameObject connectedBody;
 
-	private Rigidbody rb;
-	private int speed = 50;
+	public float breakForce = 40;
 
-	// Use this for initialization
-	void Start () {
-		rb = GetComponent<Rigidbody>();
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-		Vector3 moveDir = Vector3.zero;
-		moveDir.x = Input.GetAxis ("Horizontal");
-		moveDir.y = Input.GetAxis ("Vertical");
-		transform.position += moveDir * speed * Time.deltaTime;
+	void Start(){
+		joint = GetComponent<FixedJoint> ();
+		connectedBody = joint.connectedBody.gameObject;
 	}
 
-	void OnJointBreak(float breakForce){
-		Debug.Log (breakForce);
+	void OnJointBreak(){
+		connectedBody.GetComponent<FixedJoint> ().breakForce = breakForce;
 	}
-
 }
