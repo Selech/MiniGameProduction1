@@ -8,10 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f642c62f0207abf47a11be92b8e742da, type: 3}
-  m_Name: CarriableItemT
+  m_Script: {fileID: 11500000, guid: dd7bf9918992fd848bba542aa06b2bd3, type: 3}
+  m_Name: GeneralSound_1
   m_EditorClassIdentifier: 
-  carriablePrefab: {fileID: 0}
-  carriableMass: 1
-  carriableEffectFactor: 1
-  scoreFactor: 2
+  soundIndex: 0
+  soundEventName: 
+  soundDuration: 0

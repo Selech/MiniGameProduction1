@@ -138,12 +138,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  distance: 8.9
+  distance: 7.5
   height: 1.7
   damping: 3.6
   rotationDamping: 7.5
   smoothRotation: 1
   followBehind: 1
+  shakeForce: 0.1
 --- !u!124 &124000011668623094
 Behaviour:
   m_ObjectHideFlags: 1
