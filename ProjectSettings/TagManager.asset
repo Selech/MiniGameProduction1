@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacles
   - Ground
+  - Carriable
   layers:
   - Default
   - TransparentFX
