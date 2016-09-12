@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -233,6 +234,25 @@ public class GameManager : MonoBehaviour {
 		_GameState = GameState.Playing;
 		Time.timeScale = 1;
 	}
+
+	/// <summary>
+	/// Loads the previous level.
+	/// </summary>
+	public void LoadPreviousLevel(){
+		if (SceneManager.GetActiveScene().buildIndex != 0) {
+			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex - 1);
+		}
+	}
+
+	/// <summary>
+	/// Loads the next level.
+	/// </summary>
+	public void LoadNextLevel() {
+		if (SceneManager.GetActiveScene ().buildIndex + 1 != SceneManager.sceneCountInBuildSettings) {
+			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
+		}
+	}
+
 	#endregion
 
 	#region GamePlay Methods
