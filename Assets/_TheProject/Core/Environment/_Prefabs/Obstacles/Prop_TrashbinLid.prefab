@@ -41,7 +41,7 @@ GameObject:
   - 114: {fileID: 114000012126248208}
   m_Layer: 0
   m_Name: Prop_TrashbinLid
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
