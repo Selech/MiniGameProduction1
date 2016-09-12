@@ -50,6 +50,7 @@ public class CarriableCollider : MonoBehaviour {
 			StartCoroutine(JointBreakCo(attachedObject));
 
 		}
+		this.gameObject.transform.SetParent (null);
 		//Debug.Log("A joint has just been broken!, force: " + breakForce);
 	}
 
