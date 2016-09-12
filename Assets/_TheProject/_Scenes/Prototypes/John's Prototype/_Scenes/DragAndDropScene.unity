@@ -103,13 +103,27 @@ GameObject:
   - 23: {fileID: 45452575}
   - 114: {fileID: 45452574}
   - 54: {fileID: 45452579}
+  - 136: {fileID: 45452573}
   m_Layer: 0
   m_Name: Cylinder (1)
-  m_TagString: Untagged
+  m_TagString: Carriable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!136 &45452573
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 45452572}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &45452574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,6 +135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d969d16bc547d41b7bde4bdb9195da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MiddleofBike: {fileID: 0}
+  LerpSpeed: 10
 --- !u!23 &45452575
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -157,8 +173,8 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 45452572}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -212,7 +228,7 @@ GameObject:
   - 54: {fileID: 476794744}
   m_Layer: 0
   m_Name: Bike
-  m_TagString: Untagged
+  m_TagString: Basket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -277,6 +293,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1095708279}
+  - {fileID: 1275933997}
   m_Father: {fileID: 0}
   m_RootOrder: 3
 --- !u!54 &476794744
@@ -307,9 +324,10 @@ GameObject:
   - 23: {fileID: 611774041}
   - 54: {fileID: 611774045}
   - 114: {fileID: 611774046}
+  - 136: {fileID: 611774047}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Carriable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -350,8 +368,8 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 611774040}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -402,6 +420,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d969d16bc547d41b7bde4bdb9195da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MiddleofBike: {fileID: 0}
+  LerpSpeed: 10
+--- !u!136 &611774047
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 611774040}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &1069500014
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,9 +524,9 @@ GameObject:
   - 4: {fileID: 1095708279}
   - 65: {fileID: 1095708277}
   - 114: {fileID: 1095708280}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Object Detector
-  m_TagString: Box collider
+  m_TagString: CarraibleCollector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -508,7 +541,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 4, z: 0.1}
+  m_Size: {x: 1, y: 15, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1095708279
 Transform:
@@ -517,7 +550,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1095708275}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.65, z: -0.002}
+  m_LocalPosition: {x: 0, y: 7.7, z: -0.002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -534,6 +567,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce10f2f7ef3f3714cb1c63bb5b13a795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CollectedCarriables: []
+  CurrentCarriable: {fileID: 0}
 --- !u!1 &1186582082
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,13 +582,27 @@ GameObject:
   - 23: {fileID: 1186582085}
   - 114: {fileID: 1186582084}
   - 54: {fileID: 1186582089}
+  - 136: {fileID: 1186582083}
   m_Layer: 0
   m_Name: Cylinder (2)
-  m_TagString: Untagged
+  m_TagString: Carriable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!136 &1186582083
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1186582082}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &1186582084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,6 +614,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d969d16bc547d41b7bde4bdb9195da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MiddleofBike: {fileID: 0}
+  LerpSpeed: 10
 --- !u!23 &1186582085
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -601,8 +652,8 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1186582082}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -655,9 +706,10 @@ GameObject:
   - 23: {fileID: 1273274818}
   - 114: {fileID: 1273274816}
   - 54: {fileID: 1273274822}
+  - 65: {fileID: 1273274817}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Carriable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -673,6 +725,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d969d16bc547d41b7bde4bdb9195da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MiddleofBike: {fileID: 0}
+  LerpSpeed: 10
+--- !u!65 &1273274817
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1273274815}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1273274818
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -709,8 +775,8 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1273274815}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -749,6 +815,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!1 &1275933996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1275933997}
+  m_Layer: 0
+  m_Name: MiddleOfBike
+  m_TagString: MiddleOfBike
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1275933997
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1275933996}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.54, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 476794743}
+  m_RootOrder: 1
 --- !u!1 &1278212361
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,9 +919,10 @@ GameObject:
   - 23: {fileID: 1402818470}
   - 54: {fileID: 1402818475}
   - 114: {fileID: 1402818474}
+  - 65: {fileID: 1402818476}
   m_Layer: 0
   m_Name: Speaker
-  m_TagString: Untagged
+  m_TagString: Carriable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -868,8 +963,8 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1402818469}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -904,6 +999,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d969d16bc547d41b7bde4bdb9195da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MiddleofBike: {fileID: 0}
+  LerpSpeed: 10
 --- !u!54 &1402818475
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -919,6 +1016,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!65 &1402818476
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1402818469}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1654785625
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,6 +1040,8 @@ GameObject:
   - 92: {fileID: 1654785628}
   - 124: {fileID: 1654785627}
   - 114: {fileID: 1654785626}
+  - 114: {fileID: 1654785631}
+  - 114: {fileID: 1654785632}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1011,6 +1122,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1654785631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1654785625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fe5f93a3a5a9ca4f947657749e89fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1654785632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1654785625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930dfce37bce8cd418e374ecde0c2ae7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1675626083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1024,9 +1157,10 @@ GameObject:
   - 23: {fileID: 1675626084}
   - 54: {fileID: 1675626088}
   - 114: {fileID: 1675626090}
+  - 65: {fileID: 1675626089}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Carriable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1067,8 +1201,8 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1675626083}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1107,6 +1241,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!65 &1675626089
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1675626083}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1675626090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1118,6 +1264,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d969d16bc547d41b7bde4bdb9195da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MiddleofBike: {fileID: 0}
+  LerpSpeed: 10
 --- !u!1 &1773446891
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -14,6 +15,7 @@ public class EventsContainer
 {
 	public string beginGame = "BeginGame";	
 	public string obstacleHit = "ObstacleHitEvent";
+	public string brakeEvent = "BrakeEvent";
 	public string resetGame = "ResetGame";
 	public string loseCarriable = "LoseCarriableEvent";
 	public string pauseGame = "PauseGame";
@@ -46,6 +48,9 @@ public class GameManager : MonoBehaviour {
 	public GameState _GameState;
 	public GameObject playerPrefab;
 	public GameObject playerCamera;
+	public GameObject gameplayCanvas;
+	public GameObject loseCanvas;
+	public GameObject mainCanvas;
 
 	private GameObject curPlayer;
 	[Space(10)]
@@ -59,7 +64,7 @@ public class GameManager : MonoBehaviour {
 	[Space(10)]
 	public float maxTimeCompletion = 10f;
 
-	[Range(0,10)] public int startCarriablesAmount=3;
+	[Range(0,10)] public int startCarriablesAmount = 4;
 	public int currentCarriablesAmount;
 	public Transform startPositionSpawn;
 
@@ -73,6 +78,7 @@ public class GameManager : MonoBehaviour {
 	#region data refs
 
 	public float obstacleForceAddUp;
+	public float obstacleBrakeForce;
 
 	#endregion
 
@@ -145,6 +151,8 @@ public class GameManager : MonoBehaviour {
 	// begin game once all references have been made
 	void StartGame()
 	{
+		currentCarriablesAmount = startCarriablesAmount;
+		gameplayCanvas.SetActive (true);
 		EventManager.TriggerEvent (_eventsContainer.beginGame);
 		hasGameStarted = true;
 		InitGamePlayResume ();
@@ -153,6 +161,7 @@ public class GameManager : MonoBehaviour {
 
 	public void RestartGame()
 	{
+		loseCanvas.SetActive (false);
 		ResetSettings ();
 		Time.timeScale = 1;
 		hasGameStarted = true;
@@ -237,6 +246,25 @@ public class GameManager : MonoBehaviour {
 		_GameState = GameState.Playing;
 		Time.timeScale = 1;
 	}
+
+	/// <summary>
+	/// Loads the previous level.
+	/// </summary>
+	public void LoadPreviousLevel(){
+		if (SceneManager.GetActiveScene().buildIndex != 0) {
+			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex - 1);
+		}
+	}
+
+	/// <summary>
+	/// Loads the next level.
+	/// </summary>
+	public void LoadNextLevel() {
+		if (SceneManager.GetActiveScene ().buildIndex + 1 != SceneManager.sceneCountInBuildSettings) {
+			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
+		}
+	}
+
 	#endregion
 
 	#region GamePlay Methods
@@ -266,9 +294,9 @@ public class GameManager : MonoBehaviour {
 	{
 		if(currentCarriablesAmount<=0)
 		{
-			
+			PauseGame ();
 			currentCarriablesAmount = 0;
-			RestartGame ();
+			loseCanvas.SetActive (true);
 		}
 	}
 	#endregion
