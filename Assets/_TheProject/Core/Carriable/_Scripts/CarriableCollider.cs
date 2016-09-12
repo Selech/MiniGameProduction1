@@ -3,6 +3,9 @@ using System.Collections;
 
 public class CarriableCollider : MonoBehaviour {
 
+	public int nextBreakForce = 1;
+	public int nextBreakTorque = 1;
+	public int secondsToEnableNext = 2;
 	public float secondsToDestroy = 2;
 
 	/// <summary>
@@ -12,7 +15,7 @@ public class CarriableCollider : MonoBehaviour {
 	/// <param name="collision">Collision.</param>
 	void OnCollisionEnter(Collision collision) {
 		if (collision.gameObject.CompareTag ("Ground")) {
-			HandleCollision();
+			//TO REENABLE LATER	HandleCollision();
 		}
 	}
 
@@ -35,5 +38,33 @@ public class CarriableCollider : MonoBehaviour {
 		yield return new WaitForSeconds(secondsToDestroy);
 		Destroy(this.gameObject);
 	}
+
+	/// <summary>
+	/// Raised by the system when the box falls by forces.
+	/// </summary>
+	void OnJointBreak(float breakForce)
+	{
+		GameObject attachedObject = GetComponent<FixedJoint>().connectedBody.gameObject;
+		if(attachedObject.tag == "Carriable")
+		{
+			StartCoroutine(JointBreakCo(attachedObject));
+
+		}
+		//Debug.Log("A joint has just been broken!, force: " + breakForce);
+	}
+
+	IEnumerator JointBreakCo(GameObject attachedObject)
+	{
+		print(Time.time);
+		yield return new WaitForSeconds(secondsToEnableNext);
+		//after seconds are passed
+		attachedObject.GetComponent<FixedJoint>().breakForce = nextBreakForce;
+		attachedObject.GetComponent<FixedJoint>().breakTorque = nextBreakTorque;
+		print(Time.time);
+	}
+
 }
-	
+
+
+
+
