@@ -55,7 +55,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000014129434038}
-  - 114: {fileID: 114000010237885680}
   - 114: {fileID: 114000012878698696}
   - 65: {fileID: 65000013732671182}
   m_Layer: 0
@@ -214,19 +213,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.4797783, y: 2.3981147, z: 2.713168}
   m_Center: {x: 0.07270109, y: 0.13109833, z: -0.23205757}
---- !u!114 &114000010237885680
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012619358608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ecd73a2d745e6e42af1f509cbbc6190, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyOnCollision: 1
-  force: 2
 --- !u!114 &114000012878698696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,4 +225,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyOnCollision: 1
-  force: 2
+  force: 3
