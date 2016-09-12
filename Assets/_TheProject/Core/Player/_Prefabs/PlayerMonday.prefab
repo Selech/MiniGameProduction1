@@ -513,9 +513,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010925996062}
   - 54: {fileID: 54000014204317576}
-  - 114: {fileID: 114000014292710388}
-  - 135: {fileID: 135000013392699430}
   - 136: {fileID: 136000011437348200}
+  - 114: {fileID: 114000010089571356}
   m_Layer: 8
   m_Name: PlayerMonday
   m_TagString: Player
@@ -2014,6 +2013,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: -113.77911, y: -8.165661, z: -58.970238}
   m_Center: {x: -45.41297, y: -20.539421, z: -24.912312}
+--- !u!114 &114000010089571356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014291092224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14772b7959522de4285762b580ede990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationMultiplier: 60
+  rotationSpeed: 15
+  strafeReduction: 20
+  forwardSpeed: 0.18
+  deadZone: 0.1
+  maxSpeed: 20
+  yThreshold: 0.4
+  boostAmount: 8
+  brakeAmount: 5
+  powerUpTime: 5
+  body: {fileID: 54000014204317576}
 --- !u!114 &114000010160804634
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2074,40 +2095,6 @@ MonoBehaviour:
   nextBreakTorque: 0.6
   secondsToEnableNext: 2
   secondsToDestroy: 2
---- !u!114 &114000014292710388
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000014291092224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e02354d9d48dfb344b02be4a60c53430, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationMultiplier: 60
-  rotationSpeed: 15
-  strafeReduction: 20
-  forwardSpeed: 0.18
-  deadZone: 0.1
-  maxSpeed: 20
-  yThreshold: 0.4
-  boostAmount: 8
-  brakeAmount: 5
-  powerUpTime: 5
-  body: {fileID: 54000014204317576}
---- !u!135 &135000013392699430
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000014291092224}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.1302859
-  m_Center: {x: 0, y: -0.04, z: 0.36}
 --- !u!136 &136000011437348200
 CapsuleCollider:
   m_ObjectHideFlags: 1
