@@ -22,21 +22,25 @@ public class PlayerController : MonoBehaviour {
 
 	public Rigidbody body;
 
-	void Start(){
+	void Start()
+	{
 		AkSoundEngine.PostEvent ("Play_Pedal",this.gameObject);
 		AkSoundEngine.PostEvent ("Play_Ambience",this.gameObject);
 	}
 
-	void OnEnable(){
+	void OnEnable()
+	{
 		EventManager.StartListening (GameManager.Instance._eventsContainer.obstacleHit, Jump);
 	}
 
-	void OnDisable(){
+	void OnDisable()
+	{
 		AkSoundEngine.PostEvent ("Stop_Pedal",this.gameObject);
 		EventManager.StopListening (GameManager.Instance._eventsContainer.obstacleHit, Jump);
 	}
 
-	void FixedUpdate(){
+	void FixedUpdate()
+	{
 		Move ();
 	}
 
@@ -56,7 +60,8 @@ public class PlayerController : MonoBehaviour {
 		rotationAngle /= 500;
 
 		transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x + rotationAngle, transform.position.y, transform.position.z), 1/strafeReduction);
-		transform.Translate(new Vector3(0f, 0f, forwardSpeed));
+		body.AddForce (new Vector3(0f, 0f, forwardSpeed), ForceMode.VelocityChange);
+//		transform.Translate(new Vector3(0f, 0f, forwardSpeed));
 	}
 
 	void Jump(){

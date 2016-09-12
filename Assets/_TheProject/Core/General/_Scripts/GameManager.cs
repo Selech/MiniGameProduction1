@@ -22,6 +22,21 @@ public class EventsContainer
 	public string shakeCamera = "ShakeCamera";
 }
 
+[System.Serializable]
+public class SoundEventsContainer
+{
+	public SoundItems_Collection _soundItems_Collection;
+	public string beginGame = "BeginGame";	
+	public string obstacleHit = "ObstacleHitEvent";
+	public string resetGame = "ResetGame";
+	public string loseCarriable = "LoseCarriableEvent";
+	public string pauseGame = "PauseGame";
+	public string resumeGame = "ResumeGame";
+	public string winGame = "WinGame";
+	public string shakeCamera = "ShakeCamera";
+}
+
+
 public class GameManager : MonoBehaviour {
 
 	#region Variables
@@ -35,6 +50,8 @@ public class GameManager : MonoBehaviour {
 	[SerializeField]
 	public EventsContainer _eventsContainer = new EventsContainer();
 
+	[SerializeField]
+	public SoundEventsContainer _soundEventsContainer  = new SoundEventsContainer();
 	[HideInInspector] public float currentTime;
 	public float maxTimeCompletion = 10f;
 
