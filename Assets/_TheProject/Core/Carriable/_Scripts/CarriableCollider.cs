@@ -3,8 +3,8 @@ using System.Collections;
 
 public class CarriableCollider : MonoBehaviour {
 
-	public int nextBreakForce = 1;
-	public int nextBreakTorque = 1;
+	public float nextBreakForce = 1;
+	public float nextBreakTorque = 1;
 	public int secondsToEnableNext = 2;
 	public float secondsToDestroy = 2;
 
@@ -55,12 +55,14 @@ public class CarriableCollider : MonoBehaviour {
 
 	IEnumerator JointBreakCo(GameObject attachedObject)
 	{
-		print(Time.time);
+		//print(Time.time);
+		print (secondsToEnableNext);
 		yield return new WaitForSeconds(secondsToEnableNext);
+		print ("after");
 		//after seconds are passed
 		attachedObject.GetComponent<FixedJoint>().breakForce = nextBreakForce;
 		attachedObject.GetComponent<FixedJoint>().breakTorque = nextBreakTorque;
-		print(Time.time);
+		//print(Time.time);
 	}
 
 }
