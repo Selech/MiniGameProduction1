@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class DetectSwipe : MonoBehaviour {
+public class IntroSceneManager : MonoBehaviour {
 
 	Vector2 firstPressPos;
 	Vector2 secondPressPos;
 	// Use this for initialization
 	void Start () {
-	
+		//GameObject.Find ("Canvas").transform.FindChild ("Finish").gameObject.SetActive (true);
 	}
 	
 	// Update is called once per frame
@@ -15,6 +17,9 @@ public class DetectSwipe : MonoBehaviour {
 		Swipe ();
 	}
 
+	public void OpenScene(string scene){
+		SceneManager.LoadScene (scene);
+	}
 
 	public void Swipe()
 	{
