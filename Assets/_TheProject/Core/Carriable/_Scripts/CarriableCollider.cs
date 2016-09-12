@@ -3,10 +3,18 @@ using System.Collections;
 
 public class CarriableCollider : MonoBehaviour {
 
-	public int nextBreakForce = 1;
-	public int nextBreakTorque = 1;
-	public int secondsToEnableNext = 2;
+	public float nextBreakForce = 1;
+	public float nextBreakTorque = 1;
+	public int secondsToEnableNext = 1;
 	public float secondsToDestroy = 2;
+
+	private float breakForce;
+	private float breakTorque;
+
+	void Start(){
+		breakForce = GetComponent<FixedJoint>().breakForce;
+		breakTorque = GetComponent<FixedJoint>().breakTorque;
+	}
 
 	/// <summary>
 	/// Raises the collision enter event for the Carriable prefab. 
@@ -50,17 +58,26 @@ public class CarriableCollider : MonoBehaviour {
 			StartCoroutine(JointBreakCo(attachedObject));
 
 		}
+		this.gameObject.transform.SetParent (null);
 		//Debug.Log("A joint has just been broken!, force: " + breakForce);
 	}
 
 	IEnumerator JointBreakCo(GameObject attachedObject)
 	{
-		print(Time.time);
+		//print(Time.time);
+		print (secondsToEnableNext);
 		yield return new WaitForSeconds(secondsToEnableNext);
+		print ("after");
 		//after seconds are passed
-		attachedObject.GetComponent<FixedJoint>().breakForce = nextBreakForce;
-		attachedObject.GetComponent<FixedJoint>().breakTorque = nextBreakTorque;
-		print(Time.time);
+		var joint = GetComponent<FixedJoint>();
+
+		attachedObject.GetComponent<FixedJoint>().breakForce = breakForce * nextBreakForce;
+		attachedObject.GetComponent<FixedJoint>().breakTorque = breakTorque * nextBreakTorque;
+		attachedObject.GetComponent<CarriableCollider>().breakForce = breakForce * nextBreakForce;
+		attachedObject.GetComponent<CarriableCollider>().breakTorque = breakTorque * nextBreakTorque;
+
+
+		//print(Time.time);
 	}
 
 }
