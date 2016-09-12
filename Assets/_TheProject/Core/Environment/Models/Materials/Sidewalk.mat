@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Road
+  m_Name: Sidewalk
   m_Shader: {fileID: 4800000, guid: f5d25459062e91443becac56d585df78, type: 3}
   m_ShaderKeywords: _EMISSION _LIGHTMODE_DEFAULT _USE_M_TEX
   m_LightmapFlags: 1
@@ -175,7 +175,7 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 0.5147059, g: 0.5147059, b: 0.5147059, a: 1}
+      second: {r: 0.375, g: 0.375, b: 0.375, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}

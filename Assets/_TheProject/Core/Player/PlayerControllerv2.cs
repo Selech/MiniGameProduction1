@@ -33,7 +33,7 @@ public class PlayerControllerv2 : MonoBehaviour
 	[Range (1.0f, 10.0f)]
 	public float brakeAmount = 5f;
 
-	[Range (0.01, 10)]
+	[Range (0.01f, 10)]
 	public int powerUpTime = 5;
 
 	[Range (100, 1000)]
