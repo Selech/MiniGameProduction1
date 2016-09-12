@@ -36,8 +36,8 @@ public class PlayerControllerv2 : MonoBehaviour
 	[Range (1.0f, 10.0f)]
 	public float brakeAmount = 5f;
 
-	[Range (100, 1000)]
-	public int breakForce = 200;
+	[Range (0.1f, 500)]
+	public float breakForce = 200;
 
 	[Range (0.0f, 0.5f)]
 	public float breakMultiplier1 = 0.3f;
