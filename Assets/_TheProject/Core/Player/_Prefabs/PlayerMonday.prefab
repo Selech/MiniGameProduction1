@@ -4826,7 +4826,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012436301710}
-  m_LocalRotation: {x: 0.63799036, y: 0.30490702, z: -0.63799036, w: 0.30490702}
+  m_LocalRotation: {x: 0.6379904, y: 0.30490705, z: -0.6379904, w: 0.30490705}
   m_LocalPosition: {x: 36.277225, y: 11.142952, z: 0}
   m_LocalScale: {x: 0.009424303, y: 0.27871853, z: 0.009424303}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6595,25 +6595,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14772b7959522de4285762b580ede990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationMultiplier: 60
+  rotationMultiplier: 14
   rotationSpeed: 15
-  strafeReduction: 20
-  forwardSpeed: 0.5
-  deadZone: 0.1
-  maxSpeed: 20
+  strafeSpeed: 10
+  strafeReduction: 10
+  forwardSpeed: 0.912
+  deadZone: 0.01
+  maxSpeed: 10
   yThreshold: 0.4
-  boostAmount: 8
-  brakeAmount: 5
-  powerUpTime: 5
+  boostAmount: 0
+  brakeAmount: 1
   breakForce: 200
   breakMultiplier1: 0.3
   breakMultiplier2: 0.2
   breakMultiplier3: 0.1
+  brakeForce: 10
+  brakeCooldown: 5
   carriable:
-  - {fileID: 1000011833619230}
-  - {fileID: 1000012333232436}
-  - {fileID: 1000013172213982}
-  - {fileID: 1000010288186700}
+  - {fileID: 1000010898872670, guid: 8f381629539bb1b40be29094df8465d7, type: 2}
+  - {fileID: 1000013666923758, guid: 8f381629539bb1b40be29094df8465d7, type: 2}
+  - {fileID: 1000010239674138, guid: 8f381629539bb1b40be29094df8465d7, type: 2}
+  - {fileID: 1000012453755880, guid: 8f381629539bb1b40be29094df8465d7, type: 2}
   body: {fileID: 54000014204317576}
 --- !u!114 &114000010160804634
 MonoBehaviour:
