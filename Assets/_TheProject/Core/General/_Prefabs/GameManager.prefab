@@ -719,7 +719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _GameState: 1
-  playerPrefab: {fileID: 1000010355120728, guid: af3c2006a8f45fa4d9b963856b28ab88,
+  playerPrefab: {fileID: 1000014291092224, guid: 5a7ca2a6d589c5c428dfc7d4ca9af45e,
     type: 2}
   playerCamera: {fileID: 1000012462158176, guid: 1f77012443e972a48a0f5a12013ca3b9,
     type: 2}
