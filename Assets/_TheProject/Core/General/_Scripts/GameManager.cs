@@ -25,7 +25,9 @@ public class EventsContainer
 [System.Serializable]
 public class SoundEventsContainer
 {
+	public SoundItems_Collection _voiceOver_Collection;
 	public SoundItems_Collection _soundItems_Collection;
+	[Space(10)]
 	public string beginGame = "BeginGame";	
 	public string obstacleHit = "ObstacleHitEvent";
 	public string resetGame = "ResetGame";
@@ -46,13 +48,15 @@ public class GameManager : MonoBehaviour {
 	public GameObject playerCamera;
 
 	private GameObject curPlayer;
-
+	[Space(10)]
 	[SerializeField]
 	public EventsContainer _eventsContainer = new EventsContainer();
 
 	[SerializeField]
 	public SoundEventsContainer _soundEventsContainer  = new SoundEventsContainer();
+
 	[HideInInspector] public float currentTime;
+	[Space(10)]
 	public float maxTimeCompletion = 10f;
 
 	[Range(0,10)] public int startCarriablesAmount=3;
