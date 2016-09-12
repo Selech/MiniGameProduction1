@@ -17,7 +17,7 @@ public class CamMove : MonoBehaviour {
 		EventManager.StartListening (GameManager.Instance._eventsContainer.shakeCamera, ShakeCamera);
 		if(target == null)
 		{
-			target = GameObject.FindGameObjectWithTag ("Player").transform;
+			target = GameObject.FindGameObjectWithTag ("Basket").transform;
 			EventManager.TriggerEvent (GameManager.Instance._eventsContainer.shakeCamera);
 		}
 
