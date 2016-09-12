@@ -18,17 +18,45 @@ public class EventsContainer
 	public string loseCarriable = "LoseCarriableEvent";
 	public string pauseGame = "PauseGame";
 	public string resumeGame = "ResumeGame";
+	public string winGame = "WinGame";
+	public string shakeCamera = "ShakeCamera";
 }
+
+[System.Serializable]
+public class SoundEventsContainer
+{
+	public SoundItems_Collection _voiceOver_Collection;
+	public SoundItems_Collection _soundItems_Collection;
+	[Space(10)]
+	public string beginGame = "BeginGame";	
+	public string obstacleHit = "ObstacleHitEvent";
+	public string resetGame = "ResetGame";
+	public string loseCarriable = "LoseCarriableEvent";
+	public string pauseGame = "PauseGame";
+	public string resumeGame = "ResumeGame";
+	public string winGame = "WinGame";
+	public string shakeCamera = "ShakeCamera";
+}
+
 
 public class GameManager : MonoBehaviour {
 
 	#region Variables
 
 	public GameState _GameState;
+	public GameObject playerPrefab;
+	public GameObject playerCamera;
+
+	private GameObject curPlayer;
+	[Space(10)]
 	[SerializeField]
 	public EventsContainer _eventsContainer = new EventsContainer();
 
+	[SerializeField]
+	public SoundEventsContainer _soundEventsContainer  = new SoundEventsContainer();
+
 	[HideInInspector] public float currentTime;
+	[Space(10)]
 	public float maxTimeCompletion = 10f;
 
 	[Range(0,10)] public int startCarriablesAmount=3;
@@ -77,14 +105,14 @@ public class GameManager : MonoBehaviour {
 
 	void OnEnable()
 	{
-		EventManager.StartListening (_eventsContainer.loseCarriable,LoseCarriable);
-		EventManager.StartListening (_eventsContainer.obstacleHit,RestartGame);
+		EventManager.StartListening (_eventsContainer.loseCarriable, LoseCarriable);
+		EventManager.StartListening (_eventsContainer.winGame, WinGame);
 	}
 
 	void OnDisable()
 	{
 		EventManager.StopListening (_eventsContainer.loseCarriable,LoseCarriable);
-		EventManager.StopListening (_eventsContainer.obstacleHit,RestartGame);
+		EventManager.StopListening (_eventsContainer.winGame, WinGame);
 	}
 
 	// Use this for initialization
@@ -123,14 +151,20 @@ public class GameManager : MonoBehaviour {
 		SpawnPlayer ();
 	}
 
-	void RestartGame()
+	public void RestartGame()
 	{
 		ResetSettings ();
+		Time.timeScale = 1;
+		hasGameStarted = true;
 		EventManager.TriggerEvent (_eventsContainer.resetGame);
 	}
 
+	void WinGame() {
+		RestartGame ();
+	}
+
 	//toggle paused game on input
-	void TogglePause()
+	public void TogglePause()
 	{
 		
 		isPaused = !isPaused;
@@ -159,33 +193,49 @@ public class GameManager : MonoBehaviour {
 		InitGamePlayResume ();
 	}
 
-	void SpawnPlayer()
-	{
-		//reset carriables and time
-		GameObject player = GameObject.FindGameObjectWithTag("Player");
-		player.transform.position = startPositionSpawn.position;
-		player.transform.rotation = startPositionSpawn.rotation;
-		currentCarriablesAmount = startCarriablesAmount;
-	}
-
 	//reset settings on player spawn
 	void ResetSettings()
 	{
 		isPaused = false;
 		hasGameStarted = false;
 
-		currentTime = 0;
+		currentTime = 0.0f;
+		HUD_TimeText.text = "Elapsed Time "+(currentTime).ToString ("F2");
+
 		SpawnPlayer ();
+		currentCarriablesAmount = startCarriablesAmount;
+	}
+
+	void SpawnPlayer()
+	{
+
+		if (curPlayer == null) {
+
+			GameObject go = (GameObject)Instantiate (playerPrefab) as GameObject;
+			GameObject cam = (GameObject)Instantiate (playerCamera) as GameObject;
+
+			CamFollow cf = cam.GetComponent<CamFollow> ();
+			cf.target = go.transform;
+
+			//reset carriables and time
+			//		GameObject player = GameObject.FindGameObjectWithTag("Player");
+			curPlayer = go;
+		} 
+			
+		curPlayer.transform.position = startPositionSpawn.position;
+		curPlayer.transform.rotation = startPositionSpawn.rotation;
 	}
 
 	//change game state
 	void InitGamePlayPause(){
 		_GameState = GameState.Paused;
+		Time.timeScale = Mathf.Epsilon;
 	}
 
 	//change game state
 	void InitGamePlayResume(){
 		_GameState = GameState.Playing;
+		Time.timeScale = 1;
 	}
 	#endregion
 
@@ -193,8 +243,8 @@ public class GameManager : MonoBehaviour {
 	//once game has began, start calculating time
 	void UpdateTime()
 	{
-		currentTime += Time.time;
-		HUD_TimeText.text = "Elapsed Time "+(currentTime/60).ToString ("F1");
+		currentTime += Time.deltaTime;
+		HUD_TimeText.text = "Elapsed Time "+(currentTime/60).ToString ("F2");
 
 
 		if(currentTime>maxTimeCompletion)
