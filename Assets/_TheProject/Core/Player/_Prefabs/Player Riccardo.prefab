@@ -686,8 +686,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationMultiplier: 60
   rotationSpeed: 15
-  strafeReduction: 20
-  forwardSpeed: 0.8
+  strafeReduction: 10
+  forwardSpeed: 0.1
   deadZone: 0.1
   maxSpeed: 1
   yThreshold: 0.4
