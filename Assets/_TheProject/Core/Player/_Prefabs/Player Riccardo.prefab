@@ -248,7 +248,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013491742498}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.7449675, y: 1.0421654, z: -10.770569}
+  m_LocalPosition: {x: -0.8550676, y: 4.9924033e-17, z: -0.35983276}
   m_LocalScale: {x: 0.8, y: 1.5, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1037,6 +1037,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9a7f6df049ac346a56042631d35aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextBreakForce: 40
+  nextBreakTorque: 40
+  secondsToEnableNext: 2
   secondsToDestroy: 2
 --- !u!114 &114000011381180232
 MonoBehaviour:
@@ -1049,6 +1052,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9a7f6df049ac346a56042631d35aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextBreakForce: 40
+  nextBreakTorque: 40
+  secondsToEnableNext: 2
   secondsToDestroy: 2
 --- !u!114 &114000012035999934
 MonoBehaviour:
@@ -1078,6 +1084,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9a7f6df049ac346a56042631d35aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextBreakForce: 10
+  nextBreakTorque: 10
+  secondsToEnableNext: 2
   secondsToDestroy: 2
 --- !u!114 &114000014098863614
 MonoBehaviour:
@@ -1090,6 +1099,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9a7f6df049ac346a56042631d35aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextBreakForce: 40
+  nextBreakTorque: 40
+  secondsToEnableNext: 2
   secondsToDestroy: 2
 --- !u!135 &135000012090214296
 SphereCollider:
@@ -1123,8 +1135,8 @@ FixedJoint:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012348126884}
   m_ConnectedBody: {fileID: 54000010217091814}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 50
+  m_BreakTorque: 50
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
 --- !u!138 &138000011844314616
