@@ -28,17 +28,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_test" ID="{46C93CEB-7DD2-4B16-BDBB-760C156FCEDC}">
-					<ChildrenList>
-						<Action Name="Play" ID="{FF611BB2-515C-4E1A-90A2-C4645B04B712}" ShortID="948953194" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{907CDFFB-0CD0-4E50-8C93-4AD04269799F}" Global="false">
-									<ObjectRef Name="36-25 Landrover--Safari Diesel_Horn," ID="{9810B2AC-C60E-45A0-95BD-4397A1AA1C92}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Pedal" ID="{083B1058-D1AB-4A36-AC54-9F201F7D2D41}">
 					<ChildrenList>
 						<Action Name="Play" ID="{924BBF0C-351A-4160-ABC0-22D729ABC9E7}" ShortID="148861999" Type="Play" Scope="One" Global="false">
@@ -92,17 +81,6 @@
 							<ElementList>
 								<Element ID="{0743FEB3-AC66-4A19-871E-CCCBC5EEA359}" Global="false">
 									<ObjectRef Name="Collision" ID="{9F97DD71-A358-4237-815A-FD7121D4A22D}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_horns1" ID="{B9C73F02-2775-4D59-AD7D-E80E3CB676A3}">
-					<ChildrenList>
-						<Action Name="Play" ID="{4E19DB4E-C55D-49AA-8AFB-97C9941E3587}" ShortID="331318787" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{3BD02B60-F568-4109-B88A-007F1819C438}" Global="false">
-									<ObjectRef Name="horns1" ID="{967D96E8-A71D-480E-8A44-AD1186D99274}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
 								</Element>
 							</ElementList>
 						</Action>

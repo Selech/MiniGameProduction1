@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Obstacles
   - Ground
+  - CarraibleCollector
+  - Carriable
+  - MiddleOfBike
+  - Basket
   layers:
   - Default
   - TransparentFX
@@ -16,7 +20,7 @@ TagManager:
   - 
   - 
   - Player
-  - 
+  - Basket
   - 
   - 
   - 

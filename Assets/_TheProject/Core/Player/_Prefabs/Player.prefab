@@ -42,6 +42,7 @@ GameObject:
   - 135: {fileID: 135000012619955830}
   - 54: {fileID: 54000010576874298}
   - 114: {fileID: 114000011209795058}
+  - 136: {fileID: 136000012169505886}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -596,3 +597,16 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.15
   m_Center: {x: 0, y: -0.32, z: 0}
+--- !u!136 &136000012169505886
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010355120728}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.43922043
+  m_Height: 0.8096982
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.13, z: 0}
