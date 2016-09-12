@@ -4,7 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
-					<ReferenceList/>
+					<ChildrenList>
+						<Bus Name="VO" ID="{A80CAC93-F380-434C-9732-64822AE2D148}"/>
+					</ChildrenList>
 				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>
 				<MotionBus Name="Master Motion Bus" ID="{20A630BA-3398-4676-B927-1004DFE41FD8}"/>

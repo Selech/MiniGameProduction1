@@ -150,7 +150,7 @@ Material:
       second: 1
     - first:
         name: _ToonyFy
-      second: 1
+      second: 0
     - first:
         name: _UVSec
       second: 0
