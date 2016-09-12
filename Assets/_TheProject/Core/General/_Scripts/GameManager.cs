@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -25,7 +26,9 @@ public class EventsContainer
 [System.Serializable]
 public class SoundEventsContainer
 {
+	public SoundItems_Collection _voiceOver_Collection;
 	public SoundItems_Collection _soundItems_Collection;
+	[Space(10)]
 	public string beginGame = "BeginGame";	
 	public string obstacleHit = "ObstacleHitEvent";
 	public string resetGame = "ResetGame";
@@ -46,13 +49,15 @@ public class GameManager : MonoBehaviour {
 	public GameObject playerCamera;
 
 	private GameObject curPlayer;
-
+	[Space(10)]
 	[SerializeField]
 	public EventsContainer _eventsContainer = new EventsContainer();
 
 	[SerializeField]
 	public SoundEventsContainer _soundEventsContainer  = new SoundEventsContainer();
+
 	[HideInInspector] public float currentTime;
+	[Space(10)]
 	public float maxTimeCompletion = 10f;
 
 	[Range(0,10)] public int startCarriablesAmount=3;
@@ -233,6 +238,25 @@ public class GameManager : MonoBehaviour {
 		_GameState = GameState.Playing;
 		Time.timeScale = 1;
 	}
+
+	/// <summary>
+	/// Loads the previous level.
+	/// </summary>
+	public void LoadPreviousLevel(){
+		if (SceneManager.GetActiveScene().buildIndex != 0) {
+			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex - 1);
+		}
+	}
+
+	/// <summary>
+	/// Loads the next level.
+	/// </summary>
+	public void LoadNextLevel() {
+		if (SceneManager.GetActiveScene ().buildIndex + 1 != SceneManager.sceneCountInBuildSettings) {
+			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
+		}
+	}
+
 	#endregion
 
 	#region GamePlay Methods
