@@ -15,25 +15,25 @@ public class PlayerControllerv2 : MonoBehaviour
 
 	private float rotationAngle = 0f;
 
-	[Range (0.1f, 1f)]
+	[Range (0.0f, 1f)]
 	public float forwardSpeed = 0.5f;
 
 	[Range (0.01f, 0.3f)]
 	public float deadZone = 0.1f;
 
-	[Range (1f, 100f)]
+	[Range (0f, 100f)]
 	public float maxSpeed = 10f;
 
 	[Range (0.0f, 1.0f)]
 	public float yThreshold = 0.4f;
 
-	[Range (1.0f, 10.0f)]
+	[Range (0.0f, 10.0f)]
 	public float boostAmount = 8f;
 
 	[Range (1.0f, 10.0f)]
 	public float brakeAmount = 5f;
 
-	[Range (1, 10)]
+	[Range (0.01f, 10)]
 	public int powerUpTime = 5;
 
 	[Range (100, 1000)]

@@ -6595,25 +6595,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14772b7959522de4285762b580ede990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationMultiplier: 60
+  rotationMultiplier: 14
   rotationSpeed: 15
-  strafeReduction: 20
-  forwardSpeed: 0.5
-  deadZone: 0.1
-  maxSpeed: 20
+  strafeReduction: 10
+  forwardSpeed: 0.912
+  deadZone: 0.01
+  maxSpeed: 11
   yThreshold: 0.4
-  boostAmount: 8
-  brakeAmount: 5
+  boostAmount: 0
+  brakeAmount: 1
   powerUpTime: 5
   breakForce: 200
   breakMultiplier1: 0.3
   breakMultiplier2: 0.2
   breakMultiplier3: 0.1
   carriable:
-  - {fileID: 1000011833619230}
-  - {fileID: 1000012333232436}
-  - {fileID: 1000013172213982}
-  - {fileID: 1000010288186700}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   body: {fileID: 54000014204317576}
 --- !u!114 &114000010160804634
 MonoBehaviour:
