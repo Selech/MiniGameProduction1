@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Building01a1
+  m_Name: Building02a1
   m_Shader: {fileID: 4800000, guid: f5d25459062e91443becac56d585df78, type: 3}
   m_ShaderKeywords: _EMISSION _LIGHTMODE_DEFAULT _USE_M_TEX
   m_LightmapFlags: 1
@@ -48,7 +48,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 9caa4ba3ab2a8934cbcd7901bf8d0fad, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3c0a021caa487024bb75a545152e8fb8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -108,10 +108,10 @@ Material:
       second: 1
     - first:
         name: _LThreshold
-      second: 0.5
+      second: 0.6
     - first:
         name: _LightLevelsDiffuse
-      second: 3.15
+      second: 3
     - first:
         name: _LightLevelsSpecular
       second: 3
