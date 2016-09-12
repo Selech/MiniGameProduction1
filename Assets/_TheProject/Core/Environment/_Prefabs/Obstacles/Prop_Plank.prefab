@@ -25,7 +25,7 @@ GameObject:
   - 65: {fileID: 65000012449181280}
   m_Layer: 0
   m_Name: Prop_Plank
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
