@@ -6597,18 +6597,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationMultiplier: 14
   rotationSpeed: 15
+  strafeSpeed: 10
   strafeReduction: 10
   forwardSpeed: 0.912
   deadZone: 0.01
-  maxSpeed: 11
+  maxSpeed: 10
   yThreshold: 0.4
   boostAmount: 0
   brakeAmount: 1
-  powerUpTime: 5
   breakForce: 200
   breakMultiplier1: 0.3
   breakMultiplier2: 0.2
   breakMultiplier3: 0.1
+  brakeForce: 10
+  brakeCooldown: 5
   carriable:
   - {fileID: 0}
   - {fileID: 0}

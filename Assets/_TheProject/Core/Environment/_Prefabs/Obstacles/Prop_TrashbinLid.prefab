@@ -133,7 +133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyOnCollision: 1
-  force: 2
+  jumpForce: 0
+  brakeForce: 0
 --- !u!114 &114000012126248208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,4 +147,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyOnCollision: 1
-  force: 2
+  jumpForce: 2
+  brakeForce: 5
