@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour {
 	[Range(0.01f,0.3f)]
 	public float deadZone = 0.1f;
 
+	public Rigidbody body;
+
 	void Start(){
 		AkSoundEngine.PostEvent ("Play_Pedal",this.gameObject);
 		AkSoundEngine.PostEvent ("Play_Ambience",this.gameObject);
@@ -54,11 +56,12 @@ public class PlayerController : MonoBehaviour {
 		rotationAngle /= 500;
 
 		transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x + rotationAngle, transform.position.y, transform.position.z), 1/strafeReduction);
-		transform.Translate(new Vector3(0f, 0f, forwardSpeed));
+		body.AddForce (new Vector3(0f, 0f, forwardSpeed), ForceMode.VelocityChange);
+//		transform.Translate(new Vector3(0f, 0f, forwardSpeed));
 	}
 
 	void Jump(){
 		AkSoundEngine.PostEvent ("Play_Collision", this.gameObject);
-		this.GetComponent<Rigidbody> ().AddForce (new Vector3(0,2,0), ForceMode.VelocityChange);
+		body.AddForce (new Vector3(0,GameManager.Instance.obstacleForceAddUp,0), ForceMode.VelocityChange);
 	}
 }
