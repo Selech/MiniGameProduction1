@@ -542,6 +542,21 @@ MonoBehaviour:
     loseCarriable: LoseCarriableEvent
     pauseGame: PauseGame
     resumeGame: ResumeGame
+    winGame: WinGame
+    shakeCamera: ShakeCamera
+  _soundEventsContainer:
+    _voiceOver_Collection: {fileID: 11400000, guid: 4f10ddb536cf2674ba453ad04a5d4631,
+      type: 2}
+    _soundItems_Collection: {fileID: 11400000, guid: 8f6a981d387d7b146b98c5b5e7adf6d5,
+      type: 2}
+    beginGame: BeginGame
+    obstacleHit: ObstacleHitEvent
+    resetGame: ResetGame
+    loseCarriable: LoseCarriableEvent
+    pauseGame: PauseGame
+    resumeGame: ResumeGame
+    winGame: WinGame
+    shakeCamera: ShakeCamera
   currentTime: 0
   maxTimeCompletion: 1000
   startCarriablesAmount: 3

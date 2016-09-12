@@ -23,7 +23,7 @@
 						</Property>
 						<Property Name="OutputBusLowpass" Type="int16">
 							<ValueList>
-								<Value>28</Value>
+								<Value>33</Value>
 							</ValueList>
 						</Property>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
@@ -36,7 +36,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-16</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -238,7 +238,7 @@
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-14</Value>
+								<Value>-8</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -350,13 +350,16 @@
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>7</Value>
+								<Value>9</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+							<ObjectRef Name="New_Wwise_Gain_02" ID="{49888AC6-C848-4EA2-8C40-4DAB5D0D4824}" WorkUnitID="{892D244E-D540-4566-BFD4-6D589BDF64EA}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
@@ -685,6 +688,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Bell" ID="{3E47AB93-5BDD-4513-A8B4-FD790D0A4AA1}" ShortID="985076835" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
@@ -732,13 +742,16 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>3</Value>
+								<Value>7</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+							<ObjectRef Name="New_Wwise_Gain_03" ID="{20E9E7E8-D2A7-4029-A5BE-B47586DE903A}" WorkUnitID="{892D244E-D540-4566-BFD4-6D589BDF64EA}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>

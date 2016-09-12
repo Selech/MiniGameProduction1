@@ -30,21 +30,25 @@ public class PlayerController : MonoBehaviour {
 	private float oldY;
 	private bool flipped = false;
 
-	void Start(){
+	void Start()
+	{
 		AkSoundEngine.PostEvent ("Play_Pedal",this.gameObject);
 		AkSoundEngine.PostEvent ("Play_Ambience",this.gameObject);
 	}
 
-	void OnEnable(){
+	void OnEnable()
+	{
 		EventManager.StartListening (GameManager.Instance._eventsContainer.obstacleHit, Jump);
 	}
 
-	void OnDisable(){
+	void OnDisable()
+	{
 		AkSoundEngine.PostEvent ("Stop_Pedal",this.gameObject);
 		EventManager.StopListening (GameManager.Instance._eventsContainer.obstacleHit, Jump);
 	}
 
-	void FixedUpdate(){
+	void FixedUpdate()
+	{
 		Move ();
 	}
 
