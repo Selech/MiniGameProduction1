@@ -23,6 +23,8 @@ GameObject:
   - 65: {fileID: 65000010059552400}
   - 23: {fileID: 23000013405106638}
   - 114: {fileID: 114000010808624512}
+  - 54: {fileID: 54000013312643808}
+  - 138: {fileID: 138000012452857070}
   m_Layer: 0
   m_Name: Carriable
   m_TagString: Untagged
@@ -79,6 +81,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012907782434}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54000013312643808
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012907782434}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65000010059552400
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -103,3 +120,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondsToDestroy: 2
+--- !u!138 &138000012452857070
+FixedJoint:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012907782434}
+  m_ConnectedBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
