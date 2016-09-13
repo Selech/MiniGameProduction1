@@ -36,9 +36,7 @@ public class CarriableManager : MonoBehaviour {
 			index++;
 		}
 
-		foreach (var str in carriablefromscene1) {
-			Debug.Log (str);
-		}
+		GameManager.Instance.startCarriablesAmount = carriablefromscene1.Length;
 	}
 
 }
