@@ -8,8 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_TheProject/Core/Scenes/Stacking Scene.unity
   - enabled: 1
-    path: Assets/_TheProject/_Scenes/Prototypes/Nils' prototype/prototypelevel_01_tutorial.unity
+    path: Assets/_TheProject/Core/Scenes/Level 1 - Tutorial - Dansk.unity
   - enabled: 1
-    path: Assets/_TheProject/_Scenes/Prototypes/Nils' prototype/prototypelevel_02_easy.unity
+    path: Assets/_TheProject/Core/Scenes/Level 1 - Tutorial - Engelsk.unity
   - enabled: 1
-    path: Assets/_TheProject/_Scenes/Prototypes/Nils' prototype/prototypelevel_03_hard.unity
+    path: Assets/_TheProject/Core/Scenes/Level 2 - Easy.unity
+  - enabled: 1
+    path: Assets/_TheProject/Core/Scenes/Level 3 - Hard.unity
