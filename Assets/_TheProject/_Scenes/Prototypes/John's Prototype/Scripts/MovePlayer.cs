@@ -27,12 +27,16 @@ public class MovePlayer : MonoBehaviour {
 	}
 
 	IEnumerator rotateBike() {
+		GameManager.Instance.PlayPedal();
+
 		if (transform.position != destination.position) {
 			Vector3 dir = destination.position - transform.position;
 			Quaternion rot = Quaternion.LookRotation (-dir);
 
 			transform.rotation = Quaternion.Slerp (transform.rotation, rot, Time.deltaTime * rotationSpeed);			
 			transform.position = Vector3.MoveTowards (transform.position, destination.position, Time.deltaTime * 1.05f);
+		} else {
+			GameManager.Instance.StopPedalSound();
 		}
 		yield return null;
 	}

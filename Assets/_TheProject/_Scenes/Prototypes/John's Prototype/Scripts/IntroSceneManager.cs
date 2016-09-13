@@ -20,6 +20,7 @@ public class IntroSceneManager : MonoBehaviour {
 	}
 
 	public void OpenScene(int scene){
+		GameManager.Instance.PlayUIClick();
 		SceneManager.LoadScene (scene);
 	}
 
