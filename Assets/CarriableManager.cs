@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class CarriableManager : MonoBehaviour {
 	
-	private string[] carriablefromscene1; 
+	public string[] carriablefromscene1; 
 
 	private static CarriableManager _instance;
 	public static CarriableManager Instance
@@ -36,9 +36,7 @@ public class CarriableManager : MonoBehaviour {
 			index++;
 		}
 
-		foreach (var str in carriablefromscene1) {
-			Debug.Log (str);
-		}
+		GameManager.Instance.startCarriablesAmount = carriablefromscene1.Length;
 	}
 
 }

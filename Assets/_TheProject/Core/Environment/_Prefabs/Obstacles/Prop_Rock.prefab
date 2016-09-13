@@ -39,7 +39,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.4767892, y: -2.1856719e-17, z: 1.504339}
   m_LocalScale: {x: 0.00500432, y: 0.0050043208, z: 0.0050043208}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -182.982, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -89,8 +89,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 95.5853, y: 39.434082, z: 86.29911}
-  m_Center: {x: 0.6341935, y: 19.717041, z: -2.3911796}
+  m_Size: {x: 75.4, y: 20.5, z: 73.7}
+  m_Center: {x: 0.6341935, y: 19.3, z: -2.3911796}
 --- !u!114 &114000010369241860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,8 +103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyOnCollision: 1
-  jumpForce: 2
-  brakeForce: 5
+  jumpForce: 3.5
+  brakeForce: 10
   nodgeDirection: 0
   nodgeForce: 0
   nodgeCooldown: 0
