@@ -35,16 +35,7 @@ public class EventsContainer
 public class SoundEventsContainer
 {
 	public SoundItems_Collection _voiceOver_Collection;
-	public SoundItems_Collection _soundItems_Collection;
-	[Space(10)]
-	public string beginGame = "BeginGame";	
-	public string obstacleHit = "ObstacleHitEvent";
-	public string resetGame = "ResetGame";
-	public string loseCarriable = "LoseCarriableEvent";
-	public string pauseGame = "PauseGame";
-	public string resumeGame = "ResumeGame";
-	public string winGame = "WinGame";
-	public string shakeCamera = "ShakeCamera";
+	public bool isEnglish = true;
 }
 
 
@@ -452,6 +443,31 @@ public class GameManager : MonoBehaviour {
 			AkSoundEngine.PostEvent (s, b);
 		}
 	}
+
+	public void PlayVO(int index)
+	{
+		if(_soundEventsContainer._voiceOver_Collection != null)
+		{
+			foreach(var v in _soundEventsContainer._voiceOver_Collection.soundsCollection){
+				if(_soundEventsContainer.isEnglish)
+				{
+					if(v.soundIndex == index && v._Language == Language.English)
+					{
+						PlaySound (v.soundEventName);
+					}
+				}
+				else 
+				{
+					if(v.soundIndex == index && v._Language == Language.Danish)
+					{
+						PlaySound (v.soundEventName);
+					}
+				}
+
+			}
+		}
+	}
+
 	#endregion
 
 	#endregion
