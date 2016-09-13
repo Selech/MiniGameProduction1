@@ -47,13 +47,14 @@ public class JointCreation : MonoBehaviour {
 			default:
 				break;
 			}
-
+			ob.transform.rotation = Quaternion.Euler (new Vector3(0f,-50f,0));
 			height += ob.GetComponent<DragDrop> ().heightOfObject;
 			var joint = ob.AddComponent<FixedJoint> ();
 			joint.connectedBody = gameObjectStack [gameObjectStack.Count - 1].gameObject.GetComponent<Rigidbody>();
 			var col = ob.AddComponent<CarriableCollider> ();
-			col.secondsToDestroy = 2;
+			col.secondsToDestroy = 4;
 			col.secondsToEnableNext = 1;
+
 
 			ob.transform.SetParent (parent.transform);
 			player.carriable [index] = ob;

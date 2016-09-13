@@ -89,8 +89,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 168.3023, y: 18.41, z: 107.33047}
-  m_Center: {x: -0.0000038146973, y: 8.99, z: 0}
+  m_Size: {x: 168.3023, y: 14.02, z: 107.33047}
+  m_Center: {x: -0.0000038146973, y: 0.3, z: 0}
 --- !u!114 &114000011965391942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -106,3 +106,4 @@ MonoBehaviour:
   LerpSpeed: 2
   translateSpeed: 0.1
   heightOfObject: 0.033
+  inDragScene: 0

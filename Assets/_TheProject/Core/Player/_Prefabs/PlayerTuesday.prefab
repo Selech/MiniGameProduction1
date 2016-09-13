@@ -3152,7 +3152,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013757171768}
-  m_LocalRotation: {x: 0.63799036, y: 0.30490702, z: -0.63799036, w: 0.30490702}
+  m_LocalRotation: {x: 0.6379904, y: 0.30490705, z: -0.6379904, w: 0.30490705}
   m_LocalPosition: {x: 36.277225, y: 11.142952, z: 0}
   m_LocalScale: {x: 0.009424303, y: 0.27871853, z: 0.009424303}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6938,8 +6938,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: -0.04394585, y: 0.29676676, z: 1.1217637}
-  m_Center: {x: 0.04, y: 0.35161662, z: 0.58956766}
+  m_Size: {x: -0.04394585, y: 0.0358534, z: 1.1217637}
+  m_Center: {x: 0.14, y: 0.22115992, z: 0.58956766}
 --- !u!65 &65000012591020306
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -6962,8 +6962,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: -0.04394585, y: 0.29676676, z: 1.1217637}
-  m_Center: {x: -0.78970706, y: 0.35161662, z: 0.58956766}
+  m_Size: {x: -0.04394579, y: 0.0358534, z: 1.1217637}
+  m_Center: {x: -0.85, y: 0.22807567, z: 0.58956766}
 --- !u!95 &95000010134666860
 Animator:
   serializedVersion: 3
@@ -7032,9 +7032,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   stack:
-  - fridge
-  - pillar
   - sofa
+  - pillar
+  - fridge
   - painting
   body: {fileID: 54000013771139788}
 --- !u!114 &114000013706330598
