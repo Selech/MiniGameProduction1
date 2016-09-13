@@ -38,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1000010968575288}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.4219556, y: 0, z: 0.0035405532}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 0.012, y: 0.012, z: 0.012}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -102,4 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9a7f6df049ac346a56042631d35aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextBreakForce: 1
+  nextBreakTorque: 1
+  secondsToEnableNext: 1
   secondsToDestroy: 2

@@ -16,11 +16,15 @@
 			<ShortName>UnitySB</ShortName>
 			<Path>UnitySB.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2638365503" Name="Music_Drive" ObjectPath="\Events\Default Work Unit\Music\Music_Drive"/>
+				<Event Id="3736367630" Name="Music_Lose" ObjectPath="\Events\Default Work Unit\Music\Music_Lose" MaxAttenuation="0.000000"/>
+				<Event Id="2682680661" Name="Music_Win" ObjectPath="\Events\Default Work Unit\Music\Music_Win" MaxAttenuation="0.000000"/>
 				<Event Id="278617630" Name="Play_Ambience" ObjectPath="\Events\Default Work Unit\Play_Ambience"/>
 				<Event Id="1945722105" Name="Play_Bell" ObjectPath="\Events\Default Work Unit\Play_Bell"/>
 				<Event Id="3672906123" Name="Play_Brake" ObjectPath="\Events\Default Work Unit\Play_Brake"/>
 				<Event Id="1553219250" Name="Play_Collision" ObjectPath="\Events\Default Work Unit\Play_Collision"/>
 				<Event Id="2730303704" Name="Play_ItemLose" ObjectPath="\Events\Default Work Unit\Play_ItemLose"/>
+				<Event Id="2570041344" Name="Play_menuMusic" ObjectPath="\Events\Default Work Unit\Music\Play_menuMusic"/>
 				<Event Id="2599818666" Name="Play_Pedal" ObjectPath="\Events\Default Work Unit\Play_Pedal"/>
 				<Event Id="3535499264" Name="Play_Sidewalk" ObjectPath="\Events\Default Work Unit\Play_Sidewalk"/>
 				<Event Id="1749424733" Name="Play_UI_Click" ObjectPath="\Events\Default Work Unit\Play_UI_Click"/>
@@ -93,9 +97,10 @@
 				<Event Id="4227889151" Name="Play_VO_Ready_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_Ready_EN"/>
 				<Event Id="358651834" Name="Play_VO_Return_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_Return_DA"/>
 				<Event Id="341874214" Name="Play_VO_Return_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_Return_EN"/>
-				<Event Id="146948138" Name="StateWin" ObjectPath="\Events\Default Work Unit\StateWin" MaxAttenuation="0.000000"/>
 				<Event Id="2477713992" Name="Stop_Ambience" ObjectPath="\Events\Default Work Unit\Stop_Ambience" MaxAttenuation="0.000000"/>
+				<Event Id="2753202630" Name="Stop_menuMusic" ObjectPath="\Events\Default Work Unit\Music\Stop_menuMusic" MaxAttenuation="0.000000"/>
 				<Event Id="1731467220" Name="Stop_Pedal" ObjectPath="\Events\Default Work Unit\Stop_Pedal" MaxAttenuation="0.000000"/>
+				<Event Id="3086540886" Name="StopAll" ObjectPath="\Events\Default Work Unit\StopAll" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="9059610" Language="SFX">
@@ -116,7 +121,7 @@
 				</File>
 				<File Id="69790071" Language="SFX">
 					<ShortName>pedal1.wav</ShortName>
-					<Path>SFX/pedal1_844E6D30.wem</Path>
+					<Path>SFX/pedal1_59900C5B.wem</Path>
 				</File>
 				<File Id="98646268" Language="SFX">
 					<ShortName>14 Car, Interior, Horn--4 Blasts.wav</ShortName>
@@ -184,7 +189,7 @@
 				</File>
 				<File Id="216305355" Language="SFX">
 					<ShortName>pedal4.wav</ShortName>
-					<Path>SFX/pedal4_844E6D30.wem</Path>
+					<Path>SFX/pedal4_049728C1.wem</Path>
 				</File>
 				<File Id="225384672" Language="SFX">
 					<ShortName>UI_Snap.wav</ShortName>
@@ -204,7 +209,7 @@
 				</File>
 				<File Id="265004707" Language="SFX">
 					<ShortName>pedal3.wav</ShortName>
-					<Path>SFX/pedal3_844E6D30.wem</Path>
+					<Path>SFX/pedal3_13567CBD.wem</Path>
 				</File>
 				<File Id="266087746" Language="SFX">
 					<ShortName>VO_6_EN.wav</ShortName>
@@ -276,7 +281,7 @@
 				</File>
 				<File Id="528757210" Language="SFX">
 					<ShortName>pedal6.wav</ShortName>
-					<Path>SFX/pedal6_844E6D30.wem</Path>
+					<Path>SFX/pedal6_5386E4FC.wem</Path>
 				</File>
 				<File Id="534771917" Language="SFX">
 					<ShortName>VO_23_DA.wav</ShortName>
@@ -300,7 +305,11 @@
 				</File>
 				<File Id="568708346" Language="SFX">
 					<ShortName>pedal5.wav</ShortName>
-					<Path>SFX/pedal5_844E6D30.wem</Path>
+					<Path>SFX/pedal5_A5BBEEF9.wem</Path>
+				</File>
+				<File Id="569046176" Language="SFX">
+					<ShortName>MusicLose.wav</ShortName>
+					<Path>SFX/MusicLose_63DD582A.wem</Path>
 				</File>
 				<File Id="574831306" Language="SFX">
 					<ShortName>VO_20_DA.wav</ShortName>
@@ -362,6 +371,10 @@
 					<ShortName>VO_15_DA.wav</ShortName>
 					<Path>SFX/VO_15_DA_844E6D30.wem</Path>
 				</File>
+				<File Id="714787881" Language="SFX">
+					<ShortName>MenuMusic.wav</ShortName>
+					<Path>SFX/MenuMusic_63DD582A.wem</Path>
+				</File>
 				<File Id="716992926" Language="SFX">
 					<ShortName>VO_12_EN.wav</ShortName>
 					<Path>SFX/VO_12_EN_844E6D30.wem</Path>
@@ -377,6 +390,10 @@
 				<File Id="767286869" Language="SFX">
 					<ShortName>VO_28_EN.wav</ShortName>
 					<Path>SFX/VO_28_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="777078391" Language="SFX">
+					<ShortName>Music1.wav</ShortName>
+					<Path>SFX/Music1_63DD582A.wem</Path>
 				</File>
 				<File Id="793267656" Language="SFX">
 					<ShortName>VO_3_DA.wav</ShortName>
@@ -434,6 +451,10 @@
 					<ShortName>VO_1_EN.wav</ShortName>
 					<Path>SFX/VO_1_EN_844E6D30.wem</Path>
 				</File>
+				<File Id="904269707" Language="SFX">
+					<ShortName>MusicWin.wav</ShortName>
+					<Path>SFX/MusicWin_63DD582A.wem</Path>
+				</File>
 				<File Id="927626301" Language="SFX">
 					<ShortName>VO_9_EN.wav</ShortName>
 					<Path>SFX/VO_9_EN_844E6D30.wem</Path>
@@ -448,7 +469,7 @@
 				</File>
 				<File Id="946732094" Language="SFX">
 					<ShortName>pedal2.wav</ShortName>
-					<Path>SFX/pedal2_844E6D30.wem</Path>
+					<Path>SFX/pedal2_14480D96.wem</Path>
 				</File>
 				<File Id="950642698" Language="SFX">
 					<ShortName>VO_7_DA.wav</ShortName>

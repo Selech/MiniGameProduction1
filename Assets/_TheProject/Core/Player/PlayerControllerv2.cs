@@ -48,6 +48,9 @@ public class PlayerControllerv2 : MonoBehaviour
 	[Range (0.0f, 1f)]
 	public float breakMultiplier3 = 0.1f;
 
+	[Range (0.0f, 5f)]
+	public float breakMultiplier4 = 0.1f;
+
 	[Range (0.0f, 100.0f)]
 	public float brakeForce = 10f;
 
@@ -65,8 +68,6 @@ public class PlayerControllerv2 : MonoBehaviour
 
 	void Start ()
 	{
-		AkSoundEngine.PostEvent ("Play_Pedal", this.gameObject);
-		AkSoundEngine.PostEvent ("Play_Ambience", this.gameObject);
 
 		carriable [0].GetComponent<FixedJoint> ().breakForce = breakForce;
 		carriable [0].GetComponent<FixedJoint> ().breakTorque = breakForce;
@@ -84,13 +85,14 @@ public class PlayerControllerv2 : MonoBehaviour
 	void OnEnable ()
 	{
 		EventManager.StartListening (GameManager.Instance._eventsContainer.obstacleHit, Jump);
+		EventManager.StartListening (GameManager.Instance._eventsContainer.curbHit, Nodge);
 		EventManager.StartListening (GameManager.Instance._eventsContainer.brakeEvent, Brake);
 	}
 
 	void OnDisable ()
 	{
-		AkSoundEngine.PostEvent ("Stop_Pedal", this.gameObject);
 		EventManager.StopListening (GameManager.Instance._eventsContainer.obstacleHit, Jump);
+		EventManager.StopListening (GameManager.Instance._eventsContainer.curbHit, Nodge);
 		EventManager.StopListening (GameManager.Instance._eventsContainer.brakeEvent, Brake);
 	}
 
@@ -126,7 +128,7 @@ public class PlayerControllerv2 : MonoBehaviour
 		rotationAngle /= 500;
 		rotationAngle *= strafeSpeed;
 //		print (rotationAngle);
-		var x = Mathf.Abs (rotationAngle) > deadZone / 500 && Mathf.Abs (body.velocity.x) > 0.00025 ? body.velocity.x + rotationAngle : 0;
+		var x = Mathf.Abs (rotationAngle) > deadZone / 500 && Mathf.Abs (body.velocity.x) > 0.00025 ? body.velocity.x + rotationAngle : body.velocity.x;
 
 		body.velocity = new Vector3 (x, body.velocity.y, body.velocity.z);
 		//transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x + rotationAngle, transform.position.y, transform.position.z), 1/strafeReduction);
@@ -153,10 +155,22 @@ public class PlayerControllerv2 : MonoBehaviour
 	void Jump ()
 	{
 		if(!jumping){
-			AkSoundEngine.PostEvent ("Play_Collision", this.gameObject);
 			body.AddForce (new Vector3 (0, GameManager.Instance.obstacleForceAddUp, 0), ForceMode.VelocityChange);
 			jumping = true;
-			body.AddForce (new Vector3 (0, 0,GameManager.Instance.obstacleBrakeForce), ForceMode.VelocityChange);
+			body.AddForce (new Vector3 (0, 0, -GameManager.Instance.obstacleBrakeForce), ForceMode.VelocityChange);
+		}
+	}
+
+	void Nodge() {
+		switch (GameManager.Instance.nodgeDirection) {
+			case NodgeDirection.Left:
+				body.AddForce (new Vector3 (-GameManager.Instance.nodgeForce, 0, 0), ForceMode.VelocityChange);
+				break;
+			case NodgeDirection.Right:
+				body.AddForce (new Vector3 (GameManager.Instance.nodgeForce, 0, 0), ForceMode.VelocityChange);
+				break;
+			default:
+				break;
 		}
 	}
 
@@ -165,5 +179,23 @@ public class PlayerControllerv2 : MonoBehaviour
 		yield return new WaitForSeconds (waitSec);
 		boost = false;
 		brake = false;
+	}
+
+	IEnumerator ApplyBreakForce(int waitSec){
+		yield return new WaitForSeconds (waitSec);
+
+		carriable [0].GetComponent<CarriableCollider> ().ChangeBreakForce (breakForce, breakForce);
+
+		carriable [0].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier1;
+		carriable [0].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier1;
+
+		carriable [1].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier2;
+		carriable [1].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier2;
+
+		carriable [2].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier3;
+		carriable [2].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier3;
+
+		carriable [3].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier4;
+		carriable [3].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier4;
 	}
 }
