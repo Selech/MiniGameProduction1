@@ -141,7 +141,7 @@ MonoBehaviour:
   particle: {fileID: 0}
 --- !u!114 &114000012126248208
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011418267812}
