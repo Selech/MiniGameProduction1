@@ -36,17 +36,7 @@ public class EventsContainer
 public class SoundEventsContainer
 {
 	public SoundItems_Collection _voiceOver_Collection;
-	public SoundItems_Collection _soundItems_Collection;
 	public bool isEnglish = true;
-	[Space(10)]
-	public string beginGame = "BeginGame";	
-	public string obstacleHit = "ObstacleHitEvent";
-	public string resetGame = "ResetGame";
-	public string loseCarriable = "LoseCarriableEvent";
-	public string pauseGame = "PauseGame";
-	public string resumeGame = "ResumeGame";
-	public string winGame = "WinGame";
-	public string shakeCamera = "ShakeCamera";
 }
 
 
@@ -454,7 +444,7 @@ public class GameManager : MonoBehaviour {
 	public void PlaySoundVO(int index)
 	{
 		
-		foreach (Sound_Item v in _soundEventsContainer._voiceOver_Collection) 
+		foreach (Sound_Item v in _soundEventsContainer._voiceOver_Collection.soundsCollection) 
 		{
 			if (GameManager.Instance._soundEventsContainer.isEnglish) {
 				if (v.soundIndex == index && v._Language == Language.English) {
