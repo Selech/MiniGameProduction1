@@ -39,6 +39,7 @@ GameObject:
   - 92: {fileID: 92000012812578206}
   - 124: {fileID: 124000011668623094}
   - 114: {fileID: 114000012442324552}
+  - 114: {fileID: 114000010827561550}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -53,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012462158176}
   m_LocalRotation: {x: 0.13052596, y: -0, z: -0, w: 0.99144495}
-  m_LocalPosition: {x: -2.13, y: 4.2487, z: 12.471}
+  m_LocalPosition: {x: 0.06778377, y: 4.185029, z: 158.41971}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -114,6 +115,25 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014267648234}
   m_Enabled: 1
+--- !u!114 &114000010827561550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014267648234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76b5ec6153a1d55438228df10fe66844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceFog: 0
+  excludeFarPixels: 1
+  useRadialDistance: 0
+  heightFog: 1
+  height: 73.5
+  heightDensity: 0.005
+  startDistance: 0
+  fogShader: {fileID: 4800000, guid: 70d8568987ac0499f952b54c7c13e265, type: 3}
 --- !u!114 &114000012442324552
 MonoBehaviour:
   m_ObjectHideFlags: 1

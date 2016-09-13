@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012768844002}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3.0714626, y: -0.006026, z: -5.265179}
   m_LocalScale: {x: 0.00500432, y: 0.0050043208, z: 0.0050043208}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -56,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: bcd663f339d7e1f448850b40a3f2bd8d, type: 2}
+  - {fileID: 2100000, guid: 16dda7d46a60a6d46a512df1d585b4f7, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -103,8 +103,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyOnCollision: 1
-  jumpForce: 1
+  jumpForce: 1.15
   brakeForce: 3
   nodgeDirection: 0
   nodgeForce: 0
+  nodgeCooldown: 0
   particle: {fileID: 1000010047265062, guid: 45677e40b2e9b7b4f833b92a1b554152, type: 2}
