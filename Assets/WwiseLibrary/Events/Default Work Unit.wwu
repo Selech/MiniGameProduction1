@@ -867,7 +867,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="StateWin" ID="{411A24CF-4249-4FA3-91E8-9A6581EC0D6A}"/>
 				<Event Name="Play_ItemLose" ID="{6278905C-93A8-4C5C-867D-C3FB16B98504}">
 					<ChildrenList>
 						<Action Name="Play" ID="{F3F29FBD-6F26-4409-9CCB-3FC1BFDF50F1}" ShortID="977117012" Type="Play" Scope="One" Global="false">
@@ -921,6 +920,74 @@
 								</Element>
 							</ElementList>
 						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Music" ID="{754269BB-7DC4-4B1C-9EDF-09044289038B}" ShortID="832795015">
+					<ChildrenList>
+						<Event Name="Music_Drive" ID="{055EB12A-1029-4725-9CB3-E7542612EAC8}">
+							<ChildrenList>
+								<Action Name="Set State" ID="{71E7171E-FA71-4D33-A13E-88F6054EC173}" ShortID="50299780" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="WinLose" ID="{0BD2CE67-064A-4B09-8361-DD5F05D289FE}"/>
+										<GroupItem Name="Driving" ID="{80457EA2-611B-4EBB-931D-881000EE8083}"/>
+									</SetItemParam>
+								</Action>
+								<Action Name="Play" ID="{6907E634-48AA-4DAB-976A-1D22873D514C}" ShortID="891443692" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{210BD18C-AEBA-43EE-9D5E-438678AF55E1}" Global="false">
+											<ObjectRef Name="Music" ID="{9CB54A0E-C267-4FF0-90F9-D2E3EDA59B6C}" WorkUnitID="{D7705BA2-F6F4-4BA0-B0C1-EEF04605054C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Music_Lose" ID="{E1B683AA-9065-4E18-BD4E-56F969AA965E}">
+							<ChildrenList>
+								<Action Name="Set State" ID="{562E499A-CD46-484E-845D-1C52951E486B}" ShortID="353432191" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="WinLose" ID="{0BD2CE67-064A-4B09-8361-DD5F05D289FE}"/>
+										<GroupItem Name="Lose" ID="{6C39E7F8-1133-4B45-BD0F-FD36C2578E7B}"/>
+									</SetItemParam>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Music_Win" ID="{F0ED6FFF-8665-443E-B2B3-87D27F9B5B14}">
+							<ChildrenList>
+								<Action Name="Set State" ID="{2151A3D3-3C76-4E70-B996-57B8AA9D6839}" ShortID="507534346" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="WinLose" ID="{0BD2CE67-064A-4B09-8361-DD5F05D289FE}"/>
+										<GroupItem Name="Win" ID="{FD58759C-5251-483D-AE59-3DA40F5FEFD8}"/>
+									</SetItemParam>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_menuMusic" ID="{6D12433F-66E5-4BF2-81CE-7C8B8A7D1BD8}">
+							<ChildrenList>
+								<Action Name="Play" ID="{15C7240A-23B6-4D81-9BC0-F079F689F442}" ShortID="934481900" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{0E624EC9-78F6-48DE-9564-388911D545BC}" Global="false">
+											<ObjectRef Name="MenuMusic" ID="{2442E2EE-E9E4-4337-BD88-E9424C6D666D}" WorkUnitID="{D7705BA2-F6F4-4BA0-B0C1-EEF04605054C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_menuMusic" ID="{9EA6673E-00C2-4089-B3F5-ADC5071868D9}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{067C0370-C13C-493E-A276-670306AADD13}" ShortID="682913248" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{B061204F-3E43-485B-A773-F345FD77C6A2}" Global="false">
+											<ObjectRef Name="MenuMusic" ID="{2442E2EE-E9E4-4337-BD88-E9424C6D666D}" WorkUnitID="{D7705BA2-F6F4-4BA0-B0C1-EEF04605054C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="StopAll" ID="{28D6BA71-95FB-4C48-9A32-96CC57A20412}">
+					<ChildrenList>
+						<Action Name="Stop All" ID="{C88B8920-6B44-4F07-B60F-8BDD5FEB3457}" ShortID="244863010" Type="Stop" Scope="All" Global="false"/>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>

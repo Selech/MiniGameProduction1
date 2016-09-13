@@ -38,7 +38,6 @@ GameObject:
   - 4: {fileID: 4000013692436390}
   - 33: {fileID: 33000010730060572}
   - 23: {fileID: 23000014263629094}
-  - 114: {fileID: 114000012126248208}
   m_Layer: 0
   m_Name: Prop_TrashbinLid
   m_TagString: Obstacles
