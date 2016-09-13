@@ -56,9 +56,6 @@ public class GameManager : MonoBehaviour {
 	public GameState _GameState;
 	public GameObject playerPrefab;
 	public GameObject playerCamera;
-	public GameObject gameplayCanvas;
-	public GameObject loseCanvas;
-	public GameObject mainCanvas;
 
 	OnBikeDetector obd;
 	public List<GameObject> carriablesFromScene1 = new List<GameObject>();
