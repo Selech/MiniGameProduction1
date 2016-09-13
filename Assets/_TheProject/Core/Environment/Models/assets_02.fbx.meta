@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: 1f93ba3be8375cf4f8e2a193bd4f6d13
+timeCreated: 1473761340
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: group1
+    100004: Prop_Bucket
+    100006: Prop_Column
+    100008: Prop_Cone
+    100010: Prop_Couch
+    100012: Prop_Fridge
+    100014: Prop_Painting
+    100016: Prop_Rock
+    100018: Prop_Sign
+    100020: prop_speaker
+    100022: Prop_Trashbin
+    100024: Prop_TrashbinLid
+    100026: prop_wood
+    400000: //RootNode
+    400002: group1
+    400004: Prop_Bucket
+    400006: Prop_Column
+    400008: Prop_Cone
+    400010: Prop_Couch
+    400012: Prop_Fridge
+    400014: Prop_Painting
+    400016: Prop_Rock
+    400018: Prop_Sign
+    400020: prop_speaker
+    400022: Prop_Trashbin
+    400024: Prop_TrashbinLid
+    400026: prop_wood
+    2300000: Prop_Bucket
+    2300002: Prop_Column
+    2300004: Prop_Cone
+    2300006: Prop_Couch
+    2300008: Prop_Fridge
+    2300010: Prop_Painting
+    2300012: Prop_Rock
+    2300014: Prop_Sign
+    2300016: prop_speaker
+    2300018: Prop_Trashbin
+    2300020: Prop_TrashbinLid
+    2300022: prop_wood
+    3300000: Prop_Bucket
+    3300002: Prop_Column
+    3300004: Prop_Cone
+    3300006: Prop_Couch
+    3300008: Prop_Fridge
+    3300010: Prop_Painting
+    3300012: Prop_Rock
+    3300014: Prop_Sign
+    3300016: prop_speaker
+    3300018: Prop_Trashbin
+    3300020: Prop_TrashbinLid
+    3300022: prop_wood
+    4300000: Prop_Trashbin
+    4300002: Prop_TrashbinLid
+    4300004: Prop_Fridge
+    4300006: Prop_Couch
+    4300008: Prop_Rock
+    4300010: Prop_Cone
+    4300012: Prop_Bucket
+    4300014: prop_wood
+    4300016: prop_speaker
+    4300018: Prop_Sign
+    4300020: Prop_Column
+    4300022: Prop_Painting
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
