@@ -117,6 +117,7 @@ public class GameManager : MonoBehaviour {
 
 	void Awake()
 	{
+		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		_instance = this;
 	}
 
@@ -196,6 +197,12 @@ public class GameManager : MonoBehaviour {
 		ResetSettings ();
 		Time.timeScale = 1;
 		hasGameStarted = true;
+		EventManager.TriggerEvent (_eventsContainer.resetGame);
+	}
+
+	public void RestackGame()
+	{
+		SceneManager.LoadScene (0);
 		EventManager.TriggerEvent (_eventsContainer.resetGame);
 	}
 
