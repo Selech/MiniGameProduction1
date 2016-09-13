@@ -399,6 +399,10 @@ MonoBehaviour:
   destroyOnCollision: 0
   jumpForce: 0
   brakeForce: 0
+  nodgeDirection: 0
+  nodgeForce: 0
+  nodgeCooldown: 0
+  particle: {fileID: 0}
 --- !u!4 &166542623 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012686797732, guid: 01b9b132fa7913343a335a23537814c2,
@@ -4195,64 +4199,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 05f14d26027aee949a4a525dec4f0b3b, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &976593740
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4000010925996062, guid: 5a7ca2a6d589c5c428dfc7d4ca9af45e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.40977904
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010925996062, guid: 5a7ca2a6d589c5c428dfc7d4ca9af45e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010925996062, guid: 5a7ca2a6d589c5c428dfc7d4ca9af45e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 3.704422
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010925996062, guid: 5a7ca2a6d589c5c428dfc7d4ca9af45e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010925996062, guid: 5a7ca2a6d589c5c428dfc7d4ca9af45e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010925996062, guid: 5a7ca2a6d589c5c428dfc7d4ca9af45e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010925996062, guid: 5a7ca2a6d589c5c428dfc7d4ca9af45e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010925996062, guid: 5a7ca2a6d589c5c428dfc7d4ca9af45e, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013895903816, guid: 5a7ca2a6d589c5c428dfc7d4ca9af45e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0.6379904
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013895903816, guid: 5a7ca2a6d589c5c428dfc7d4ca9af45e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.30490705
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013895903816, guid: 5a7ca2a6d589c5c428dfc7d4ca9af45e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0.6379904
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013895903816, guid: 5a7ca2a6d589c5c428dfc7d4ca9af45e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.30490705
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 5a7ca2a6d589c5c428dfc7d4ca9af45e, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &998705767 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013692436390, guid: fe33a2689e32f7f4ba248b46f013bb98,
@@ -6269,6 +6215,10 @@ MonoBehaviour:
   destroyOnCollision: 0
   jumpForce: 0
   brakeForce: 0
+  nodgeDirection: 0
+  nodgeForce: 0
+  nodgeCooldown: 0
+  particle: {fileID: 0}
 --- !u!23 &1541876484
 MeshRenderer:
   m_ObjectHideFlags: 0
