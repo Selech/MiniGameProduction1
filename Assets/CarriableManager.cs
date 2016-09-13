@@ -32,11 +32,9 @@ public class CarriableManager : MonoBehaviour {
 		var index = 0;
 
 		foreach (var obj in carriables) {
-			carriablefromscene1[index] = obj.name;
+			carriablefromscene1 [index] = obj.name;
 			index++;
 		}
 
-		GameManager.Instance.startCarriablesAmount = carriablefromscene1.Length;
 	}
-
 }

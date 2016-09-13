@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour {
 	[Space(10)]
 	public float maxTimeCompletion = 10f;
 
-	[Range(0,10)] public int startCarriablesAmount = 4;
+	private int startCarriablesAmount = 4;
 	public int currentCarriablesAmount;
 	public Transform startPositionSpawn;
 
@@ -178,7 +178,7 @@ public class GameManager : MonoBehaviour {
 	// begin game once all references have been made
 	void StartGame()
 	{
-		currentCarriablesAmount = startCarriablesAmount;
+		currentCarriablesAmount = CarriableManager.Instance.carriablefromscene1.Length;
 		gameplayCanvas.SetActive (true);
 		EventManager.TriggerEvent (_eventsContainer.beginGame);
 		hasGameStarted = true;
@@ -193,10 +193,10 @@ public class GameManager : MonoBehaviour {
 	public void RestartGame()
 	{
 		SceneManager.LoadScene (SceneManager.GetActiveScene().name);
-		loseCanvas.SetActive (false);
-		ResetSettings ();
-		Time.timeScale = 1;
-		hasGameStarted = true;
+//		loseCanvas.SetActive (false);
+//		ResetSettings ();
+//		Time.timeScale = 1;
+//		hasGameStarted = true;
 		EventManager.TriggerEvent (_eventsContainer.resetGame);
 	}
 
@@ -211,6 +211,7 @@ public class GameManager : MonoBehaviour {
 		StopAmbience ();
 		//StopGameMusic ();
 		PlayWinGameSound ();
+		menuCanvas.SetActive (true);
 	}
 
 	//toggle paused game on input

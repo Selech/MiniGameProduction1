@@ -882,6 +882,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 599618007}
   - 114: {fileID: 599618006}
+  - 114: {fileID: 599618008}
   m_Layer: 0
   m_Name: CarriableManager
   m_TagString: Untagged
@@ -914,6 +915,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
+--- !u!114 &599618008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 599618005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e8ab12987949a7479760b790f64329b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  valueGuid: c6a61107e6afc44aaaab6b2db71dee31
+  bankName: UnitySB
+  loadAsynchronous: 0
+  decodeBank: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
 --- !u!1001 &729844494
 Prefab:
   m_ObjectHideFlags: 0
@@ -2019,7 +2039,6 @@ MonoBehaviour:
     isEnglish: 1
   currentTime: 0
   maxTimeCompletion: 10
-  startCarriablesAmount: 4
   currentCarriablesAmount: 0
   startPositionSpawn: {fileID: 0}
   isPaused: 0
@@ -2152,7 +2171,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1426544539}
   - 114: {fileID: 1426544540}
-  - 114: {fileID: 1426544541}
   m_Layer: 0
   m_Name: Level Select UI
   m_TagString: Untagged
@@ -2191,25 +2209,6 @@ MonoBehaviour:
   runButton: {fileID: 1029221011}
   languageScript: {fileID: 1658452515}
   animator: {fileID: 1287081254}
---- !u!114 &1426544541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1426544538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e8ab12987949a7479760b790f64329b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  valueGuid: c6a61107e6afc44aaaab6b2db71dee31
-  bankName: UnitySB
-  loadAsynchronous: 0
-  decodeBank: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
 --- !u!1 &1499668457
 GameObject:
   m_ObjectHideFlags: 0

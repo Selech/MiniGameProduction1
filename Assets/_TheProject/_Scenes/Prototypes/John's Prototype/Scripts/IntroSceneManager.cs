@@ -32,6 +32,7 @@ public class IntroSceneManager : MonoBehaviour {
 
 	public void OpenScene(int scene){
 		GameManager.Instance.PlayUIClick();
+		GameManager.Instance.StopMenuMusic ();
 		if (scene == 1 && !languageScript.GetComponent<LanguageSelectionManager>().languageSelected) {
 			SceneManager.LoadScene (2);
 		} else {
