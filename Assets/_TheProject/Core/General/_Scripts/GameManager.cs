@@ -67,7 +67,6 @@ public class GameManager : MonoBehaviour {
 	[HideInInspector] public bool isPaused = false;
 	[HideInInspector] public bool hasGameStarted = false;
 	public Text HUD_TimeText;
-
 	//used for testing
 	public string pauseGameButton = "Cancel";
 
@@ -98,6 +97,7 @@ public class GameManager : MonoBehaviour {
 	void Awake()
 	{
 		_instance = this;
+		//AkSoundEngine.PostEvent ("",this.gameObject);
 	}
 
 	#endregion
