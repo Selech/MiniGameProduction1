@@ -191,7 +191,7 @@ public class GameManager : MonoBehaviour {
 	void WinGame() {
 		StopPedalSound ();
 		StopAmbience ();
-		StopGameMusic ();
+		//StopGameMusic ();
 		PlayWinGameSound ();
 		RestartGame ();
 	}
@@ -326,9 +326,9 @@ public class GameManager : MonoBehaviour {
 			currentCarriablesAmount = 0;
 
 			StopAmbience ();
-			StopGameMusic ();
+			//StopGameMusic ();
 			StopPedalSound ();
-
+			//StopAllSound ();
 			loseCanvas.SetActive (true);
 			PlayLoseGameSound ();
 		}
@@ -338,23 +338,28 @@ public class GameManager : MonoBehaviour {
 	#region Audio Methods
 	void PlayLoseGameSound()
 	{
-		PlaySound ("Game_lose");
+		PlaySound ("Music_Lose");
 
 	}
 
 	void PlayWinGameSound()
 	{
-		PlaySound ("Game_win");
+		PlaySound ("Music_Win");
 	}
 
 	void PlayGameMusic()
 	{
-		PlaySound ("Play_gameMusic");
+		PlaySound ("Music_Drive");
 	}
 
 	void StopGameMusic()
 	{
-		PlaySound ("Play_gameMusic");
+		//PlaySound ("StopAll");
+	}
+
+	void StopAllSound()
+	{
+		PlaySound ("StopAll");
 	}
 
 	void PlayAmbience()
@@ -402,12 +407,12 @@ public class GameManager : MonoBehaviour {
 
 	public void PlayMenuMusic()
 	{
-		PlaySound ("Play_MenuMusic");
+		PlaySound ("Play_menuMusic");
 	}
 
 	public void StopMenuMusic()
 	{
-		PlaySound ("Stop_MenuMusic");
+		PlaySound ("Stop_menuMusic");
 	}
 
 	//generic method for playing sound
