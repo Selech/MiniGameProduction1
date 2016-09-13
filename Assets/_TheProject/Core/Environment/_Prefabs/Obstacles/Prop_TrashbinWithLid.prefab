@@ -97,7 +97,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012619358608}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.253, z: 0}
+  m_LocalPosition: {x: -6.5208015, y: 0.72, z: -0.9217737}
   m_LocalScale: {x: 0.2668971, y: 0.2668971, z: 0.2668971}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -118,7 +118,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: bcd663f339d7e1f448850b40a3f2bd8d, type: 2}
+  - {fileID: 2100000, guid: c1e38f6fb3da3fa429c189060407e0cd, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -147,7 +147,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: bcd663f339d7e1f448850b40a3f2bd8d, type: 2}
+  - {fileID: 2100000, guid: c1e38f6fb3da3fa429c189060407e0cd, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
