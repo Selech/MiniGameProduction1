@@ -162,8 +162,7 @@ public class PlayerControllerv2 : MonoBehaviour
 	IEnumerator ApplyBreakForce(int waitSec){
 		yield return new WaitForSeconds (waitSec);
 
-		carriable [0].GetComponent<FixedJoint> ().breakForce = breakForce;
-		carriable [0].GetComponent<FixedJoint> ().breakTorque = breakForce;
+		carriable [0].GetComponent<CarriableCollider> ().ChangeBreakForce (breakForce, breakForce);
 
 		carriable [1].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier1;
 		carriable [1].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier1;
