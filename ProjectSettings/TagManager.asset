@@ -6,7 +6,11 @@ TagManager:
   tags:
   - Obstacles
   - Ground
+  - CarriableDetector
   - Carriable
+  - MiddleOfBike
+  - Basket
+  - CarriableDragNDrop
   layers:
   - Default
   - TransparentFX
@@ -17,7 +21,7 @@ TagManager:
   - 
   - 
   - Player
-  - 
+  - Basket
   - 
   - 
   - 

@@ -4,26 +4,51 @@ using System.Collections.Generic;
 
 public class OnBikeDetector : MonoBehaviour {
 
-	public ArrayList GOList = new ArrayList();
+	public List<GameObject> CollectedCarriables = new List<GameObject>();
+	public GameObject CurrentCarriable;
+	public float currentHeight = 0.0f;
 
-	void OnTriggerEnter(Collider other){
-		if (!GOList.Contains (other.gameObject.name)) {
-			GOList.Add (other.gameObject.name);
+	private Vector3 target;
+
+	public void addObject(GameObject go, float height) {
+		CurrentCarriable = go;
+
+		if (!CollectedCarriables.Contains (go)) {
+			CollectedCarriables.Add (go);
+			currentHeight += height;
+
+			target = new Vector3(0,6.92f + (currentHeight * 0.3f),-8.72f -(currentHeight * 0.4f));
+		} else {
+			sortObjects ();
 		}
-		Debug.Log (GOList.Count);
-		foreach (var o in GOList) {
-			Debug.Log (o);
-		}	
 	}
 
-	void OnTriggerExit(Collider other){
-		if (GOList.Contains (other.gameObject.name)) {
-			GOList.Remove (other.gameObject.name);
-		}
-		Debug.Log (GOList.Count);
-		foreach (var o in GOList) {
-				Debug.Log (o);
-		}	
+	void Start(){
+		target = Camera.main.transform.position;
 	}
 
+	void Update(){
+		Camera.main.transform.position = Vector3.Slerp(Camera.main.transform.position, target, 0.02f);
+	}
+
+	public void removeObject(GameObject go, float height) {
+		
+		foreach (var v in CollectedCarriables) {
+			if (go == v) {
+				CollectedCarriables.Remove (v);
+				currentHeight -= height;
+				sortObjects ();	
+				break;
+			}
+		}
+		target = new Vector3(0,6.92f + (currentHeight * 0.3f),-8.72f -(currentHeight * 0.4f));
+		CurrentCarriable = null;
+	}
+
+	public void sortObjects() {
+		currentHeight = 0.0f;
+		foreach (var obj in CollectedCarriables) {
+			obj.GetComponent<DragDrop> ().Sort ();
+		}
+	}
 }
