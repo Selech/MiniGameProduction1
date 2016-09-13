@@ -12,7 +12,7 @@ public class CamFollow : MonoBehaviour {
 	public bool followBehind = true;
 	public bool canFollow = true;
 	[Range(0.05f,0.5f)] public float shakeForce = 0.1f;
-
+	public float xRotOffset=1;
 	void Start()
 	{
 		
@@ -62,7 +62,7 @@ public class CamFollow : MonoBehaviour {
 		if (smoothRotation) {
 			Quaternion wantedRotation = Quaternion.LookRotation(target.position - transform.position, target.up);
 			wantedRotation.z = 0;
-
+			wantedRotation.x += xRotOffset;
 			transform.rotation = Quaternion.Slerp (transform.rotation, wantedRotation, Time.deltaTime * rotationDamping);
 		}
 		else transform.LookAt (target, target.up);
