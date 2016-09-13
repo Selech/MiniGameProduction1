@@ -38,7 +38,6 @@ GameObject:
   - 4: {fileID: 4000013692436390}
   - 33: {fileID: 33000010730060572}
   - 23: {fileID: 23000014263629094}
-  - 114: {fileID: 114000012126248208}
   m_Layer: 0
   m_Name: Prop_TrashbinLid
   m_TagString: Obstacles
@@ -127,20 +126,6 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011322283058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ecd73a2d745e6e42af1f509cbbc6190, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyOnCollision: 1
-  jumpForce: 0
-  brakeForce: 0
---- !u!114 &114000012126248208
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011418267812}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ecd73a2d745e6e42af1f509cbbc6190, type: 3}
