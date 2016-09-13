@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class MovePlayer : MonoBehaviour {
 
@@ -11,6 +12,11 @@ public class MovePlayer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		destination = GameObject.Find ("FinalDestination").transform;
+
+		foreach (var obj in GameObject.FindGameObjectsWithTag ("CarriableDragNDrop")) {
+			obj.GetComponent<BoxCollider> ().enabled = false;	
+		}
+
 	}
 	
 	// Update is called once per frame
