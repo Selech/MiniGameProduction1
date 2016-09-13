@@ -23,7 +23,7 @@ GameObject:
   - 23: {fileID: 23000012008919872}
   - 65: {fileID: 65000014184011202}
   - 114: {fileID: 114000011753491996}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Prop_Column
   m_TagString: CarriableDragNDrop
   m_Icon: {fileID: 0}

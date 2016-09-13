@@ -23,7 +23,7 @@ GameObject:
   - 65: {fileID: 65000010458315192}
   - 23: {fileID: 23000013627618806}
   - 114: {fileID: 114000010168782920}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SidewalkLTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
