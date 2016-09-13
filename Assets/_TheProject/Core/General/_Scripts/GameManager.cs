@@ -200,6 +200,12 @@ public class GameManager : MonoBehaviour {
 		EventManager.TriggerEvent (_eventsContainer.resetGame);
 	}
 
+	public void RestackGame()
+	{
+		SceneManager.LoadScene (0);
+		EventManager.TriggerEvent (_eventsContainer.resetGame);
+	}
+
 	void WinGame() {
 		StopPedalSound ();
 		StopAmbience ();
