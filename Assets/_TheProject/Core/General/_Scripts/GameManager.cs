@@ -117,6 +117,7 @@ public class GameManager : MonoBehaviour {
 
 	void Awake()
 	{
+		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		_instance = this;
 	}
 

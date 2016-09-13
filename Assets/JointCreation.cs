@@ -12,6 +12,7 @@ public class JointCreation : MonoBehaviour {
 	public GameObject fridge;
 
 	public GameObject parent;
+	public string[] stack;
 	public PlayerControllerv2 player;
 
 	public List<GameObject> gameObjectStack = new List<GameObject>();
@@ -19,12 +20,14 @@ public class JointCreation : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		stack = CarriableManager.Instance.carriablefromscene1;
+
 		gameObjectStack.Add (this.gameObject);
 
 		GameObject ob = null;
 
-		int index = player.stack.Length-1;
-		foreach (var car in player.stack) {
+		int index = stack.Length-1;
+		foreach (var car in stack) {
 			switch (car) {
 			case "sofa":
 				ob = (GameObject) Instantiate (sofa, this.transform.position + new Vector3(0,height,0), Quaternion.identity);
