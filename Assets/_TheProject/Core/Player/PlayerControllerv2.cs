@@ -61,6 +61,7 @@ public class PlayerControllerv2 : MonoBehaviour
 	public int brakeCooldown = 5;
 
 	public GameObject[] carriable;
+	public string[] stack;
 
 	public Rigidbody body;
 	private float oldY;
