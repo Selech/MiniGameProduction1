@@ -16,7 +16,7 @@ public class IntroSceneManager : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		if (swipe) {
-			Debug.Log ("hey");
+			GameObject.Find ("OnBikeDetector").GetComponent<OnBikeDetector> ().stackingDone = true;
 			Swipe ();
 		}
 	}
@@ -27,7 +27,6 @@ public class IntroSceneManager : MonoBehaviour {
 
 	public void Swipe() {
 		carriablesAmount = GameObject.FindObjectOfType<OnBikeDetector> ().CollectedCarriables.Count;
-
 
 		if(Input.touches.Length > 0 && carriablesAmount >= 1 && carriablesAmount <= 4) {
 			Touch t = Input.GetTouch(0);
@@ -66,7 +65,7 @@ public class IntroSceneManager : MonoBehaviour {
 			camera.gameObject.AddComponent<CamMove> ();
 			GameObject basket = GameObject.FindGameObjectWithTag ("Player");
 			basket.AddComponent<MovePlayer> ();
-			camera.transform.parent = basket.transform;
+			//camera.transform.parent = basket.transform;
 
 			foreach (GameObject carriable in GameObject.FindObjectOfType<OnBikeDetector> ().CollectedCarriables) {
 				carriable.transform.parent = basket.transform;
