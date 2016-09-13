@@ -10,6 +10,12 @@ public enum GameState
 	Paused
 }
 
+public enum NodgeDirection {
+	Disabled,
+	Left,
+	Right
+}
+
 [System.Serializable]
 public class EventsContainer
 {
@@ -79,6 +85,9 @@ public class GameManager : MonoBehaviour {
 
 	public float obstacleForceAddUp;
 	public float obstacleBrakeForce;
+	public NodgeDirection nodgeDirection;
+	public float nodgeForce;
+
 
 	#endregion
 
