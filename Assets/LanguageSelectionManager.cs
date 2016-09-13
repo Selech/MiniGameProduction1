@@ -8,12 +8,15 @@ public class LanguageSelectionManager : MonoBehaviour {
 	public RectTransform highlight;
 	Image[] childrenImage;
 
+	public bool languageSelected;
+
 
 	void Start() {
 		childrenImage = this.GetComponentsInChildren<Image> ();
 	}
 
 	public void SelectEnglish(){
+		languageSelected = false;
 		highlight.GetComponent<Image> ().enabled = true;
 		highlight.localPosition = new Vector3 (-180,0,0);
 
@@ -25,6 +28,7 @@ public class LanguageSelectionManager : MonoBehaviour {
 	}
 
 	public void SelectDanish(){
+		languageSelected = true;
 		highlight.GetComponent<Image> ().enabled = true;
 		highlight.localPosition = new Vector3 (160,0,0);
 	
