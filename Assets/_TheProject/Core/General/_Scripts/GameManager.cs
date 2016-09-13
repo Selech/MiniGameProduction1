@@ -28,6 +28,8 @@ public class EventsContainer
 	public string resumeGame = "ResumeGame";
 	public string winGame = "WinGame";
 	public string shakeCamera = "ShakeCamera";
+	public string UISnap = "UISnap";
+	public string UIClick = "UIClick";
 }
 
 [System.Serializable]
@@ -121,6 +123,8 @@ public class GameManager : MonoBehaviour {
 	{
 		EventManager.StartListening (_eventsContainer.loseCarriable, LoseCarriable);
 		EventManager.StartListening (_eventsContainer.loseCarriable, LoseItemSound);
+		EventManager.StartListening (_eventsContainer.UISnap, PlayUISnap);
+		EventManager.StartListening (_eventsContainer.UIClick, PlayUIClick);
 		EventManager.StartListening (_eventsContainer.winGame, WinGame);
 		EventManager.StartListening (_eventsContainer.obstacleHit, JumpCollisionSound);
 		EventManager.StartListening (_eventsContainer.brakeEvent, BrakeSound);
@@ -133,6 +137,8 @@ public class GameManager : MonoBehaviour {
 		EventManager.StopListening (_eventsContainer.obstacleHit, JumpCollisionSound);
 		EventManager.StopListening (_eventsContainer.brakeEvent, BrakeSound);
 		EventManager.StopListening (_eventsContainer.loseCarriable, LoseItemSound);
+		EventManager.StopListening (_eventsContainer.UISnap, PlayUISnap);
+		EventManager.StopListening (_eventsContainer.UIClick, PlayUIClick);
 	}
 
 	// Use this for initialization
@@ -334,6 +340,10 @@ public class GameManager : MonoBehaviour {
 	#endregion
 
 	#region Audio Methods
+
+	#region SFX Methods
+
+
 	void PlayLoseGameSound()
 	{
 		PlaySound ("Music_Lose");
@@ -422,7 +432,147 @@ public class GameManager : MonoBehaviour {
 	{
 		PlaySound ("Play_UI_Snap");
 	}
+	#endregion
 
+	#region VoiceOver methods - English
+	public void PlayIntroVO_EN()
+	{
+		PlaySound ("Play_VO_Intro_EN");
+	}
+
+	public void PlayReadySceneVO_EN()
+	{
+		PlaySound ("Play_VO_Ready_EN");
+	}
+
+	public void PlayMadeitVO_EN()
+	{
+		PlaySound ("Play_VO_MadeIt_EN");
+	}
+
+	public void PlayReturnToStackingVO_EN()
+	{
+		PlaySound ("Play_VO_Return_EN");
+	}
+
+	public void PlayWhichWayVO_EN()
+	{
+		PlaySound ("Play_VO_7_EN");
+	}
+
+	public void PlayGiveUsPushVO_EN()
+	{
+		PlaySound ("Play_VO_8_EN");
+	}
+
+	public void PlayLostOutStuffVO_EN()
+	{
+		PlaySound ("Play_VO_13_EN");
+	}
+
+	public void PlayWatchOutNailsVO_EN()
+	{
+		PlaySound ("Play_VO_20_EN");
+	}
+
+	public void PlayMouseTakesCareVO_EN()
+	{
+		PlaySound ("Play_VO_21_EN");
+	}
+
+	public void PlayYayVO_EN()
+	{
+		PlaySound ("Play_VO_29_EN");
+	}
+
+	public void PlayOhNoVO_EN()
+	{
+		PlaySound ("Play_VO_30_EN");
+	}
+
+	public void PlayRideBikeTeachVO_EN()
+	{
+		PlaySound ("Play_VO_31_EN");
+	}
+
+	public void PlayRoadLotsOfTrashVO_EN()
+	{
+		PlaySound ("Play_VO_34_EN");
+	}
+
+
+
+	#endregion
+
+	#region VoiceOver methods - Danish
+	public void PlayIntroVO_DA()
+	{
+		PlaySound ("Play_VO_Intro_DA");
+	}
+
+	public void PlayReadySceneVO_DA()
+	{
+		PlaySound ("Play_VO_Ready_DA");
+	}
+
+	public void PlayMadeitVO_DA()
+	{
+		PlaySound ("Play_VO_MadeIt_DA");
+	}
+
+	public void PlayReturnToStackingVO_DA()
+	{
+		PlaySound ("Play_VO_Return_DA");
+	}
+
+	public void PlayWhichWayVO_DA()
+	{
+		PlaySound ("Play_VO_7_DA");
+	}
+
+	public void PlayGiveUsPushVO_DA()
+	{
+		PlaySound ("Play_VO_8_DA");
+	}
+
+	public void PlayLostOutStuffVO_DA()
+	{
+		PlaySound ("Play_VO_13_DA");
+	}
+
+	public void PlayWatchOutNailsVO_DA()
+	{
+		PlaySound ("Play_VO_20_DA");
+	}
+
+	public void PlayMouseTakesCareVO_DA()
+	{
+		PlaySound ("Play_VO_21_DA");
+	}
+
+	public void PlayYayVO_DA()
+	{
+		PlaySound ("Play_VO_29_DA");
+	}
+
+	public void PlayOhNoVO_DA()
+	{
+		PlaySound ("Play_VO_30_DA");
+	}
+
+	public void PlayRideBikeTeachVO_DA()
+	{
+		PlaySound ("Play_VO_31_DA");
+	}
+
+	public void PlayRoadLotsOfTrashVO_DA()
+	{
+		PlaySound ("Play_VO_34_DA");
+	}
+
+
+
+	#endregion
 	//generic method for playing sound
 	public void PlaySound(string s)
 	{
