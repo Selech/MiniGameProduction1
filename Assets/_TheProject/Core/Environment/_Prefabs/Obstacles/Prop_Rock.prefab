@@ -105,4 +105,6 @@ MonoBehaviour:
   destroyOnCollision: 1
   jumpForce: 2
   brakeForce: 5
-  particles: {fileID: 1000010047265062, guid: 45677e40b2e9b7b4f833b92a1b554152, type: 2}
+  nodgeDirection: 0
+  nodgeForce: 0
+  particle: {fileID: 1000010047265062, guid: 45677e40b2e9b7b4f833b92a1b554152, type: 2}
