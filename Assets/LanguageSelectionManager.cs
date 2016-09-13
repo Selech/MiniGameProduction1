@@ -10,6 +10,8 @@ public class LanguageSelectionManager : MonoBehaviour {
 
 	public bool languageSelected;
 
+	public Animator animator;
+
 
 	void Start() {
 		childrenImage = this.GetComponentsInChildren<Image> ();
@@ -42,8 +44,15 @@ public class LanguageSelectionManager : MonoBehaviour {
 	}
 
 	IEnumerator disableCanvas() {
-		yield return new WaitForSeconds (1f);
 		this.gameObject.SetActive (false);
+		animator.SetTrigger ("Intro");
+
+		if(GameManager.Instance._soundEventsContainer.isEnglish)
+			GameManager.Instance.PlaySound ("Play_VO_Intro_EN");
+		else
+			GameManager.Instance.PlaySound ("Play_VO_Intro_DA");
+
+		yield return null;
 	}
 
 	public void Back(){

@@ -24,7 +24,7 @@ public class MovePlayer : MonoBehaviour {
 
 		StartCoroutine (rotateBike());
 
-		if(Vector3.Distance (transform.position, destination.position) == 0.0){
+		if(Vector3.Distance (transform.position, destination.position) <= 0.2f){
 			levels = GameObject.Find("Canvas").transform.FindChild("Levels").gameObject;
 			if (levels != null) {
 				levels.SetActive (true);
@@ -33,16 +33,12 @@ public class MovePlayer : MonoBehaviour {
 	}
 
 	IEnumerator rotateBike() {
-		GameManager.Instance.PlayPedal();
-
 		if (transform.position != destination.position) {
 			Vector3 dir = destination.position - transform.position;
 			Quaternion rot = Quaternion.LookRotation (-dir);
 
 			transform.rotation = Quaternion.Slerp (transform.rotation, rot, Time.deltaTime * rotationSpeed);			
 			transform.position = Vector3.MoveTowards (transform.position, destination.position, Time.deltaTime * 1.05f);
-		} else {
-			GameManager.Instance.StopPedalSound();
 		}
 		yield return null;
 	}

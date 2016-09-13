@@ -11,6 +11,8 @@ public class IntroSceneManager : MonoBehaviour {
 	public bool startBike = false;
 	public GameObject runButton;
 	public LanguageSelectionManager languageScript;
+
+	public Animator animator;
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -31,7 +33,7 @@ public class IntroSceneManager : MonoBehaviour {
 	public void OpenScene(int scene){
 		GameManager.Instance.PlayUIClick();
 		if (scene == 1 && !languageScript.GetComponent<LanguageSelectionManager>().languageSelected) {
-			SceneManager.LoadScene (3);
+			SceneManager.LoadScene (2);
 		} else {
 			SceneManager.LoadScene (scene);
 		}
@@ -77,6 +79,13 @@ public class IntroSceneManager : MonoBehaviour {
 	public void goBike() {
 		runButton.SetActive (false);
 		startBike = true;
+		animator.SetTrigger ("StartBiking");
+
+		if(GameManager.Instance._soundEventsContainer.isEnglish)
+			AkSoundEngine.ExecuteActionOnEvent ("Play_VO_Intro_EN", AkActionOnEventType.AkActionOnEventType_Stop);
+		else
+			AkSoundEngine.ExecuteActionOnEvent ("Play_VO_Intro_DA", AkActionOnEventType.AkActionOnEventType_Stop);
+		
 		GameObject camera = GameObject.Find ("Main Camera");
 
 		camera.gameObject.AddComponent<CamMove> ();

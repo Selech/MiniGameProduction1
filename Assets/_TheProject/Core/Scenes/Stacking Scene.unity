@@ -1111,7 +1111,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: prototypelevel1
           m_BoolArgument: 0
@@ -1440,7 +1440,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: prototypelevel1
           m_BoolArgument: 0
@@ -1560,6 +1560,35 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1052163398}
+--- !u!1 &1083546368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1083546369}
+  m_Layer: 0
+  m_Name: Bike
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1083546369
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1083546368}
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: 1.2947202, y: 0.4767462, z: -0.5112128}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+  m_Children:
+  - {fileID: 1287081255}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1 &1236293499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,39 +1659,39 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1083546369}
     m_Modifications:
     - target: {fileID: 400534, guid: b5bb62f83fab3174591af05975ec796b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.37
+      value: 0.07527983
       objectReference: {fileID: 0}
     - target: {fileID: 400534, guid: b5bb62f83fab3174591af05975ec796b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.0454326e-17
+      value: -0.4767462
       objectReference: {fileID: 0}
     - target: {fileID: 400534, guid: b5bb62f83fab3174591af05975ec796b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.6
+      value: -0.0887872
       objectReference: {fileID: 0}
     - target: {fileID: 400534, guid: b5bb62f83fab3174591af05975ec796b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400534, guid: b5bb62f83fab3174591af05975ec796b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.92387867
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 400534, guid: b5bb62f83fab3174591af05975ec796b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400534, guid: b5bb62f83fab3174591af05975ec796b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.38268548
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400534, guid: b5bb62f83fab3174591af05975ec796b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100534, guid: b5bb62f83fab3174591af05975ec796b, type: 3}
       propertyPath: m_TagString
@@ -1670,7 +1699,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400534, guid: b5bb62f83fab3174591af05975ec796b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -134.751
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: 2300016, guid: b5bb62f83fab3174591af05975ec796b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1930,6 +1959,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &1287081254 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: b5bb62f83fab3174591af05975ec796b,
+    type: 3}
+  m_PrefabInternal: {fileID: 1246334103}
+--- !u!4 &1287081255 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400534, guid: b5bb62f83fab3174591af05975ec796b, type: 3}
+  m_PrefabInternal: {fileID: 1246334103}
 --- !u!1 &1308732514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2152,6 +2190,7 @@ MonoBehaviour:
   startBike: 0
   runButton: {fileID: 1029221011}
   languageScript: {fileID: 1658452515}
+  animator: {fileID: 1287081254}
 --- !u!114 &1426544541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2500,7 +2539,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1658452515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2514,6 +2553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlight: {fileID: 1416063741}
   languageSelected: 0
+  animator: {fileID: 1287081254}
 --- !u!114 &1658452516
 MonoBehaviour:
   m_ObjectHideFlags: 0
