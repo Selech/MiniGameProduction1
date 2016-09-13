@@ -132,5 +132,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyOnCollision: 1
+  jumpForce: 0
+  brakeForce: 0
+  particles: {fileID: 1000010047265062, guid: 45677e40b2e9b7b4f833b92a1b554152, type: 2}
+--- !u!114 &114000012126248208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011418267812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ecd73a2d745e6e42af1f509cbbc6190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyOnCollision: 1
   jumpForce: 2
   brakeForce: 5
+  particles: {fileID: 0}

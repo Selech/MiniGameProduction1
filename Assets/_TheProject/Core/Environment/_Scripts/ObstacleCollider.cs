@@ -1,5 +1,3 @@
-﻿using UnityEngine;
-using System.Collections;
 
 public class ObstacleCollider : MonoBehaviour {
 
