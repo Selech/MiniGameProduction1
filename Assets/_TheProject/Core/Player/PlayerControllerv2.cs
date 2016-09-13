@@ -77,12 +77,14 @@ public class PlayerControllerv2 : MonoBehaviour
 	void OnEnable ()
 	{
 		EventManager.StartListening (GameManager.Instance._eventsContainer.obstacleHit, Jump);
+		EventManager.StartListening (GameManager.Instance._eventsContainer.curbHit, Nodge);
 		EventManager.StartListening (GameManager.Instance._eventsContainer.brakeEvent, Brake);
 	}
 
 	void OnDisable ()
 	{
 		EventManager.StopListening (GameManager.Instance._eventsContainer.obstacleHit, Jump);
+		EventManager.StopListening (GameManager.Instance._eventsContainer.curbHit, Nodge);
 		EventManager.StopListening (GameManager.Instance._eventsContainer.brakeEvent, Brake);
 	}
 
@@ -145,19 +147,22 @@ public class PlayerControllerv2 : MonoBehaviour
 	void Jump ()
 	{
 		if(!jumping){
-			switch (GameManager.Instance.nodgeDirection) {
-				case NodgeDirection.Left:
-					body.AddForce (new Vector3 (-GameManager.Instance.nodgeForce, GameManager.Instance.obstacleForceAddUp, 0), ForceMode.VelocityChange);
-					break;
-				case NodgeDirection.Right:
-					body.AddForce (new Vector3 (GameManager.Instance.nodgeForce, GameManager.Instance.obstacleForceAddUp, 0), ForceMode.VelocityChange);
-					break;
-				default:
-					body.AddForce (new Vector3 (0, GameManager.Instance.obstacleForceAddUp, 0), ForceMode.VelocityChange);
-					break;
-			}
+			body.AddForce (new Vector3 (0, GameManager.Instance.obstacleForceAddUp, 0), ForceMode.VelocityChange);
 			jumping = true;
 			body.AddForce (new Vector3 (0, 0, -GameManager.Instance.obstacleBrakeForce), ForceMode.VelocityChange);
+		}
+	}
+
+	void Nodge() {
+		switch (GameManager.Instance.nodgeDirection) {
+			case NodgeDirection.Left:
+				body.AddForce (new Vector3 (-GameManager.Instance.nodgeForce, 0, 0), ForceMode.VelocityChange);
+				break;
+			case NodgeDirection.Right:
+				body.AddForce (new Vector3 (GameManager.Instance.nodgeForce, 0, 0), ForceMode.VelocityChange);
+				break;
+			default:
+				break;
 		}
 	}
 
