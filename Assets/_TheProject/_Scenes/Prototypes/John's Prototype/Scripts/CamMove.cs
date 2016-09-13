@@ -4,72 +4,40 @@ using System.Collections;
 public class CamMove : MonoBehaviour {
 
 	public Transform target;
+
 	[Range(1,20)] public float height = 5.0f;
 	public bool isCameraSet = true;
+
 	private Vector3 offset;
-	private Vector3 prevPosition;
+	private Vector3 finalDestination = new Vector3(13f, 196f, 555f);
+	public Transform destination;
 
-
-	[Range(0.05f,0.5f)] public float shakeForce = 0.1f;
-
-	void Start()
-	{
-		EventManager.StartListening (GameManager.Instance._eventsContainer.shakeCamera, ShakeCamera);
-		if(target == null)
-		{
+	void Start() {
+		if(target == null) {
 			target = GameObject.FindGameObjectWithTag ("Player").transform;
-			EventManager.TriggerEvent (GameManager.Instance._eventsContainer.shakeCamera);
+			destination = GameObject.Find ("FinalDestination").transform;
 		}
-
 	}
 
-	void Update () 
-	{
+	void Update () {
 		if (target != null) {
-//			Follow ();
-//			if (!isCameraSet) {
-			if (prevPosition != transform.position) {
+			if (destination.position != target.position) {
 				SetUpCamera ();
-				//Follow ();
 			}
-//				else
-//					isCameraSet = true;
-//			}
-//			else
-//				Follow ();
-
-
 		} else {
 			print ("no target assigned for camera to follow");
 		}
-		EventManager.StopListening (GameManager.Instance._eventsContainer.shakeCamera, ShakeCamera);
 	}
 
-	void SetUpCamera()
-	{
-		Vector3 wantedPosition = target.position;
-		wantedPosition.y = height;
-		wantedPosition.x = wantedPosition.x - 10;
-		wantedPosition.z = 5.0f;
-		prevPosition = transform.position;
-		transform.position = Vector3.MoveTowards(transform.position, wantedPosition, 0.5f* Time.fixedDeltaTime);
+	void SetUpCamera() {
+
+		transform.position = Vector3.MoveTowards(transform.position, target.position, 0.5f* Time.fixedDeltaTime);
 		transform.LookAt (target, target.up);
-		Quaternion wantedRotation = Quaternion.LookRotation(target.position - transform.position, target.up);
-		wantedRotation.z = 0;
-		wantedRotation.y = 30;
+
+		Quaternion wantedRotation = Quaternion.LookRotation(target.position - transform.position);
+		wantedRotation.y += 0f;
 
 		transform.rotation = Quaternion.Slerp(transform.rotation,  wantedRotation, 0.4f* Time.fixedDeltaTime);
 		offset = transform.position - target.transform.position; 
-	}
-
-	void Follow()
-	{
-		transform.position = target.transform.position + offset;
-	}
-
-	private void ShakeCamera(){
-		var random = Random.Range (0,1);
-		var shakeVector = random == 0 ? new Vector3 (shakeForce,shakeForce,shakeForce) : new Vector3 (-shakeForce,-shakeForce,-shakeForce);
-//		transform.Translate (this.transform.position + shakeVector);
 	}
 }
