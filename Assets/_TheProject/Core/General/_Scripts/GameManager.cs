@@ -88,7 +88,6 @@ public class GameManager : MonoBehaviour {
 	public NodgeDirection nodgeDirection;
 	public float nodgeForce;
 
-
 	#endregion
 
 	#endregion
@@ -125,7 +124,6 @@ public class GameManager : MonoBehaviour {
 		EventManager.StartListening (_eventsContainer.winGame, WinGame);
 		EventManager.StartListening (_eventsContainer.obstacleHit, JumpCollisionSound);
 		EventManager.StartListening (_eventsContainer.brakeEvent, BrakeSound);
-
 	}
 
 	void OnDisable()
@@ -415,6 +413,16 @@ public class GameManager : MonoBehaviour {
 		PlaySound ("Stop_menuMusic");
 	}
 
+	public void PlayUIClick()
+	{
+		PlaySound ("Play_UI_Click");
+	}
+
+	public void PlayUISnap()
+	{
+		PlaySound ("Play_UI_Snap");
+	}
+
 	//generic method for playing sound
 	public void PlaySound(string s)
 	{
@@ -424,6 +432,7 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	//play sound from other object
 	public void PlaySound(string s,GameObject b)
 	{
 		if(!string.IsNullOrEmpty(s) && b != null )
