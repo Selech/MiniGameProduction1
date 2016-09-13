@@ -494,7 +494,7 @@
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>
-							<StateGroupInfo>
+							<StateGroupInfo MusicSyncType="3">
 								<StateGroupRef Name="WinLose" ID="{0BD2CE67-064A-4B09-8361-DD5F05D289FE}"/>
 							</StateGroupInfo>
 						</StateGroupList>
