@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{94BBBD5F-FAA8-478E-A74A-D11000E0AABD}" SchemaVersion="72">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{94BBBD5F-FAA8-478E-A74A-D11000E0AABD}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{94BBBD5F-FAA8-478E-A74A-D11000E0AABD}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="WinLose" ID="{FBA451D8-360C-44A0-B8B2-5E630A694204}">
+					<ChildrenList>
+						<Switch Name="Win" ID="{0B9BC59F-D9C5-4773-97E4-3E0CED9BDE19}"/>
+						<Switch Name="Lose" ID="{307EC282-6371-49FD-9B3F-ADDD20EC79BD}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>
