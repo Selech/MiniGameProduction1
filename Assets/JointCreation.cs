@@ -50,7 +50,7 @@ public class JointCreation : MonoBehaviour {
 			default:
 				break;
 			}
-			ob.transform.rotation = Quaternion.Euler (new Vector3(0f,-50f,0));
+			ob.transform.rotation = Quaternion.Euler (new Vector3(0f,-90f,0));
 			height += ob.GetComponent<DragDrop> ().heightOfObject;
 			var joint = ob.AddComponent<FixedJoint> ();
 			joint.connectedBody = gameObjectStack [gameObjectStack.Count - 1].gameObject.GetComponent<Rigidbody>();
