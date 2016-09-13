@@ -107,3 +107,5 @@ MonoBehaviour:
   brakeForce: 0
   nodgeDirection: 2
   nodgeForce: 1.5
+  nodgeCooldown: 0.5
+  particle: {fileID: 0}
