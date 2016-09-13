@@ -26,6 +26,30 @@
 						</ControlSurfaceBindingGroup>
 					</ChildrenList>
 				</ControlSurfaceSession>
+				<ControlSurfaceSession Name="test" ID="{AA358250-04E2-4892-BEBA-FA4ABC9BD21F}">
+					<ChildrenList>
+						<ControlSurfaceBindingGroup Name="Global" ID="{C5062EE2-C463-4188-832A-B687B993607A}"/>
+						<ControlSurfaceBindingGroup Name="Current Selection" ID="{1DCD7AA8-945D-4966-B168-D81A4B5B2669}">
+							<PropertyList>
+								<Property Name="GroupType" Type="int16" Value="4"/>
+							</PropertyList>
+							<ChildrenList>
+								<ControlSurfaceBinding Name="Binding" ID="{94635076-2442-43CB-8E69-48958EFE3C6A}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="test~Ch.1~CC~0"/>
+										<Property Name="TargetName" Type="string" Value="PassMidiMessage"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+							</ChildrenList>
+						</ControlSurfaceBindingGroup>
+						<ControlSurfaceBindingGroup Name="View Groups" ID="{AA7F2D0C-9E56-48D6-805E-D506E8FD4917}">
+							<PropertyList>
+								<Property Name="GroupType" Type="int16" Value="3"/>
+							</PropertyList>
+						</ControlSurfaceBindingGroup>
+					</ChildrenList>
+				</ControlSurfaceSession>
 			</ChildrenList>
 		</WorkUnit>
 	</ControlSurfaceSessions>
