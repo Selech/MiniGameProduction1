@@ -4826,7 +4826,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012436301710}
-  m_LocalRotation: {x: 0.63799036, y: 0.30490702, z: -0.63799036, w: 0.30490702}
+  m_LocalRotation: {x: 0.6379904, y: 0.30490705, z: -0.6379904, w: 0.30490705}
   m_LocalPosition: {x: 36.277225, y: 11.142952, z: 0}
   m_LocalScale: {x: 0.009424303, y: 0.27871853, z: 0.009424303}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6611,11 +6611,12 @@ MonoBehaviour:
   breakMultiplier3: 0.1
   brakeForce: 10
   brakeCooldown: 5
+  breakForceApplyWait: 3
   carriable:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000010898872670, guid: 8f381629539bb1b40be29094df8465d7, type: 2}
+  - {fileID: 1000013666923758, guid: 8f381629539bb1b40be29094df8465d7, type: 2}
+  - {fileID: 1000010239674138, guid: 8f381629539bb1b40be29094df8465d7, type: 2}
+  - {fileID: 1000012453755880, guid: 8f381629539bb1b40be29094df8465d7, type: 2}
   body: {fileID: 54000014204317576}
 --- !u!114 &114000010160804634
 MonoBehaviour:
@@ -6811,8 +6812,8 @@ FixedJoint:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011833619230}
   m_ConnectedBody: {fileID: 54000010003080932}
-  m_BreakForce: 500
-  m_BreakTorque: 500
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
 --- !u!138 &138000012503084580

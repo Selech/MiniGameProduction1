@@ -36,16 +36,16 @@ public class PlayerControllerv2 : MonoBehaviour
 	[Range (1.0f, 10.0f)]
 	public float brakeAmount = 5f;
 
-	[Range (100, 1000)]
-	public int breakForce = 200;
+	[Range (0.1f, 1000)]
+	public float breakForce = 200;
 
-	[Range (0.0f, 0.5f)]
+	[Range (0.0f, 5f)]
 	public float breakMultiplier1 = 0.3f;
 
-	[Range (0.0f, 0.5f)]
+	[Range (0.0f, 5f)]
 	public float breakMultiplier2 = 0.2f;
 
-	[Range (0.0f, 0.5f)]
+	[Range (0.0f, 5f)]
 	public float breakMultiplier3 = 0.1f;
 
 	[Range (0.0f, 100.0f)]
@@ -53,6 +53,9 @@ public class PlayerControllerv2 : MonoBehaviour
 
 	[Range (1, 10)]
 	public int brakeCooldown = 5;
+
+	[Range (1, 10)]
+	public int breakForceApplyWait = 5;
 
 	public GameObject[] carriable;
 
@@ -68,17 +71,7 @@ public class PlayerControllerv2 : MonoBehaviour
 		AkSoundEngine.PostEvent ("Play_Pedal", this.gameObject);
 		AkSoundEngine.PostEvent ("Play_Ambience", this.gameObject);
 
-		carriable [0].GetComponent<FixedJoint> ().breakForce = breakForce;
-		carriable [0].GetComponent<FixedJoint> ().breakTorque = breakForce;
-
-		carriable [1].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier1;
-		carriable [1].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier1;
-
-		carriable [2].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier2;
-		carriable [2].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier2;
-
-		carriable [3].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier3;
-		carriable [3].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier3;
+		StartCoroutine (ApplyBreakForce(breakForceApplyWait));
 	}
 
 	void OnEnable ()
@@ -153,10 +146,9 @@ public class PlayerControllerv2 : MonoBehaviour
 	void Jump ()
 	{
 		if(!jumping){
-			AkSoundEngine.PostEvent ("Play_Collision", this.gameObject);
 			body.AddForce (new Vector3 (0, GameManager.Instance.obstacleForceAddUp, 0), ForceMode.VelocityChange);
 			jumping = true;
-			body.AddForce (new Vector3 (0, 0,GameManager.Instance.obstacleBrakeForce), ForceMode.VelocityChange);
+			body.AddForce (new Vector3 (0, 0, -GameManager.Instance.obstacleBrakeForce), ForceMode.VelocityChange);
 		}
 	}
 
@@ -165,5 +157,21 @@ public class PlayerControllerv2 : MonoBehaviour
 		yield return new WaitForSeconds (waitSec);
 		boost = false;
 		brake = false;
+	}
+
+	IEnumerator ApplyBreakForce(int waitSec){
+		yield return new WaitForSeconds (waitSec);
+
+		carriable [0].GetComponent<FixedJoint> ().breakForce = breakForce;
+		carriable [0].GetComponent<FixedJoint> ().breakTorque = breakForce;
+
+		carriable [1].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier1;
+		carriable [1].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier1;
+
+		carriable [2].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier2;
+		carriable [2].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier2;
+
+		carriable [3].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier3;
+		carriable [3].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier3;
 	}
 }

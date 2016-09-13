@@ -3,10 +3,12 @@ using System.Collections;
 
 public class ObstacleCollider : MonoBehaviour {
 
-	public bool destroyOnCollision = true;
-	[Range(0.0f,100.0f)]
+	public bool destroyOnCollision = true; 
+
+	[Range(0.0f, 100.0f)]
 	public float jumpForce = 0;
-	[Range(0.0f,100.0f)]
+
+	[Range(0.0f, 100.0f)]
 	public float brakeForce = 0;
 
 	void OnTriggerEnter(Collider other) {
