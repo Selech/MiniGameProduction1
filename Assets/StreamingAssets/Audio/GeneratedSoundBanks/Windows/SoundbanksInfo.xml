@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="118">
+	<RootPaths>
+		<ProjectRoot>/Users/Christian/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/z:/Volumes/Macintosh HD/DADIU/GIT/Minigame1/Assets/WwiseLibrary/</ProjectRoot>
+		<SourceFilesRoot>/Users/Christian/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/z:/Volumes/Macintosh HD/DADIU/GIT/Minigame1/Assets/WwiseLibrary/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/Christian/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/z:/Volumes/Macintosh HD/DADIU/GIT/Minigame1/Assets/WwiseLibrary/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/Christian/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/z:/Volumes/Macintosh HD/DADIU/GIT/Minigame1/Assets/WwiseLibrary/GeneratedSoundBanks/Windows/</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="399307055" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\UnitySB</ObjectPath>
+			<ShortName>UnitySB</ShortName>
+			<Path>UnitySB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2638365503" Name="Music_Drive" ObjectPath="\Events\Default Work Unit\Music\Music_Drive"/>
+				<Event Id="3736367630" Name="Music_Lose" ObjectPath="\Events\Default Work Unit\Music\Music_Lose" MaxAttenuation="0.000000"/>
+				<Event Id="2682680661" Name="Music_Win" ObjectPath="\Events\Default Work Unit\Music\Music_Win" MaxAttenuation="0.000000"/>
+				<Event Id="278617630" Name="Play_Ambience" ObjectPath="\Events\Default Work Unit\Play_Ambience"/>
+				<Event Id="1945722105" Name="Play_Bell" ObjectPath="\Events\Default Work Unit\Play_Bell"/>
+				<Event Id="3672906123" Name="Play_Brake" ObjectPath="\Events\Default Work Unit\Play_Brake"/>
+				<Event Id="1553219250" Name="Play_Collision" ObjectPath="\Events\Default Work Unit\Play_Collision"/>
+				<Event Id="2730303704" Name="Play_ItemLose" ObjectPath="\Events\Default Work Unit\Play_ItemLose"/>
+				<Event Id="2570041344" Name="Play_menuMusic" ObjectPath="\Events\Default Work Unit\Music\Play_menuMusic"/>
+				<Event Id="2599818666" Name="Play_Pedal" ObjectPath="\Events\Default Work Unit\Play_Pedal"/>
+				<Event Id="3535499264" Name="Play_Sidewalk" ObjectPath="\Events\Default Work Unit\Play_Sidewalk"/>
+				<Event Id="1749424733" Name="Play_UI_Click" ObjectPath="\Events\Default Work Unit\Play_UI_Click"/>
+				<Event Id="645831303" Name="Play_UI_Snap" ObjectPath="\Events\Default Work Unit\Play_UI_Snap"/>
+				<Event Id="1752741677" Name="Play_VO_10_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_10_DA"/>
+				<Event Id="1769519281" Name="Play_VO_10_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_10_EN"/>
+				<Event Id="233870390" Name="Play_VO_11_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_11_DA"/>
+				<Event Id="217092778" Name="Play_VO_11_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_11_EN"/>
+				<Event Id="1476743487" Name="Play_VO_12_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_12_DA"/>
+				<Event Id="1493521055" Name="Play_VO_12_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_12_EN"/>
+				<Event Id="4242393800" Name="Play_VO_13_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_13_DA"/>
+				<Event Id="4225616248" Name="Play_VO_13_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_13_EN"/>
+				<Event Id="3059202625" Name="Play_VO_14_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_14_DA"/>
+				<Event Id="3075980253" Name="Play_VO_14_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_14_EN"/>
+				<Event Id="1540228170" Name="Play_VO_15_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_15_DA"/>
+				<Event Id="1523450614" Name="Play_VO_15_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_15_EN"/>
+				<Event Id="2999520707" Name="Play_VO_16_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_16_DA"/>
+				<Event Id="3016298331" Name="Play_VO_16_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_16_EN"/>
+				<Event Id="1480649420" Name="Play_VO_17_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_17_DA"/>
+				<Event Id="1463871860" Name="Play_VO_17_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_17_EN"/>
+				<Event Id="18059541" Name="Play_VO_18_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_18_DA"/>
+				<Event Id="34837353" Name="Play_VO_18_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_18_EN"/>
+				<Event Id="1720388062" Name="Play_VO_19_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_19_DA"/>
+				<Event Id="1703610434" Name="Play_VO_19_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_19_EN"/>
+				<Event Id="3090573775" Name="Play_VO_1_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_1_DA"/>
+				<Event Id="3107351343" Name="Play_VO_1_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_1_EN"/>
+				<Event Id="1014692382" Name="Play_VO_20_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_20_DA"/>
+				<Event Id="997914754" Name="Play_VO_20_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_20_EN"/>
+				<Event Id="3607331413" Name="Play_VO_21_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_21_DA"/>
+				<Event Id="3624108969" Name="Play_VO_21_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_21_EN"/>
+				<Event Id="707356976" Name="Play_VO_22_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_22_DA"/>
+				<Event Id="690579408" Name="Play_VO_22_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_22_EN"/>
+				<Event Id="2226331431" Name="Play_VO_23_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_23_DA"/>
+				<Event Id="2243109047" Name="Play_VO_23_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_23_EN"/>
+				<Event Id="2289816178" Name="Play_VO_24_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_24_DA"/>
+				<Event Id="2273038574" Name="Play_VO_24_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_24_EN"/>
+				<Event Id="618721897" Name="Play_VO_25_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_25_DA"/>
+				<Event Id="635499509" Name="Play_VO_25_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_25_EN"/>
+				<Event Id="2271814132" Name="Play_VO_26_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_26_DA"/>
+				<Event Id="2255036524" Name="Play_VO_26_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_26_EN"/>
+				<Event Id="3801131051" Name="Play_VO_27_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_27_DA"/>
+				<Event Id="3817908659" Name="Play_VO_27_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_27_EN"/>
+				<Event Id="3864718966" Name="Play_VO_28_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_28_DA"/>
+				<Event Id="3847941354" Name="Play_VO_28_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_28_EN"/>
+				<Event Id="1088622957" Name="Play_VO_29_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_29_DA"/>
+				<Event Id="1105400561" Name="Play_VO_29_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_29_EN"/>
+				<Event Id="1889277382" Name="Play_VO_2_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_2_DA"/>
+				<Event Id="1872499834" Name="Play_VO_2_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_2_EN"/>
+				<Event Id="2074304215" Name="Play_VO_30_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_30_DA"/>
+				<Event Id="2091081767" Name="Play_VO_30_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_30_EN"/>
+				<Event Id="3418594365" Name="Play_VO_3_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_3_DA"/>
+				<Event Id="3435371905" Name="Play_VO_3_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_3_EN"/>
+				<Event Id="2041603548" Name="Play_VO_4_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_4_DA"/>
+				<Event Id="2024825924" Name="Play_VO_4_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_4_EN"/>
+				<Event Id="3591605651" Name="Play_VO_5_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_5_DA"/>
+				<Event Id="3608383467" Name="Play_VO_5_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_5_EN"/>
+				<Event Id="3154161434" Name="Play_VO_6_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_6_DA"/>
+				<Event Id="3137383814" Name="Play_VO_6_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_6_EN"/>
+				<Event Id="388408145" Name="Play_VO_7_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_7_DA"/>
+				<Event Id="405185709" Name="Play_VO_7_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_7_EN"/>
+				<Event Id="3026985856" Name="Play_VO_8_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_8_DA"/>
+				<Event Id="3010208288" Name="Play_VO_8_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_8_EN"/>
+				<Event Id="261335799" Name="Play_VO_9_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_9_DA"/>
+				<Event Id="278113351" Name="Play_VO_9_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_9_EN"/>
+				<Event Id="1080905738" Name="Play_VO_Intro_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_Intro_DA"/>
+				<Event Id="1064128182" Name="Play_VO_Intro_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_Intro_EN"/>
+				<Event Id="3590457580" Name="Play_VO_MadeIt_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_MadeIt_DA"/>
+				<Event Id="3573679764" Name="Play_VO_MadeIt_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_MadeIt_EN"/>
+				<Event Id="4211111327" Name="Play_VO_Ready_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_Ready_DA"/>
+				<Event Id="4227889151" Name="Play_VO_Ready_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_Ready_EN"/>
+				<Event Id="358651834" Name="Play_VO_Return_DA" ObjectPath="\Events\Default Work Unit\VO_DA\Play_VO_Return_DA"/>
+				<Event Id="341874214" Name="Play_VO_Return_EN" ObjectPath="\Events\Default Work Unit\VO_EN\Play_VO_Return_EN"/>
+				<Event Id="2477713992" Name="Stop_Ambience" ObjectPath="\Events\Default Work Unit\Stop_Ambience" MaxAttenuation="0.000000"/>
+				<Event Id="2753202630" Name="Stop_menuMusic" ObjectPath="\Events\Default Work Unit\Music\Stop_menuMusic" MaxAttenuation="0.000000"/>
+				<Event Id="1731467220" Name="Stop_Pedal" ObjectPath="\Events\Default Work Unit\Stop_Pedal" MaxAttenuation="0.000000"/>
+				<Event Id="3086540886" Name="StopAll" ObjectPath="\Events\Default Work Unit\StopAll" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="9059610" Language="SFX">
+					<ShortName>VO_MadeIt_EN.wav</ShortName>
+					<Path>SFX/VO_MadeIt_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="24799722" Language="SFX">
+					<ShortName>36-26 Landrover--Safari Diesel_Horn,3.wav</ShortName>
+					<Path>SFX/36-26 Landrover--Safari Diesel_Horn,3_844E6D30.wem</Path>
+				</File>
+				<File Id="56102947" Language="SFX">
+					<ShortName>VO_10_EN.wav</ShortName>
+					<Path>SFX/VO_10_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="57491296" Language="SFX">
+					<ShortName>VO_27_EN.wav</ShortName>
+					<Path>SFX/VO_27_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="69790071" Language="SFX">
+					<ShortName>pedal1.wav</ShortName>
+					<Path>SFX/pedal1_EE6A20D7.wem</Path>
+				</File>
+				<File Id="98646268" Language="SFX">
+					<ShortName>14 Car, Interior, Horn--4 Blasts.wav</ShortName>
+					<Path>SFX/14 Car, Interior, Horn--4 Blasts_844E6D30.wem</Path>
+				</File>
+				<File Id="104483556" Language="SFX">
+					<ShortName>VO_27_DA.wav</ShortName>
+					<Path>SFX/VO_27_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="109563332" Language="SFX">
+					<ShortName>VO_29_DA.wav</ShortName>
+					<Path>SFX/VO_29_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="112600336" Language="SFX">
+					<ShortName>VO_17_EN.wav</ShortName>
+					<Path>SFX/VO_17_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="134070531" Language="SFX">
+					<ShortName>VO_11_EN.wav</ShortName>
+					<Path>SFX/VO_11_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="159362932" Language="SFX">
+					<ShortName>VO_12_DA.wav</ShortName>
+					<Path>SFX/VO_12_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="163405176" Language="SFX">
+					<ShortName>VO_11_DA.wav</ShortName>
+					<Path>SFX/VO_11_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="167958815" Language="SFX">
+					<ShortName>VO_Ready_EN.wav</ShortName>
+					<Path>SFX/VO_Ready_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="168403748" Language="SFX">
+					<ShortName>VO_30_DA.wav</ShortName>
+					<Path>SFX/VO_30_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="170967349" Language="SFX">
+					<ShortName>VO_16_EN.wav</ShortName>
+					<Path>SFX/VO_16_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="173287185" Language="SFX">
+					<ShortName>VO_Return_EN.wav</ShortName>
+					<Path>SFX/VO_Return_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="173706623" Language="SFX">
+					<ShortName>VO_15_EN.wav</ShortName>
+					<Path>SFX/VO_15_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="173734436" Language="SFX">
+					<ShortName>VO_26_DA.wav</ShortName>
+					<Path>SFX/VO_26_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="177556905" Language="SFX">
+					<ShortName>VO_28_DA.wav</ShortName>
+					<Path>SFX/VO_28_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="187524640" Language="SFX">
+					<ShortName>Collision2.wav</ShortName>
+					<Path>SFX/Collision2_844E6D30.wem</Path>
+				</File>
+				<File Id="188645246" Language="SFX">
+					<ShortName>VO_26_EN.wav</ShortName>
+					<Path>SFX/VO_26_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="216305355" Language="SFX">
+					<ShortName>pedal4.wav</ShortName>
+					<Path>SFX/pedal4_778F3CA5.wem</Path>
+				</File>
+				<File Id="225384672" Language="SFX">
+					<ShortName>UI_Snap.wav</ShortName>
+					<Path>SFX/UI_Snap_844E6D30.wem</Path>
+				</File>
+				<File Id="228629949" Language="SFX">
+					<ShortName>VO_10_DA.wav</ShortName>
+					<Path>SFX/VO_10_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="233114623" Language="SFX">
+					<ShortName>Ambience2.wav</ShortName>
+					<Path>SFX/Ambience2_844E6D30.wem</Path>
+				</File>
+				<File Id="235785812" Language="SFX">
+					<ShortName>VO_14_EN.wav</ShortName>
+					<Path>SFX/VO_14_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="265004707" Language="SFX">
+					<ShortName>pedal3.wav</ShortName>
+					<Path>SFX/pedal3_E5310ACC.wem</Path>
+				</File>
+				<File Id="266087746" Language="SFX">
+					<ShortName>VO_6_EN.wav</ShortName>
+					<Path>SFX/VO_6_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="275340123" Language="SFX">
+					<ShortName>VO_29_EN.wav</ShortName>
+					<Path>SFX/VO_29_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="275471936" Language="SFX">
+					<ShortName>VO_18_EN.wav</ShortName>
+					<Path>SFX/VO_18_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="286321199" Language="SFX">
+					<ShortName>VO_Intro_EN.wav</ShortName>
+					<Path>SFX/VO_Intro_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="307491067" Language="SFX">
+					<ShortName>09 Horn, Angry Motorist.wav</ShortName>
+					<Path>SFX/09 Horn, Angry Motorist_844E6D30.wem</Path>
+				</File>
+				<File Id="308239113" Language="SFX">
+					<ShortName>VO_2_DA.wav</ShortName>
+					<Path>SFX/VO_2_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="310972626" Language="SFX">
+					<ShortName>VO_24_DA.wav</ShortName>
+					<Path>SFX/VO_24_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="334703236" Language="SFX">
+					<ShortName>Cycling.wav</ShortName>
+					<Path>SFX/Cycling_63DD582A.wem</Path>
+				</File>
+				<File Id="339908215" Language="SFX">
+					<ShortName>Sidewalk.wav</ShortName>
+					<Path>SFX/Sidewalk_844E6D30.wem</Path>
+				</File>
+				<File Id="413907037" Language="SFX">
+					<ShortName>VO_20_EN.wav</ShortName>
+					<Path>SFX/VO_20_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="432744538" Language="SFX">
+					<ShortName>VO_4_DA.wav</ShortName>
+					<Path>SFX/VO_4_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="442966560" Language="SFX">
+					<ShortName>VO_22_DA.wav</ShortName>
+					<Path>SFX/VO_22_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="467571691" Language="SFX">
+					<ShortName>VO_13_DA.wav</ShortName>
+					<Path>SFX/VO_13_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="483919717" Language="SFX">
+					<ShortName>VO_30_EN.wav</ShortName>
+					<Path>SFX/VO_30_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="487764026" Language="SFX">
+					<ShortName>VO_3_EN.wav</ShortName>
+					<Path>SFX/VO_3_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="490991733" Language="SFX">
+					<ShortName>VO_5_DA.wav</ShortName>
+					<Path>SFX/VO_5_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="514326861" Language="SFX">
+					<ShortName>LoseItem1.wav</ShortName>
+					<Path>SFX/LoseItem1_844E6D30.wem</Path>
+				</File>
+				<File Id="528757210" Language="SFX">
+					<ShortName>pedal6.wav</ShortName>
+					<Path>SFX/pedal6_FEC2D8A8.wem</Path>
+				</File>
+				<File Id="534771917" Language="SFX">
+					<ShortName>VO_23_DA.wav</ShortName>
+					<Path>SFX/VO_23_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="537057367" Language="SFX">
+					<ShortName>VO_21_EN.wav</ShortName>
+					<Path>SFX/VO_21_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="539893431" Language="SFX">
+					<ShortName>VO_Ready_DA.wav</ShortName>
+					<Path>SFX/VO_Ready_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="550247255" Language="SFX">
+					<ShortName>LoseItem3.wav</ShortName>
+					<Path>SFX/LoseItem3_844E6D30.wem</Path>
+				</File>
+				<File Id="552529954" Language="SFX">
+					<ShortName>VO_24_EN.wav</ShortName>
+					<Path>SFX/VO_24_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="568708346" Language="SFX">
+					<ShortName>pedal5.wav</ShortName>
+					<Path>SFX/pedal5_461E53E0.wem</Path>
+				</File>
+				<File Id="569046176" Language="SFX">
+					<ShortName>MusicLose.wav</ShortName>
+					<Path>SFX/MusicLose_63DD582A.wem</Path>
+				</File>
+				<File Id="574831306" Language="SFX">
+					<ShortName>VO_20_DA.wav</ShortName>
+					<Path>SFX/VO_20_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="584650142" Language="SFX">
+					<ShortName>VO_MadeIt_DA.wav</ShortName>
+					<Path>SFX/VO_MadeIt_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="611704546" Language="SFX">
+					<ShortName>VO_21_DA.wav</ShortName>
+					<Path>SFX/VO_21_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="616934956" Language="SFX">
+					<ShortName>VO_Intro_DA.wav</ShortName>
+					<Path>SFX/VO_Intro_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="621392757" Language="SFX">
+					<ShortName>VO_17_DA.wav</ShortName>
+					<Path>SFX/VO_17_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="625892720" Language="SFX">
+					<ShortName>VO_Return_DA.wav</ShortName>
+					<Path>SFX/VO_Return_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="644800556" Language="SFX">
+					<ShortName>VO_2_EN.wav</ShortName>
+					<Path>SFX/VO_2_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="655176926" Language="SFX">
+					<ShortName>Brake.wav</ShortName>
+					<Path>SFX/Brake_844E6D30.wem</Path>
+				</File>
+				<File Id="659991130" Language="SFX">
+					<ShortName>VO_4_EN.wav</ShortName>
+					<Path>SFX/VO_4_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="664707725" Language="SFX">
+					<ShortName>VO_16_DA.wav</ShortName>
+					<Path>SFX/VO_16_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="668167092" Language="SFX">
+					<ShortName>VO_14_DA.wav</ShortName>
+					<Path>SFX/VO_14_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="672722289" Language="SFX">
+					<ShortName>LoseItem2.wav</ShortName>
+					<Path>SFX/LoseItem2_844E6D30.wem</Path>
+				</File>
+				<File Id="681824584" Language="SFX">
+					<ShortName>VO_1_DA.wav</ShortName>
+					<Path>SFX/VO_1_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="693020111" Language="SFX">
+					<ShortName>VO_5_EN.wav</ShortName>
+					<Path>SFX/VO_5_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="705759586" Language="SFX">
+					<ShortName>VO_15_DA.wav</ShortName>
+					<Path>SFX/VO_15_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="714787881" Language="SFX">
+					<ShortName>MenuMusic.wav</ShortName>
+					<Path>SFX/MenuMusic_63DD582A.wem</Path>
+				</File>
+				<File Id="716992926" Language="SFX">
+					<ShortName>VO_12_EN.wav</ShortName>
+					<Path>SFX/VO_12_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="736967630" Language="SFX">
+					<ShortName>VO_25_DA.wav</ShortName>
+					<Path>SFX/VO_25_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="757463396" Language="SFX">
+					<ShortName>VO_6_DA.wav</ShortName>
+					<Path>SFX/VO_6_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="767286869" Language="SFX">
+					<ShortName>VO_28_EN.wav</ShortName>
+					<Path>SFX/VO_28_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="777078391" Language="SFX">
+					<ShortName>Music1.wav</ShortName>
+					<Path>SFX/Music1_63DD582A.wem</Path>
+				</File>
+				<File Id="793267656" Language="SFX">
+					<ShortName>VO_3_DA.wav</ShortName>
+					<Path>SFX/VO_3_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="798122069" Language="SFX">
+					<ShortName>VO_7_EN.wav</ShortName>
+					<Path>SFX/VO_7_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="801295534" Language="SFX">
+					<ShortName>VO_8_DA.wav</ShortName>
+					<Path>SFX/VO_8_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="811011108" Language="SFX">
+					<ShortName>VO_9_DA.wav</ShortName>
+					<Path>SFX/VO_9_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="814477509" Language="SFX">
+					<ShortName>VO_19_DA.wav</ShortName>
+					<Path>SFX/VO_19_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="816433338" Language="SFX">
+					<ShortName>VO_8_EN.wav</ShortName>
+					<Path>SFX/VO_8_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="825684298" Language="SFX">
+					<ShortName>UI_Click.wav</ShortName>
+					<Path>SFX/UI_Click_844E6D30.wem</Path>
+				</File>
+				<File Id="828043336" Language="SFX">
+					<ShortName>VO_22_EN.wav</ShortName>
+					<Path>SFX/VO_22_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="861037606" Language="SFX">
+					<ShortName>VO_19_EN.wav</ShortName>
+					<Path>SFX/VO_19_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="866149939" Language="SFX">
+					<ShortName>VO_13_EN.wav</ShortName>
+					<Path>SFX/VO_13_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="868637415" Language="SFX">
+					<ShortName>36-25 Landrover--Safari Diesel_Horn,.wav</ShortName>
+					<Path>SFX/36-25 Landrover--Safari Diesel_Horn,_844E6D30.wem</Path>
+				</File>
+				<File Id="881668295" Language="SFX">
+					<ShortName>Ambience3.wav</ShortName>
+					<Path>SFX/Ambience3_844E6D30.wem</Path>
+				</File>
+				<File Id="883776519" Language="SFX">
+					<ShortName>Collision1.wav</ShortName>
+					<Path>SFX/Collision1_844E6D30.wem</Path>
+				</File>
+				<File Id="902126579" Language="SFX">
+					<ShortName>VO_1_EN.wav</ShortName>
+					<Path>SFX/VO_1_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="904269707" Language="SFX">
+					<ShortName>MusicWin.wav</ShortName>
+					<Path>SFX/MusicWin_63DD582A.wem</Path>
+				</File>
+				<File Id="927626301" Language="SFX">
+					<ShortName>VO_9_EN.wav</ShortName>
+					<Path>SFX/VO_9_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="941939495" Language="SFX">
+					<ShortName>VO_23_EN.wav</ShortName>
+					<Path>SFX/VO_23_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="942912805" Language="SFX">
+					<ShortName>08 Horn--Sounded Twice.wav</ShortName>
+					<Path>SFX/08 Horn--Sounded Twice_844E6D30.wem</Path>
+				</File>
+				<File Id="946732094" Language="SFX">
+					<ShortName>pedal2.wav</ShortName>
+					<Path>SFX/pedal2_B7FB613C.wem</Path>
+				</File>
+				<File Id="950642698" Language="SFX">
+					<ShortName>VO_7_DA.wav</ShortName>
+					<Path>SFX/VO_7_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="1020873154" Language="SFX">
+					<ShortName>VO_25_EN.wav</ShortName>
+					<Path>SFX/VO_25_EN_844E6D30.wem</Path>
+				</File>
+				<File Id="1051219406" Language="SFX">
+					<ShortName>VO_18_DA.wav</ShortName>
+					<Path>SFX/VO_18_DA_844E6D30.wem</Path>
+				</File>
+				<File Id="1052367920" Language="SFX">
+					<ShortName>Bell.wav</ShortName>
+					<Path>SFX/Bell_844E6D30.wem</Path>
+				</File>
+				<File Id="1057270782" Language="SFX">
+					<ShortName>Ambience1.wav</ShortName>
+					<Path>SFX/Ambience1_844E6D30.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
