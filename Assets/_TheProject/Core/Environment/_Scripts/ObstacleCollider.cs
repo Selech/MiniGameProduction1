@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class ObstacleCollider : MonoBehaviour {
@@ -19,6 +19,8 @@ public class ObstacleCollider : MonoBehaviour {
 	[Range(0.0f, 5f)]
 	public float nodgeCooldown = 0;
 
+	public GameObject particle;
+
 	void OnTriggerEnter(Collider other) {
 		GameManager.Instance.obstacleForceAddUp = jumpForce;
 		GameManager.Instance.obstacleBrakeForce = brakeForce;
@@ -37,6 +39,7 @@ public class ObstacleCollider : MonoBehaviour {
 			}
 		}
 
+		Instantiate (particle,this.transform.position, Quaternion.identity);
 		this.gameObject.SetActive (!destroyOnCollision);  
 	}
 

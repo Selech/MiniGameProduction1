@@ -90,7 +90,6 @@ public class GameManager : MonoBehaviour {
 	public float nodgeForce;
 	public bool nodgeActive = true;
 
-
 	#endregion
 
 	#endregion
@@ -127,7 +126,6 @@ public class GameManager : MonoBehaviour {
 		EventManager.StartListening (_eventsContainer.winGame, WinGame);
 		EventManager.StartListening (_eventsContainer.obstacleHit, JumpCollisionSound);
 		EventManager.StartListening (_eventsContainer.brakeEvent, BrakeSound);
-
 	}
 
 	void OnDisable()
@@ -193,7 +191,7 @@ public class GameManager : MonoBehaviour {
 	void WinGame() {
 		StopPedalSound ();
 		StopAmbience ();
-		StopGameMusic ();
+		//StopGameMusic ();
 		PlayWinGameSound ();
 		RestartGame ();
 	}
@@ -328,9 +326,9 @@ public class GameManager : MonoBehaviour {
 			currentCarriablesAmount = 0;
 
 			StopAmbience ();
-			StopGameMusic ();
+			//StopGameMusic ();
 			StopPedalSound ();
-
+			//StopAllSound ();
 			loseCanvas.SetActive (true);
 			PlayLoseGameSound ();
 		}
@@ -340,23 +338,28 @@ public class GameManager : MonoBehaviour {
 	#region Audio Methods
 	void PlayLoseGameSound()
 	{
-		PlaySound ("Game_lose");
+		PlaySound ("Music_Lose");
 
 	}
 
 	void PlayWinGameSound()
 	{
-		PlaySound ("Game_win");
+		PlaySound ("Music_Win");
 	}
 
 	void PlayGameMusic()
 	{
-		PlaySound ("Play_gameMusic");
+		PlaySound ("Music_Drive");
 	}
 
 	void StopGameMusic()
 	{
-		PlaySound ("Play_gameMusic");
+		//PlaySound ("StopAll");
+	}
+
+	void StopAllSound()
+	{
+		PlaySound ("StopAll");
 	}
 
 	void PlayAmbience()
@@ -404,12 +407,22 @@ public class GameManager : MonoBehaviour {
 
 	public void PlayMenuMusic()
 	{
-		PlaySound ("Play_MenuMusic");
+		PlaySound ("Play_menuMusic");
 	}
 
 	public void StopMenuMusic()
 	{
-		PlaySound ("Stop_MenuMusic");
+		PlaySound ("Stop_menuMusic");
+	}
+
+	public void PlayUIClick()
+	{
+		PlaySound ("Play_UI_Click");
+	}
+
+	public void PlayUISnap()
+	{
+		PlaySound ("Play_UI_Snap");
 	}
 
 	//generic method for playing sound
@@ -421,6 +434,7 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	//play sound from other object
 	public void PlaySound(string s,GameObject b)
 	{
 		if(!string.IsNullOrEmpty(s) && b != null )
