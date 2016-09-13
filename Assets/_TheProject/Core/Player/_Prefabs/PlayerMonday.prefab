@@ -6611,6 +6611,7 @@ MonoBehaviour:
   breakMultiplier3: 0.1
   brakeForce: 10
   brakeCooldown: 5
+  breakForceApplyWait: 3
   carriable:
   - {fileID: 1000010898872670, guid: 8f381629539bb1b40be29094df8465d7, type: 2}
   - {fileID: 1000013666923758, guid: 8f381629539bb1b40be29094df8465d7, type: 2}
@@ -6811,8 +6812,8 @@ FixedJoint:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011833619230}
   m_ConnectedBody: {fileID: 54000010003080932}
-  m_BreakForce: 500
-  m_BreakTorque: 500
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
 --- !u!138 &138000012503084580
