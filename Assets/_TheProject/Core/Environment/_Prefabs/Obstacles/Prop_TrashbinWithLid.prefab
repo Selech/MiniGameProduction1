@@ -225,5 +225,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyOnCollision: 1
-  jumpForce: 3
-  brakeForce: 10
+  jumpForce: 6
+  brakeForce: 15
