@@ -25,7 +25,7 @@ GameObject:
   - 65: {fileID: 65000011108555352}
   - 65: {fileID: 65000011710980060}
   m_Layer: 0
-  m_Name: Prop_Sign
+  m_Name: Prop_SignGamekongevej
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
