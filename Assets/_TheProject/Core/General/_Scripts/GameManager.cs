@@ -28,6 +28,7 @@ public class EventsContainer
 	public string resumeGame = "ResumeGame";
 	public string winGame = "WinGame";
 	public string shakeCamera = "ShakeCamera";
+	public string curbHit = "CurbHit";
 }
 
 [System.Serializable]
@@ -87,6 +88,7 @@ public class GameManager : MonoBehaviour {
 	public float obstacleBrakeForce;
 	public NodgeDirection nodgeDirection;
 	public float nodgeForce;
+	public bool nodgeActive = true;
 
 	#endregion
 
