@@ -77444,6 +77444,10 @@ Prefab:
       propertyPath: m_ReceiveShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014012831108, guid: ce1275ff6c92b964ab041ddaf8d5b53a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce1275ff6c92b964ab041ddaf8d5b53a, type: 2}
   m_IsPrefabParent: 0

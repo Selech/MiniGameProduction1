@@ -166,6 +166,7 @@ MonoBehaviour:
   followBehind: 1
   canFollow: 1
   shakeForce: 0.1
+  xRotOffset: 0
 --- !u!124 &124000011668623094
 Behaviour:
   m_ObjectHideFlags: 1
