@@ -158,12 +158,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  distance: 10.35
-  height: 2.04
-  damping: 3.6
+  distance: 15.83
+  height: 4.94
+  damping: 14.7
   rotationDamping: 7.5
-  smoothRotation: 0
+  smoothRotation: 1
   followBehind: 1
+  canFollow: 1
   shakeForce: 0.1
 --- !u!124 &124000011668623094
 Behaviour:
