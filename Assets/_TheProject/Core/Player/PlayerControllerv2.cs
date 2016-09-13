@@ -39,17 +39,20 @@ public class PlayerControllerv2 : MonoBehaviour
 	[Range (0.1f, 1000)]
 	public float breakForce = 200;
 
-	[Range (0.0f, 1f)]
+	[Range (0.0f, 5f)]
 	public float breakMultiplier1 = 0.3f;
 
-	[Range (0.0f, 1f)]
+	[Range (0.0f, 5f)]
 	public float breakMultiplier2 = 0.2f;
 
-	[Range (0.0f, 1f)]
+	[Range (0.0f, 5f)]
 	public float breakMultiplier3 = 0.1f;
 
-	[Range (0.0f, 5f)]
-	public float breakMultiplier4 = 0.1f;
+//	[Range (0.0f, 5f)]
+//	public float breakMultiplier4 = 0.1f;
+
+	[Range (1, 5)]
+	public int breakableWait = 3;
 
 	[Range (0.0f, 100.0f)]
 	public float brakeForce = 10f;
@@ -68,29 +71,20 @@ public class PlayerControllerv2 : MonoBehaviour
 
 	void Start ()
 	{
-
-		carriable [0].GetComponent<FixedJoint> ().breakForce = breakForce;
-		carriable [0].GetComponent<FixedJoint> ().breakTorque = breakForce;
-
-		carriable [1].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier1;
-		carriable [1].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier1;
-
-		carriable [2].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier2;
-		carriable [2].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier2;
-
-		carriable [3].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier3;
-		carriable [3].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier3;
+		StartCoroutine (ApplyBreakForce (breakableWait));
 	}
 
 	void OnEnable ()
 	{
 		EventManager.StartListening (GameManager.Instance._eventsContainer.obstacleHit, Jump);
+		EventManager.StartListening (GameManager.Instance._eventsContainer.curbHit, Nodge);
 		EventManager.StartListening (GameManager.Instance._eventsContainer.brakeEvent, Brake);
 	}
 
 	void OnDisable ()
 	{
 		EventManager.StopListening (GameManager.Instance._eventsContainer.obstacleHit, Jump);
+		EventManager.StopListening (GameManager.Instance._eventsContainer.curbHit, Nodge);
 		EventManager.StopListening (GameManager.Instance._eventsContainer.brakeEvent, Brake);
 	}
 
@@ -126,7 +120,7 @@ public class PlayerControllerv2 : MonoBehaviour
 		rotationAngle /= 500;
 		rotationAngle *= strafeSpeed;
 //		print (rotationAngle);
-		var x = Mathf.Abs (rotationAngle) > deadZone / 500 && Mathf.Abs (body.velocity.x) > 0.00025 ? body.velocity.x + rotationAngle : 0;
+		var x = Mathf.Abs (rotationAngle) > deadZone / 500 && Mathf.Abs (body.velocity.x) > 0.00025 ? body.velocity.x + rotationAngle : body.velocity.x;
 
 		body.velocity = new Vector3 (x, body.velocity.y, body.velocity.z);
 		//transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x + rotationAngle, transform.position.y, transform.position.z), 1/strafeReduction);
@@ -153,19 +147,22 @@ public class PlayerControllerv2 : MonoBehaviour
 	void Jump ()
 	{
 		if(!jumping){
-			switch (GameManager.Instance.nodgeDirection) {
-				case NodgeDirection.Left:
-					body.AddForce (new Vector3 (-GameManager.Instance.nodgeForce, GameManager.Instance.obstacleForceAddUp, 0), ForceMode.VelocityChange);
-					break;
-				case NodgeDirection.Right:
-					body.AddForce (new Vector3 (GameManager.Instance.nodgeForce, GameManager.Instance.obstacleForceAddUp, 0), ForceMode.VelocityChange);
-					break;
-				default:
-					body.AddForce (new Vector3 (0, GameManager.Instance.obstacleForceAddUp, 0), ForceMode.VelocityChange);
-					break;
-			}
+			body.AddForce (new Vector3 (0, GameManager.Instance.obstacleForceAddUp, 0), ForceMode.VelocityChange);
 			jumping = true;
 			body.AddForce (new Vector3 (0, 0, -GameManager.Instance.obstacleBrakeForce), ForceMode.VelocityChange);
+		}
+	}
+
+	void Nodge() {
+		switch (GameManager.Instance.nodgeDirection) {
+			case NodgeDirection.Left:
+				body.AddForce (new Vector3 (-GameManager.Instance.nodgeForce, 0, 0), ForceMode.VelocityChange);
+				break;
+			case NodgeDirection.Right:
+				body.AddForce (new Vector3 (GameManager.Instance.nodgeForce, 0, 0), ForceMode.VelocityChange);
+				break;
+			default:
+				break;
 		}
 	}
 
@@ -190,7 +187,7 @@ public class PlayerControllerv2 : MonoBehaviour
 		carriable [2].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier3;
 		carriable [2].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier3;
 
-		carriable [3].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier4;
-		carriable [3].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier4;
+		carriable [3].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier3;
+		carriable [3].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier3;
 	}
 }

@@ -10,27 +10,43 @@ public class CamFollow : MonoBehaviour {
 	[Range(0.1f,30)] public float rotationDamping = 10.0f;
 	public bool smoothRotation = true;
 	public bool followBehind = true;
-
+	public bool canFollow = true;
 	[Range(0.05f,0.5f)] public float shakeForce = 0.1f;
+
+	void Start()
+	{
+		
+	}
 
 	void OnEnable()
 	{
-		EventManager.StartListening (GameManager.Instance._eventsContainer.shakeCamera, ShakeCamera);
 		if(target == null)
 		{
 			target = GameObject.FindGameObjectWithTag ("Player").transform;
 		}
+		EventManager.StartListening (GameManager.Instance._eventsContainer.beginGame, AllowFollow);
+		EventManager.StartListening (GameManager.Instance._eventsContainer.shakeCamera, ShakeCamera);
+	}
+
+	void OnDisable()
+	{
+		EventManager.StopListening (GameManager.Instance._eventsContainer.beginGame, AllowFollow);
+		EventManager.StopListening (GameManager.Instance._eventsContainer.shakeCamera, ShakeCamera);
 	}
 
 	void FixedUpdate () 
 	{
-		if (target != null) {
-			Follow ();
+		if(canFollow)
+		{
+			if (target != null) {
+				Follow ();
+				
+			} else {
+				print ("no target assigned for camera to follow");
+			}
 			
-		} else {
-			print ("no target assigned for camera to follow");
 		}
-		EventManager.StopListening (GameManager.Instance._eventsContainer.shakeCamera, ShakeCamera);
+
 	}
 
 	void Follow()
@@ -53,9 +69,19 @@ public class CamFollow : MonoBehaviour {
 	}
 
 	private void ShakeCamera(){
-		print ("Stuff");
+		
 		var random = Random.Range (0,1);
 		var shakeVector = random == 0 ? new Vector3 (shakeForce,shakeForce,shakeForce) : new Vector3 (-shakeForce,-shakeForce,-shakeForce);
 		transform.Translate (this.transform.position + shakeVector);
+	}
+
+	void AllowFollow()
+	{
+		canFollow = true;
+	}
+
+	void StopFollow()
+	{
+		canFollow = false;
 	}
 }

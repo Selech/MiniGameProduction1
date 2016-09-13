@@ -137,10 +137,11 @@ MonoBehaviour:
   brakeForce: 0
   nodgeDirection: 0
   nodgeForce: 0
-  particle: {fileID: 1000010047265062, guid: 45677e40b2e9b7b4f833b92a1b554152, type: 2}
+  nodgeCooldown: 0
+  particle: {fileID: 0}
 --- !u!114 &114000012126248208
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011418267812}
@@ -154,4 +155,5 @@ MonoBehaviour:
   brakeForce: 5
   nodgeDirection: 0
   nodgeForce: 0
-  particle: {fileID: 0}
+  nodgeCooldown: 0
+  particle: {fileID: 1000010047265062, guid: 45677e40b2e9b7b4f833b92a1b554152, type: 2}

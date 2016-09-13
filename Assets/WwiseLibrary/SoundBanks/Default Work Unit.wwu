@@ -5,20 +5,24 @@
 			<ChildrenList>
 				<SoundBank Name="UnitySB" ID="{0711A6C6-AFE6-4AC4-AAAB-6B2DB71DEE31}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Stop_menuMusic" ID="{9EA6673E-00C2-4089-B3F5-ADC5071868D9}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Ambience" ID="{4E299924-99F3-41C9-BB81-CA725DD02602}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Bell" ID="{2379BC88-A678-443B-91A3-87DE5B342EF0}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Music_Win" ID="{F0ED6FFF-8665-443E-B2B3-87D27F9B5B14}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Pedal" ID="{1FE28159-D39C-445C-BF2B-39C19015D209}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_UI_Snap" ID="{172351F8-F0EC-449F-9C1F-069390AA063A}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ambience" ID="{9EF87505-54BF-4560-BA74-AD8F6B161A1D}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Music_Drive" ID="{055EB12A-1029-4725-9CB3-E7542612EAC8}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Collision" ID="{3BB5F7A5-7AC8-48E3-9632-C2443892BAFE}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Pedal" ID="{083B1058-D1AB-4A36-AC54-9F201F7D2D41}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Sidewalk" ID="{DF42D3A0-CCEC-4A90-9C68-C999FE388FBA}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Music" ID="{754269BB-7DC4-4B1C-9EDF-09044289038B}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_UI_Click" ID="{0120E9EC-82A4-4B8D-B2A0-491B10C741C9}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_menuMusic" ID="{6D12433F-66E5-4BF2-81CE-7C8B8A7D1BD8}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="StopAll" ID="{28D6BA71-95FB-4C48-9A32-96CC57A20412}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_ItemLose" ID="{6278905C-93A8-4C5C-867D-C3FB16B98504}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="VO_EN" ID="{37368A97-3512-4CF1-9BF3-E2E988038976}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="StateWin" ID="{411A24CF-4249-4FA3-91E8-9A6581EC0D6A}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Music_Lose" ID="{E1B683AA-9065-4E18-BD4E-56F969AA965E}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="VO_DA" ID="{20FF82F0-39B6-4FB5-96FB-87818669CF9D}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Brake" ID="{EA4F9E0A-9D43-4FED-AB23-11A44933AEC4}" WorkUnitID="{FCFFA91E-B225-442C-9C27-0DE8A95F2202}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
