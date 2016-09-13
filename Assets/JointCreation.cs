@@ -51,17 +51,16 @@ public class JointCreation : MonoBehaviour {
 			height += ob.GetComponent<DragDrop> ().heightOfObject;
 			var joint = ob.AddComponent<FixedJoint> ();
 			joint.connectedBody = gameObjectStack [gameObjectStack.Count - 1].gameObject.GetComponent<Rigidbody>();
-			ob.AddComponent<Rigidbody> ();
 			var col = ob.AddComponent<CarriableCollider> ();
 			col.secondsToDestroy = 2;
-			col.secondsToEnableNext = 2;
+			col.secondsToEnableNext = 1;
 
 			ob.transform.SetParent (parent.transform);
 			player.carriable [index] = ob;
 
 			var script = ob.GetComponent<DragDrop> ();
 			Destroy (script);
-			ob.tag = "Untagged";
+			ob.tag = "Carriable";
 
 			gameObjectStack.Add (ob);
 			index--;
