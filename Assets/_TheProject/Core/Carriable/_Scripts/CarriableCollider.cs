@@ -24,6 +24,8 @@ public class CarriableCollider : MonoBehaviour {
 
 		this.GetComponent<FixedJoint>().breakForce = breakFor;
 		this.GetComponent<FixedJoint>().breakTorque = breakTor;
+
+		print ("New break: " + breakFor);
 	}
 
 	/// <summary>
@@ -32,9 +34,9 @@ public class CarriableCollider : MonoBehaviour {
 	/// </summary>
 	/// <param name="collision">Collision.</param>
 	void OnCollisionEnter(Collision collision) {
+		print (lostCarriable);
+		print ("tag: " + collision.gameObject.tag);
 		if ((collision.gameObject.CompareTag ("Ground") || collision.gameObject.CompareTag ("Obstacles")) && !lostCarriable) {
-			print (this.name + " hits " + collision.collider.gameObject);
-			print ("Is it here is dies??");
 			HandleCollision();
 			lostCarriable = true;
 		}
@@ -69,7 +71,6 @@ public class CarriableCollider : MonoBehaviour {
 		if(attachedObject.tag == "Carriable")
 		{
 			StartCoroutine(JointBreakCo(attachedObject));
-
 		}
 		this.gameObject.transform.SetParent (null);
 		//Debug.Log("A joint has just been broken!, force: " + breakForce);
@@ -82,7 +83,10 @@ public class CarriableCollider : MonoBehaviour {
 		//after seconds are passed
 		var joint = GetComponent<FixedJoint>();
 
+
 		var newForce = breakForce * nextBreakForce;
+		print ("New break: " + newForce);
+
 		attachedObject.GetComponent<CarriableCollider> ().ChangeBreakForce (newForce, newForce);
 
 		//print(Time.time);
