@@ -149,7 +149,7 @@ public class GameManager : MonoBehaviour {
 
 	public void loadScene(int sceneNum) {
 		carriablesFromScene1 = obd.CollectedCarriables;
-		SceneManager.LoadScene ();
+		SceneManager.LoadScene (sceneNum);
 	}
 
 	// Use this for initialization
@@ -183,7 +183,7 @@ public class GameManager : MonoBehaviour {
 	void StartGame()
 	{
 		currentCarriablesAmount = startCarriablesAmount;
-		gameplayCanvas.SetActive (true);
+//		gameplayCanvas.SetActive (true);
 		EventManager.TriggerEvent (_eventsContainer.beginGame);
 		hasGameStarted = true;
 		InitGamePlayResume ();
