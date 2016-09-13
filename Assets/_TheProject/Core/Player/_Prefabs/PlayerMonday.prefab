@@ -4826,7 +4826,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012436301710}
-  m_LocalRotation: {x: 0.63799036, y: 0.30490702, z: -0.63799036, w: 0.30490702}
+  m_LocalRotation: {x: 0.6379904, y: 0.30490705, z: -0.6379904, w: 0.30490705}
   m_LocalPosition: {x: 36.277225, y: 11.142952, z: 0}
   m_LocalScale: {x: 0.009424303, y: 0.27871853, z: 0.009424303}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6601,17 +6601,17 @@ MonoBehaviour:
   strafeReduction: 10
   forwardSpeed: 0.912
   deadZone: 0.01
-  maxSpeed: 10
+  maxSpeed: 11
   yThreshold: 0.4
   boostAmount: 0
-  brakeAmount: 1
-  breakForce: 200
-  breakMultiplier1: 0.3
-  breakMultiplier2: 0.2
-  breakMultiplier3: 0.1
-  brakeForce: 10
-  brakeCooldown: 5
-  breakForceApplyWait: 3
+  brakeAmount: 5
+  breakForce: 100
+  breakMultiplier1: 4.8
+  breakMultiplier2: 4.9
+  breakMultiplier3: 5
+  brakeForce: 6
+  brakeCooldown: 3
+  breakForceApplyWait: 2
   carriable:
   - {fileID: 1000011833619230}
   - {fileID: 1000012333232436}
