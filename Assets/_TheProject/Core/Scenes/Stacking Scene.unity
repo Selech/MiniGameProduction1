@@ -2057,6 +2057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startBike: 0
   runButton: {fileID: 1029221011}
+  languageScript: {fileID: 1658452515}
 --- !u!114 &1426544541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2432,6 +2433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 1416063741}
+  languageSelected: 0
 --- !u!114 &1658452516
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,10 +10,7 @@ public class IntroSceneManager : MonoBehaviour {
 	int carriablesAmount = 0;
 	public bool startBike = false;
 	public GameObject runButton;
-	// Use this for initialization
-	void Start () {
-		
-	}
+	public LanguageSelectionManager languageScript;
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -23,7 +20,7 @@ public class IntroSceneManager : MonoBehaviour {
 			Swipe ();
 		}
 
-		if (carriablesAmount >= 1) {
+		if (carriablesAmount >= 1 && !startBike) {
 			runButton.SetActive (true);
 		} else {
 			runButton.SetActive (false);
@@ -32,7 +29,11 @@ public class IntroSceneManager : MonoBehaviour {
 	}
 
 	public void OpenScene(int scene){
-		SceneManager.LoadScene (scene);
+		if (scene == 1 && !languageScript.GetComponent<LanguageSelectionManager>().languageSelected) {
+			SceneManager.LoadScene (3);
+		} else {
+			SceneManager.LoadScene (scene);
+		}
 	}
 
 	public void Swipe() {
@@ -74,6 +75,7 @@ public class IntroSceneManager : MonoBehaviour {
 
 	public void goBike() {
 		runButton.SetActive (false);
+		startBike = true;
 		GameObject camera = GameObject.Find ("Main Camera");
 
 		camera.gameObject.AddComponent<CamMove> ();
