@@ -16,7 +16,8 @@ public class ObstacleCollider : MonoBehaviour {
 	[Range(0.0f, 100.0f)]
 	public float nodgeForce = 0;
 
-	public GameObject particle;
+	[SerializeField]
+	GameObject particle;
 
 	void OnTriggerEnter(Collider other) {
 		GameManager.Instance.obstacleForceAddUp = jumpForce;
