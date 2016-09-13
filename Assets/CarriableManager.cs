@@ -23,6 +23,7 @@ public class CarriableManager : MonoBehaviour {
 	void Awake()
 	{
 		_instance = this;
+		DontDestroyOnLoad (this);
 	}
 
 	public void convertToStringArray(List<GameObject> carriables) {
