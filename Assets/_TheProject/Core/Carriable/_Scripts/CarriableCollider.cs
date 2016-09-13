@@ -76,13 +76,12 @@ public class CarriableCollider : MonoBehaviour {
 	IEnumerator JointBreakCo(GameObject attachedObject)
 	{
 		//print(Time.time);
-		print (secondsToEnableNext);
 		yield return new WaitForSeconds(secondsToEnableNext);
-		print ("after");
 		//after seconds are passed
 		var joint = GetComponent<FixedJoint>();
 
-		attachedObject.GetComponent<CarriableCollider> ().ChangeBreakForce (breakForce * nextBreakForce, breakTorque * nextBreakTorque);
+		var newForce = breakForce * nextBreakForce;
+		attachedObject.GetComponent<CarriableCollider> ().ChangeBreakForce (newForce, newForce);
 
 		//print(Time.time);
 	}
