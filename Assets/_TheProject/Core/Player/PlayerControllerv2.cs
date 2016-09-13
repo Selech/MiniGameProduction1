@@ -146,7 +146,6 @@ public class PlayerControllerv2 : MonoBehaviour
 	void Jump ()
 	{
 		if(!jumping){
-			AkSoundEngine.PostEvent ("Play_Collision", this.gameObject);
 			switch (GameManager.Instance.nodgeDirection) {
 				case NodgeDirection.Left:
 					body.AddForce (new Vector3 (-GameManager.Instance.nodgeForce, GameManager.Instance.obstacleForceAddUp, 0), ForceMode.VelocityChange);
