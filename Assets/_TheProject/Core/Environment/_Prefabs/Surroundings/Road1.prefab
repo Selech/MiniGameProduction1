@@ -9,46 +9,45 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000012768844002}
+  m_RootGameObject: {fileID: 1000011336543354}
   m_IsPrefabParent: 1
---- !u!1 &1000012768844002
+--- !u!1 &1000011336543354
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 4000012497690488}
-  - 33: {fileID: 33000010695674010}
-  - 23: {fileID: 23000011964386184}
-  - 114: {fileID: 114000014236310284}
-  - 65: {fileID: 65000010690634736}
+  - 4: {fileID: 4000010909388082}
+  - 33: {fileID: 33000012521481660}
+  - 64: {fileID: 64000010689179622}
+  - 23: {fileID: 23000013312487290}
   m_Layer: 0
-  m_Name: Prop_Cone
-  m_TagString: Obstacles
+  m_Name: Road1
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000012497690488
+--- !u!4 &4000010909388082
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012768844002}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.202896, y: -0.006026, z: -4.925462}
-  m_LocalScale: {x: 0.00500432, y: 0.0050043208, z: 0.0050043208}
+  m_GameObject: {fileID: 1000011336543354}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -4.0556183, z: 718.3}
+  m_LocalScale: {x: 1.02, y: 0.5, z: 147.8}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &23000011964386184
+--- !u!23 &23000013312487290
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012768844002}
+  m_GameObject: {fileID: 1000011336543354}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -56,13 +55,13 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 16dda7d46a60a6d46a512df1d585b4f7, type: 2}
+  - {fileID: 2100000, guid: 3e2392a25a023de489dc3d33f8fd5972, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
+  m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_SelectedWireframeHidden: 0
@@ -72,40 +71,22 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &33000010695674010
+--- !u!33 &33000012521481660
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012768844002}
-  m_Mesh: {fileID: 4300010, guid: 1f93ba3be8375cf4f8e2a193bd4f6d13, type: 3}
---- !u!65 &65000010690634736
-BoxCollider:
+  m_GameObject: {fileID: 1000011336543354}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &64000010689179622
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012768844002}
+  m_GameObject: {fileID: 1000011336543354}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 55.6, y: 69.6, z: 55.6}
-  m_Center: {x: 0.8060088, y: 40.4, z: -0.565211}
---- !u!114 &114000014236310284
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012768844002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ecd73a2d745e6e42af1f509cbbc6190, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyOnCollision: 1
-  jumpForce: 2
-  brakeForce: 5
-  nodgeDirection: 0
-  nodgeForce: 0
-  nodgeCooldown: 0
-  particle: {fileID: 1000010047265062, guid: 45677e40b2e9b7b4f833b92a1b554152, type: 2}
+  m_Convex: 0
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
