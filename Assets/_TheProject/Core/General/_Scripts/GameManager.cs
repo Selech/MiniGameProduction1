@@ -63,6 +63,15 @@ public class GameManager : MonoBehaviour {
 	OnBikeDetector obd;
 	public List<GameObject> carriablesFromScene1 = new List<GameObject>();
 
+	[SerializeField]
+	GameObject loseCanvas;
+
+	[SerializeField]
+	GameObject menuCanvas;
+
+	[SerializeField]
+	GameObject mainCanvas;
+
 	private GameObject curPlayer;
 	[Space(10)]
 	[SerializeField]
@@ -221,6 +230,15 @@ public class GameManager : MonoBehaviour {
 			ResumeGame();
 		}
 
+	}
+
+	/// <summary>
+	/// Toggles the ingame menu.
+	/// </summary>
+	public void toggleIngameMenu() {
+		TogglePause ();
+
+		menuCanvas.SetActive (!menuCanvas.activeSelf);
 	}
 
 	void PauseGame()
