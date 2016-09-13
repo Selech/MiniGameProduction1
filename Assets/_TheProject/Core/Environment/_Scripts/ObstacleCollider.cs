@@ -22,25 +22,27 @@ public class ObstacleCollider : MonoBehaviour {
 	public GameObject particle;
 
 	void OnTriggerEnter(Collider other) {
-		GameManager.Instance.obstacleForceAddUp = jumpForce;
-		GameManager.Instance.obstacleBrakeForce = brakeForce;
-		GameManager.Instance.nodgeDirection = nodgeDirection;
-		GameManager.Instance.nodgeForce = nodgeForce;
-		EventManager.TriggerEvent (GameManager.Instance._eventsContainer.obstacleHit);
+		if (other.CompareTag("Player")) {
+			GameManager.Instance.obstacleForceAddUp = jumpForce;
+			GameManager.Instance.obstacleBrakeForce = brakeForce;
+			GameManager.Instance.nodgeDirection = nodgeDirection;
+			GameManager.Instance.nodgeForce = nodgeForce;
+			EventManager.TriggerEvent (GameManager.Instance._eventsContainer.obstacleHit);
 
-		if (nodgeDirection != NodgeDirection.Disabled && GameManager.Instance.nodgeActive) {
-			EventManager.TriggerEvent (GameManager.Instance._eventsContainer.curbHit);
-			GameManager.Instance.nodgeActive = false;
+			if (nodgeDirection != NodgeDirection.Disabled && GameManager.Instance.nodgeActive) {
+				EventManager.TriggerEvent (GameManager.Instance._eventsContainer.curbHit);
+				GameManager.Instance.nodgeActive = false;
 
-			if (nodgeCooldown != 0f) {
-				StartCoroutine (NodgeCooldown (nodgeCooldown));
-			} else {
-				GameManager.Instance.nodgeActive = true;
+				if (nodgeCooldown != 0f) {
+					StartCoroutine (NodgeCooldown (nodgeCooldown));
+				} else {
+					GameManager.Instance.nodgeActive = true;
+				}
 			}
-		}
 
-		Instantiate (particle,this.transform.position, Quaternion.identity);
-		this.gameObject.SetActive (!destroyOnCollision);  
+			Instantiate (particle,this.transform.position, Quaternion.identity);
+			this.gameObject.SetActive (!destroyOnCollision);
+		}
 	}
 
 	IEnumerator NodgeCooldown (float waitSec)
