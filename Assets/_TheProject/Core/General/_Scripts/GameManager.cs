@@ -211,7 +211,6 @@ public class GameManager : MonoBehaviour {
 		StopAmbience ();
 		//StopGameMusic ();
 		PlayWinGameSound ();
-		RestartGame ();
 	}
 
 	//toggle paused game on input
@@ -339,6 +338,8 @@ public class GameManager : MonoBehaviour {
 	//decrement carriable counter
 	public void LoseCarriable()
 	{
+		var ran = Random.Range (0,3);
+		if(ran == 1) PlayLostCarriable ();
 		currentCarriablesAmount--;
 		CheckForEndGame ();
 
@@ -363,50 +364,67 @@ public class GameManager : MonoBehaviour {
 	#endregion
 
 	#region Audio Methods
-	void PlayLoseGameSound()
+	public void PlayLoseGameSound()
 	{
+		if(_soundEventsContainer.isEnglish)
+			PlaySound ("Play_VO_13_EN");
+		else
+			PlaySound ("Play_VO_13_DA");
+
 		PlaySound ("Music_Lose");
+	}
+
+	public void PlayLostCarriable(){
+		if(_soundEventsContainer.isEnglish)
+			PlaySound ("Play_VO_30_EN");
+		else
+			PlaySound ("Play_VO_30_DA");
+
 
 	}
 
-	void PlayWinGameSound()
+	public void PlayWinGameSound()
 	{
+		if(_soundEventsContainer.isEnglish)
+			PlaySound ("Play_VO_MadeIt_EN");
+		else
+			PlaySound ("Play_VO_MadeIt_DA");
 		PlaySound ("Music_Win");
 	}
 
-	void PlayGameMusic()
+	public void PlayGameMusic()
 	{
 		PlaySound ("Music_Drive");
 	}
 
-	void StopGameMusic()
+	public void StopGameMusic()
 	{
 		//PlaySound ("StopAll");
 	}
 
-	void StopAllSound()
+	public void StopAllSound()
 	{
 		PlaySound ("StopAll");
 	}
 
-	void PlayAmbience()
+	public void PlayAmbience()
 	{
 		PlaySound ("Play_Ambience");
 	}
 
-	void StopAmbience()
+	public void StopAmbience()
 	{
 		PlaySound ("Stop_Ambience");
 	}
 
 	// collision sound
-	void JumpCollisionSound()
+	public void JumpCollisionSound()
 	{
 		PlaySound ("Play_Collision");
 	}
 
 	// brake sound
-	void BrakeSound()
+	public void BrakeSound()
 	{
 		PlaySound ("Play_Brake");
 
@@ -417,17 +435,17 @@ public class GameManager : MonoBehaviour {
 //		PlaySound ("Play_Sidewalk");
 //	}
 
-	void PlayPedal()
+	public void PlayPedal()
 	{
 		PlaySound ("Play_Pedal");
 	}
 
-	void StopPedalSound()
+	public void StopPedalSound()
 	{
 		PlaySound ("Stop_Pedal");
 	}
 
-	void LoseItemSound()
+	public void LoseItemSound()
 	{
 		PlaySound ("Play_ItemLose");
 	}
