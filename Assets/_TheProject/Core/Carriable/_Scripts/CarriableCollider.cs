@@ -8,6 +8,8 @@ public class CarriableCollider : MonoBehaviour {
 	public int secondsToEnableNext = 1;
 	public float secondsToDestroy = 2;
 
+	private bool lostCarriable = false;
+
 	private float breakForce;
 	private float breakTorque;
 
@@ -22,8 +24,9 @@ public class CarriableCollider : MonoBehaviour {
 	/// </summary>
 	/// <param name="collision">Collision.</param>
 	void OnCollisionEnter(Collision collision) {
-		if (collision.gameObject.CompareTag ("Ground")) {
-			//TO REENABLE LATER	HandleCollision();
+		if ((collision.gameObject.CompareTag ("Ground") || collision.gameObject.CompareTag ("Obstacles")) && !lostCarriable) {
+			HandleCollision();
+			lostCarriable = true;
 		}
 	}
 
@@ -42,7 +45,7 @@ public class CarriableCollider : MonoBehaviour {
 	/// </summary>
 	IEnumerator HandleCollisionCo()
 	{
-		EventManager.TriggerEvent ("LoseCarriableEvent");
+		EventManager.TriggerEvent (GameManager.Instance._eventsContainer.loseCarriable);
 		yield return new WaitForSeconds(secondsToDestroy);
 		Destroy(this.gameObject);
 	}
