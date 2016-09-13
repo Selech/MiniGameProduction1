@@ -4,6 +4,7 @@ using System.Collections;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public enum GameState
 {
@@ -190,6 +191,7 @@ public class GameManager : MonoBehaviour {
 
 	public void RestartGame()
 	{
+		SceneManager.LoadScene (SceneManager.GetActiveScene().name);
 		loseCanvas.SetActive (false);
 		ResetSettings ();
 		Time.timeScale = 1;
