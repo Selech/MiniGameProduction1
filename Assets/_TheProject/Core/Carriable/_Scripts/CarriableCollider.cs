@@ -8,6 +8,8 @@ public class CarriableCollider : MonoBehaviour {
 	public int secondsToEnableNext = 1;
 	public float secondsToDestroy = 2;
 
+	private bool lostCarriable = false;
+
 	private float breakForce;
 	private float breakTorque;
 
@@ -16,14 +18,23 @@ public class CarriableCollider : MonoBehaviour {
 		breakTorque = GetComponent<FixedJoint>().breakTorque;
 	}
 
+	public void ChangeBreakForce(float breakFor, float breakTor){
+		breakForce = breakFor;
+		breakTorque = breakTor;
+
+		this.GetComponent<FixedJoint>().breakForce = breakFor;
+		this.GetComponent<FixedJoint>().breakTorque = breakTor;
+	}
+
 	/// <summary>
 	/// Raises the collision enter event for the Carriable prefab. 
 	/// Ignores all collisions except for collisions with the ground, and triggers the LoseCarriableEvent.
 	/// </summary>
 	/// <param name="collision">Collision.</param>
 	void OnCollisionEnter(Collision collision) {
-		if (collision.gameObject.CompareTag ("Ground")) {
-			//TO REENABLE LATER	HandleCollision();
+		if ((collision.gameObject.CompareTag ("Ground") || collision.gameObject.CompareTag ("Obstacles")) && !lostCarriable) {
+			HandleCollision();
+			lostCarriable = true;
 		}
 	}
 
@@ -42,7 +53,7 @@ public class CarriableCollider : MonoBehaviour {
 	/// </summary>
 	IEnumerator HandleCollisionCo()
 	{
-		EventManager.TriggerEvent ("LoseCarriableEvent");
+		EventManager.TriggerEvent (GameManager.Instance._eventsContainer.loseCarriable);
 		yield return new WaitForSeconds(secondsToDestroy);
 		Destroy(this.gameObject);
 	}
@@ -65,17 +76,12 @@ public class CarriableCollider : MonoBehaviour {
 	IEnumerator JointBreakCo(GameObject attachedObject)
 	{
 		//print(Time.time);
-		print (secondsToEnableNext);
 		yield return new WaitForSeconds(secondsToEnableNext);
-		print ("after");
 		//after seconds are passed
 		var joint = GetComponent<FixedJoint>();
 
-		attachedObject.GetComponent<FixedJoint>().breakForce = breakForce * nextBreakForce;
-		attachedObject.GetComponent<FixedJoint>().breakTorque = breakTorque * nextBreakTorque;
-		attachedObject.GetComponent<CarriableCollider>().breakForce = breakForce * nextBreakForce;
-		attachedObject.GetComponent<CarriableCollider>().breakTorque = breakTorque * nextBreakTorque;
-
+		var newForce = breakForce * nextBreakForce;
+		attachedObject.GetComponent<CarriableCollider> ().ChangeBreakForce (newForce, newForce);
 
 		//print(Time.time);
 	}
