@@ -227,3 +227,4 @@ MonoBehaviour:
   destroyOnCollision: 1
   jumpForce: 3
   brakeForce: 10
+  particles: {fileID: 1000010047265062, guid: 45677e40b2e9b7b4f833b92a1b554152, type: 2}
