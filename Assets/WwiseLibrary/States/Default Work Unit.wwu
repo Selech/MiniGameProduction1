@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F3A5A0B9-89AD-4F63-87DB-922EAD240549}" SchemaVersion="72">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{F3A5A0B9-89AD-4F63-87DB-922EAD240549}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F3A5A0B9-89AD-4F63-87DB-922EAD240549}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="WinLose" ID="{0BD2CE67-064A-4B09-8361-DD5F05D289FE}">
+					<ChildrenList>
+						<State Name="None" ID="{13E868D6-8505-4284-AC73-50A07C205F5A}"/>
+						<State Name="Win" ID="{FD58759C-5251-483D-AE59-3DA40F5FEFD8}"/>
+						<State Name="Lose" ID="{6C39E7F8-1133-4B45-BD0F-FD36C2578E7B}"/>
+						<State Name="Driving" ID="{80457EA2-611B-4EBB-931D-881000EE8083}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
