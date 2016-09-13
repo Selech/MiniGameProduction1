@@ -695,13 +695,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1751889513}
+      - m_Target: {fileID: 0}
         m_MethodName: loadScene
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: prototypelevel1
           m_BoolArgument: 0
@@ -806,6 +806,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!1001 &665880490
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000010684476688, guid: fe1bb9b622b7e3841b244519fbdfb721, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010684476688, guid: fe1bb9b622b7e3841b244519fbdfb721, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010684476688, guid: fe1bb9b622b7e3841b244519fbdfb721, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010684476688, guid: fe1bb9b622b7e3841b244519fbdfb721, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010684476688, guid: fe1bb9b622b7e3841b244519fbdfb721, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010684476688, guid: fe1bb9b622b7e3841b244519fbdfb721, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010684476688, guid: fe1bb9b622b7e3841b244519fbdfb721, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010684476688, guid: fe1bb9b622b7e3841b244519fbdfb721, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014229039514, guid: fe1bb9b622b7e3841b244519fbdfb721, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: fe1bb9b622b7e3841b244519fbdfb721, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &729844494
 Prefab:
   m_ObjectHideFlags: 0
@@ -1944,117 +1990,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1751889511
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1000011131761750, guid: fe1bb9b622b7e3841b244519fbdfb721,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1751889514}
-  - 114: {fileID: 1751889513}
-  - 114: {fileID: 1751889512}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: GameController
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1751889512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000012860534140, guid: fe1bb9b622b7e3841b244519fbdfb721,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1751889511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e8ab12987949a7479760b790f64329b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  valueGuid: c6a61107e6afc44aaaab6b2db71dee31
-  bankName: UnitySB
-  loadAsynchronous: 0
-  decodeBank: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
---- !u!114 &1751889513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000013032287518, guid: fe1bb9b622b7e3841b244519fbdfb721,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1751889511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85ab583e69a9cfb47b83f51d03bd8b46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _GameState: 1
-  playerPrefab: {fileID: 1000014291092224, guid: 5a7ca2a6d589c5c428dfc7d4ca9af45e,
-    type: 2}
-  playerCamera: {fileID: 1000012462158176, guid: 1f77012443e972a48a0f5a12013ca3b9,
-    type: 2}
-  gameplayCanvas: {fileID: 0}
-  loseCanvas: {fileID: 0}
-  mainCanvas: {fileID: 0}
-  carriablesFromScene1: []
-  _eventsContainer:
-    beginGame: BeginGame
-    obstacleHit: ObstacleHitEvent
-    brakeEvent: BrakeEvent
-    resetGame: ResetGame
-    loseCarriable: LoseCarriableEvent
-    pauseGame: PauseGame
-    resumeGame: ResumeGame
-    winGame: WinGame
-    shakeCamera: ShakeCamera
-    curbHit: CurbHit
-  _soundEventsContainer:
-    _voiceOver_Collection: {fileID: 11400000, guid: 4f10ddb536cf2674ba453ad04a5d4631,
-      type: 2}
-    _soundItems_Collection: {fileID: 11400000, guid: 8f6a981d387d7b146b98c5b5e7adf6d5,
-      type: 2}
-    beginGame: BeginGame
-    obstacleHit: ObstacleHitEvent
-    resetGame: ResetGame
-    loseCarriable: LoseCarriableEvent
-    pauseGame: PauseGame
-    resumeGame: ResumeGame
-    winGame: WinGame
-    shakeCamera: ShakeCamera
-  currentTime: 0
-  maxTimeCompletion: 1000
-  startCarriablesAmount: 4
-  currentCarriablesAmount: 0
-  startPositionSpawn: {fileID: 0}
-  isPaused: 0
-  hasGameStarted: 0
-  HUD_TimeText: {fileID: 0}
-  pauseGameButton: Cancel
-  obstacleForceAddUp: 0
-  obstacleBrakeForce: 0
-  nodgeDirection: 0
-  nodgeForce: 0
-  nodgeActive: 1
---- !u!4 &1751889514
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4000010684476688, guid: fe1bb9b622b7e3841b244519fbdfb721,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1751889511}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
 --- !u!1 &1824631421
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,7 +2190,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1751889513}
+      - m_Target: {fileID: 0}
         m_MethodName: loadScene
         m_Mode: 1
         m_Arguments:
