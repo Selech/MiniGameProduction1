@@ -10,6 +10,12 @@ public enum GameState
 	Paused
 }
 
+public enum NodgeDirection {
+	Disabled,
+	Left,
+	Right
+}
+
 [System.Serializable]
 public class EventsContainer
 {
@@ -71,6 +77,7 @@ public class GameManager : MonoBehaviour {
 	[HideInInspector] public bool isPaused = false;
 	[HideInInspector] public bool hasGameStarted = false;
 	public Text HUD_TimeText;
+
 	//used for testing
 	public string pauseGameButton = "Cancel";
 
@@ -78,6 +85,9 @@ public class GameManager : MonoBehaviour {
 
 	public float obstacleForceAddUp;
 	public float obstacleBrakeForce;
+	public NodgeDirection nodgeDirection;
+	public float nodgeForce;
+
 
 	#endregion
 
@@ -102,7 +112,6 @@ public class GameManager : MonoBehaviour {
 	void Awake()
 	{
 		_instance = this;
-
 	}
 
 	#endregion
@@ -127,8 +136,6 @@ public class GameManager : MonoBehaviour {
 		EventManager.StopListening (_eventsContainer.brakeEvent, BrakeSound);
 		EventManager.StopListening (_eventsContainer.loseCarriable, LoseItemSound);
 	}
-
-
 
 	// Use this for initialization
 	void Start () 
@@ -172,8 +179,6 @@ public class GameManager : MonoBehaviour {
 		PlayPedal ();
 	}
 
-
-
 	public void RestartGame()
 	{
 		loseCanvas.SetActive (false);
@@ -200,13 +205,10 @@ public class GameManager : MonoBehaviour {
 		if(isPaused)
 		{
 			
-
 			PauseGame ();
 		}
 		else 
 		{
-
-
 			ResumeGame();
 		}
 
