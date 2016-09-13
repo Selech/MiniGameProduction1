@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class CarriableManager : MonoBehaviour {
 	
-	private string[] carriablefromscene1; 
+	public string[] carriablefromscene1; 
 
 	private static CarriableManager _instance;
 	public static CarriableManager Instance
