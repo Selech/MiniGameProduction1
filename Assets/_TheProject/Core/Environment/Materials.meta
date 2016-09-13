@@ -1,7 +1,19 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d73c241f5896a6b44bd59f262d63bddf
 folderAsset: yes
 timeCreated: 1473755897
+=======
+<<<<<<< HEAD
+guid: d73c241f5896a6b44bd59f262d63bddf
+folderAsset: yes
+timeCreated: 1473755897
+=======
+guid: a4e6b998ad43deb4daa5f1aa2a761fd2
+folderAsset: yes
+timeCreated: 1473761340
+>>>>>>> development
+>>>>>>> nils
 licenseType: Pro
 DefaultImporter:
   userData: 

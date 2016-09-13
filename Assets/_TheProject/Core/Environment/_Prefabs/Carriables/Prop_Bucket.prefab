@@ -9,20 +9,35 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000013912005386}
+  m_RootGameObject: {fileID: 1000013857458732}
   m_IsPrefabParent: 1
---- !u!1 &1000013912005386
+--- !u!1 &1000011365970246
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 4000011907505094}
-  - 33: {fileID: 33000012286074300}
-  - 23: {fileID: 23000010813862448}
-  - 64: {fileID: 64000011410500454}
-  - 114: {fileID: 114000012862386306}
+  - 4: {fileID: 4000013192366616}
+  - 33: {fileID: 33000012611253354}
+  - 23: {fileID: 23000010977252420}
+  m_Layer: 0
+  m_Name: Prop_Bucket
+  m_TagString: CarriableDragNDrop
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000013857458732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010102228346}
+  - 114: {fileID: 114000013217715394}
+  - 65: {fileID: 65000011230923916}
   m_Layer: 0
   m_Name: Prop_Bucket
   m_TagString: Untagged
@@ -30,25 +45,39 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000011907505094
+--- !u!4 &4000010102228346
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013912005386}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.9418576, y: 0.20397651, z: 0}
+  m_GameObject: {fileID: 1000013857458732}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.64, y: 0, z: -1.82}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4000013192366616}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &4000013192366616
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011365970246}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.24, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 4000010102228346}
   m_RootOrder: 0
---- !u!23 &23000010813862448
+--- !u!23 &23000010977252420
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013912005386}
+  m_GameObject: {fileID: 1000011365970246}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -72,34 +101,37 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &33000012286074300
+--- !u!33 &33000012611253354
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013912005386}
+  m_GameObject: {fileID: 1000011365970246}
   m_Mesh: {fileID: 4300014, guid: 84807753fd641aa43b3a4e0bdb68a8f6, type: 3}
---- !u!64 &64000011410500454
-MeshCollider:
+--- !u!65 &65000011230923916
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013912005386}
+  m_GameObject: {fileID: 1000013857458732}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 4300014, guid: 84807753fd641aa43b3a4e0bdb68a8f6, type: 3}
---- !u!114 &114000012862386306
+  m_Size: {x: 0.7006588, y: 0.4586892, z: 0.6875128}
+  m_Center: {x: 0.0024974346, y: 0.2706554, z: -0.008744955}
+--- !u!114 &114000013217715394
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013912005386}
+  m_GameObject: {fileID: 1000013857458732}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc9a7f6df049ac346a56042631d35aa0, type: 3}
+  m_Script: {fileID: 11500000, guid: 33d969d16bc547d41b7bde4bdb9195da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsToDestroy: 2
+  MiddleofBike: {fileID: 0}
+  LerpSpeed: 2
+  translateSpeed: 2
+  heightOfObject: 0.5
