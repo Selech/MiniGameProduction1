@@ -54,6 +54,9 @@ public class GameManager : MonoBehaviour {
 	GameObject loseCanvas;
 
 	[SerializeField]
+	GameObject menuCanvas;
+
+	[SerializeField]
 	GameObject mainCanvas;
 
 	private GameObject curPlayer;
@@ -211,6 +214,15 @@ public class GameManager : MonoBehaviour {
 			ResumeGame();
 		}
 
+	}
+
+	/// <summary>
+	/// Toggles the ingame menu.
+	/// </summary>
+	public void toggleIngameMenu() {
+		TogglePause ();
+
+		menuCanvas.SetActive (!menuCanvas.activeSelf);
 	}
 
 	void PauseGame()
