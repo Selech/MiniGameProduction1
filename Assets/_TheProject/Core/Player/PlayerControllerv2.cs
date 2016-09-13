@@ -65,8 +65,7 @@ public class PlayerControllerv2 : MonoBehaviour
 
 	void Start ()
 	{
-		AkSoundEngine.PostEvent ("Play_Pedal", this.gameObject);
-		AkSoundEngine.PostEvent ("Play_Ambience", this.gameObject);
+		
 
 		carriable [0].GetComponent<FixedJoint> ().breakForce = breakForce;
 		carriable [0].GetComponent<FixedJoint> ().breakTorque = breakForce;
@@ -89,7 +88,7 @@ public class PlayerControllerv2 : MonoBehaviour
 
 	void OnDisable ()
 	{
-		AkSoundEngine.PostEvent ("Stop_Pedal", this.gameObject);
+		
 		EventManager.StopListening (GameManager.Instance._eventsContainer.obstacleHit, Jump);
 		EventManager.StopListening (GameManager.Instance._eventsContainer.brakeEvent, Brake);
 	}
@@ -153,7 +152,7 @@ public class PlayerControllerv2 : MonoBehaviour
 	void Jump ()
 	{
 		if(!jumping){
-			AkSoundEngine.PostEvent ("Play_Collision", this.gameObject);
+			
 			body.AddForce (new Vector3 (0, GameManager.Instance.obstacleForceAddUp, 0), ForceMode.VelocityChange);
 			jumping = true;
 			body.AddForce (new Vector3 (0, 0,GameManager.Instance.obstacleBrakeForce), ForceMode.VelocityChange);
