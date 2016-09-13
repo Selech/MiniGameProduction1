@@ -442,6 +442,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9a7f6df049ac346a56042631d35aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextBreakForce: 1
+  nextBreakTorque: 1
+  secondsToEnableNext: 1
   secondsToDestroy: 2
 --- !u!114 &114000011312869478
 MonoBehaviour:
@@ -454,6 +457,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9a7f6df049ac346a56042631d35aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextBreakForce: 0.1
+  nextBreakTorque: 0.1
+  secondsToEnableNext: 1
   secondsToDestroy: 2
 --- !u!114 &114000013673594734
 MonoBehaviour:
@@ -466,6 +472,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9a7f6df049ac346a56042631d35aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextBreakForce: 0.2
+  nextBreakTorque: 0.2
+  secondsToEnableNext: 1
   secondsToDestroy: 2
 --- !u!114 &114000013929016410
 MonoBehaviour:
@@ -478,6 +487,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9a7f6df049ac346a56042631d35aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextBreakForce: 0.3
+  nextBreakTorque: 0.3
+  secondsToEnableNext: 1
   secondsToDestroy: 2
 --- !u!138 &138000010520752038
 FixedJoint:
@@ -519,7 +531,7 @@ FixedJoint:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010898872670}
   m_ConnectedBody: {fileID: 54000014161916398}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 200
+  m_BreakTorque: 200
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
