@@ -33,6 +33,8 @@ public class CarriableCollider : MonoBehaviour {
 	/// <param name="collision">Collision.</param>
 	void OnCollisionEnter(Collision collision) {
 		if ((collision.gameObject.CompareTag ("Ground") || collision.gameObject.CompareTag ("Obstacles")) && !lostCarriable) {
+			print (this.name + " hits " + collision.collider.gameObject);
+			print ("Is it here is dies??");
 			HandleCollision();
 			lostCarriable = true;
 		}
