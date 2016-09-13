@@ -25,5 +25,10 @@ public class PlayVOTest : MonoBehaviour {
 		{
 			GameManager.Instance.PlayVO (4);
 		}
+
+		if(Input.GetButtonDown("Jump"))
+		{
+			GameManager.Instance._soundEventsContainer.isEnglish = !GameManager.Instance._soundEventsContainer.isEnglish;
+		}
 	}
 }
