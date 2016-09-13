@@ -39,17 +39,20 @@ public class PlayerControllerv2 : MonoBehaviour
 	[Range (0.1f, 1000)]
 	public float breakForce = 200;
 
-	[Range (0.0f, 1f)]
+	[Range (0.0f, 5f)]
 	public float breakMultiplier1 = 0.3f;
 
-	[Range (0.0f, 1f)]
+	[Range (0.0f, 5f)]
 	public float breakMultiplier2 = 0.2f;
 
-	[Range (0.0f, 1f)]
+	[Range (0.0f, 5f)]
 	public float breakMultiplier3 = 0.1f;
 
-	[Range (0.0f, 5f)]
-	public float breakMultiplier4 = 0.1f;
+//	[Range (0.0f, 5f)]
+//	public float breakMultiplier4 = 0.1f;
+
+	[Range (1, 5)]
+	public int breakableWait = 3;
 
 	[Range (0.0f, 100.0f)]
 	public float brakeForce = 10f;
@@ -58,6 +61,7 @@ public class PlayerControllerv2 : MonoBehaviour
 	public int brakeCooldown = 5;
 
 	public GameObject[] carriable;
+	public string[] stack;
 
 	public Rigidbody body;
 	private float oldY;
@@ -68,18 +72,7 @@ public class PlayerControllerv2 : MonoBehaviour
 
 	void Start ()
 	{
-
-		carriable [0].GetComponent<FixedJoint> ().breakForce = breakForce;
-		carriable [0].GetComponent<FixedJoint> ().breakTorque = breakForce;
-
-		carriable [1].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier1;
-		carriable [1].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier1;
-
-		carriable [2].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier2;
-		carriable [2].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier2;
-
-		carriable [3].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier3;
-		carriable [3].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier3;
+		StartCoroutine (ApplyBreakForce (breakableWait));
 	}
 
 	void OnEnable ()
@@ -195,7 +188,7 @@ public class PlayerControllerv2 : MonoBehaviour
 		carriable [2].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier3;
 		carriable [2].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier3;
 
-		carriable [3].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier4;
-		carriable [3].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier4;
+		carriable [3].GetComponent<CarriableCollider> ().nextBreakForce = breakMultiplier3;
+		carriable [3].GetComponent<CarriableCollider> ().nextBreakTorque = breakMultiplier3;
 	}
 }

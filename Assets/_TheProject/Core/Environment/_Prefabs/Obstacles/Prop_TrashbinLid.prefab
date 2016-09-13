@@ -66,7 +66,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011418267812}
   m_LocalRotation: {x: 0.54706043, y: 0.030824898, z: -0.047060564, w: 0.8352006}
-  m_LocalPosition: {x: 0.000000010133, y: 0.043, z: -0.000000020266}
+  m_LocalPosition: {x: 27.1, y: -9.9, z: -29.5}
   m_LocalScale: {x: 0.2668971, y: 0.2668971, z: 0.2668971}
   m_LocalEulerAnglesHint: {x: 66.45, y: 0, z: -6.45}
   m_Children:
@@ -137,10 +137,11 @@ MonoBehaviour:
   brakeForce: 0
   nodgeDirection: 0
   nodgeForce: 0
-  particle: {fileID: 1000010047265062, guid: 45677e40b2e9b7b4f833b92a1b554152, type: 2}
+  nodgeCooldown: 0
+  particle: {fileID: 0}
 --- !u!114 &114000012126248208
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011418267812}
@@ -154,4 +155,5 @@ MonoBehaviour:
   brakeForce: 5
   nodgeDirection: 0
   nodgeForce: 0
-  particle: {fileID: 0}
+  nodgeCooldown: 0
+  particle: {fileID: 1000010047265062, guid: 45677e40b2e9b7b4f833b92a1b554152, type: 2}

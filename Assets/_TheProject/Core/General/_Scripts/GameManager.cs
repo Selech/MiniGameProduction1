@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public enum GameState
 {
@@ -55,9 +56,18 @@ public class GameManager : MonoBehaviour {
 	public GameState _GameState;
 	public GameObject playerPrefab;
 	public GameObject playerCamera;
-	public GameObject gameplayCanvas;
-	public GameObject loseCanvas;
-	public GameObject mainCanvas;
+
+	OnBikeDetector obd;
+	public List<GameObject> carriablesFromScene1 = new List<GameObject>();
+
+	[SerializeField]
+	GameObject loseCanvas;
+
+	[SerializeField]
+	GameObject menuCanvas;
+
+	[SerializeField]
+	GameObject mainCanvas;
 
 	private GameObject curPlayer;
 	[Space(10)]
@@ -137,6 +147,11 @@ public class GameManager : MonoBehaviour {
 		EventManager.StopListening (_eventsContainer.loseCarriable, LoseItemSound);
 	}
 
+	public void loadScene(int sceneNum) {
+		carriablesFromScene1 = obd.CollectedCarriables;
+		SceneManager.LoadScene (sceneNum);
+	}
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -168,7 +183,7 @@ public class GameManager : MonoBehaviour {
 	void StartGame()
 	{
 		currentCarriablesAmount = startCarriablesAmount;
-		gameplayCanvas.SetActive (true);
+//		gameplayCanvas.SetActive (true);
 		EventManager.TriggerEvent (_eventsContainer.beginGame);
 		hasGameStarted = true;
 		InitGamePlayResume ();
@@ -212,6 +227,15 @@ public class GameManager : MonoBehaviour {
 			ResumeGame();
 		}
 
+	}
+
+	/// <summary>
+	/// Toggles the ingame menu.
+	/// </summary>
+	public void toggleIngameMenu() {
+		TogglePause ();
+
+		menuCanvas.SetActive (!menuCanvas.activeSelf);
 	}
 
 	void PauseGame()
