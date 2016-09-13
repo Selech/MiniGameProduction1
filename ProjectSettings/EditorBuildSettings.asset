@@ -7,3 +7,9 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/_TheProject/Core/Scenes/Stacking Scene.unity
+  - enabled: 1
+    path: Assets/_TheProject/Core/Scenes/Level 1 - Tutorial.unity
+  - enabled: 1
+    path: Assets/_TheProject/Core/Scenes/Level 2 - Easy.unity
+  - enabled: 1
+    path: Assets/_TheProject/Core/Scenes/Level 3 - Hard.unity
