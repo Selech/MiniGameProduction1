@@ -55,9 +55,15 @@ public class GameManager : MonoBehaviour {
 	public GameState _GameState;
 	public GameObject playerPrefab;
 	public GameObject playerCamera;
-	public GameObject gameplayCanvas;
-	public GameObject loseCanvas;
-	public GameObject mainCanvas;
+
+	[SerializeField]
+	GameObject gameplayCanvas;
+
+	[SerializeField]
+	GameObject loseCanvas;
+
+	[SerializeField]
+	GameObject mainCanvas;
 
 	private GameObject curPlayer;
 	[Space(10)]
@@ -182,6 +188,8 @@ public class GameManager : MonoBehaviour {
 	public void RestartGame()
 	{
 		loseCanvas.SetActive (false);
+		mainCanvas.SetActive (true);
+		gameplayCanvas.SetActive (true);
 		ResetSettings ();
 		Time.timeScale = 1;
 		hasGameStarted = true;
@@ -330,6 +338,8 @@ public class GameManager : MonoBehaviour {
 			StopPedalSound ();
 			//StopAllSound ();
 			loseCanvas.SetActive (true);
+			mainCanvas.SetActive (false);
+			gameplayCanvas.SetActive (false);
 			PlayLoseGameSound ();
 		}
 	}
