@@ -36,8 +36,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011510119144}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.55, y: 0, z: -0.81}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.34, y: 0, z: -0.85}
   m_LocalScale: {x: 0.006666667, y: 0.006666667, z: 0.006666667}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -105,4 +105,5 @@ MonoBehaviour:
   MiddleofBike: {fileID: 0}
   LerpSpeed: 2
   translateSpeed: 0.1
-  heightOfObject: 0.73333335
+  heightOfObject: 0.78
+  inDragScene: 1

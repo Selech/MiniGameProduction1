@@ -68,6 +68,7 @@ public class CarriableCollider : MonoBehaviour {
 	void OnJointBreak(float breakForce)
 	{
 		GameObject attachedObject = GetComponent<FixedJoint>().connectedBody.gameObject;
+		this.GetComponent<Rigidbody> ().AddForce(new Vector3(0,5f,-8f), ForceMode.VelocityChange);
 		if(attachedObject.tag == "Carriable")
 		{
 			StartCoroutine(JointBreakCo(attachedObject));
