@@ -14,50 +14,65 @@ public class IntroSceneManager : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		Swipe ();
+	void FixedUpdate () {
+		if (swipe) {
+			Debug.Log ("hey");
+			Swipe ();
+		}
 	}
 
-	public void OpenScene(string scene){
+	public void OpenScene(int scene){
 		SceneManager.LoadScene (scene);
 	}
 
-	public void Swipe()
-	{
+	public void Swipe() {
 		carriablesAmount = GameObject.FindObjectOfType<OnBikeDetector> ().CollectedCarriables.Count;
-		if(Input.touches.Length > 0 && carriablesAmount >= 1 && carriablesAmount <= 6)
-		{
+
+
+		if(Input.touches.Length > 0 && carriablesAmount >= 1 && carriablesAmount <= 4) {
 			Touch t = Input.GetTouch(0);
+
 			if (t.phase == TouchPhase.Began) {
 				firstPressPos = new Vector2 (t.position.x, t.position.y);
 			}
+
 			if (t.phase == TouchPhase.Ended) {
 				secondPressPos = new Vector2 (t.position.x, t.position.y);
 				float distance = Vector2.Distance (firstPressPos, secondPressPos);
 				Ray ray1 = Camera.main.ScreenPointToRay (firstPressPos);
 				Ray ray2 = Camera.main.ScreenPointToRay (secondPressPos);
 				RaycastHit hit1, hit2;
+
 				if (distance > 0 && Physics.Raycast(ray1, out hit1) && hit1.transform.gameObject.tag == "Basket" && Physics.Raycast(ray2, out hit2) && hit2.transform.gameObject.tag == "Basket") {
 					GameObject camera = GameObject.Find ("Main Camera");
+
 					camera.gameObject.AddComponent<CamMove> ();
 					GameObject basket = GameObject.FindGameObjectWithTag ("Player");
+
 					basket.AddComponent<MovePlayer> ();
 					camera.transform.parent = basket.transform;
+
 					foreach (GameObject carriable in GameObject.FindObjectOfType<OnBikeDetector> ().CollectedCarriables) {
 						carriable.transform.parent = basket.transform;
 					}
+
+					swipe = false;
 				}
 			}
 		}
+
 		if (swipe && carriablesAmount >= 1 && carriablesAmount <= 6) {
 			GameObject camera = GameObject.Find ("Main Camera");
 			camera.gameObject.AddComponent<CamMove> ();
 			GameObject basket = GameObject.FindGameObjectWithTag ("Player");
 			basket.AddComponent<MovePlayer> ();
 			camera.transform.parent = basket.transform;
+
 			foreach (GameObject carriable in GameObject.FindObjectOfType<OnBikeDetector> ().CollectedCarriables) {
 				carriable.transform.parent = basket.transform;
 			}
+
+			swipe = false;
 		}
 	}
 }
