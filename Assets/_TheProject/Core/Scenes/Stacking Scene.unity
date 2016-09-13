@@ -668,6 +668,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!1001 &633070383
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000013109693972, guid: 76f33beb91cec83469c98ff9f346556f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013109693972, guid: 76f33beb91cec83469c98ff9f346556f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 6.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013109693972, guid: 76f33beb91cec83469c98ff9f346556f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -8.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013109693972, guid: 76f33beb91cec83469c98ff9f346556f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013109693972, guid: 76f33beb91cec83469c98ff9f346556f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013109693972, guid: 76f33beb91cec83469c98ff9f346556f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013109693972, guid: 76f33beb91cec83469c98ff9f346556f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013109693972, guid: 76f33beb91cec83469c98ff9f346556f, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 76f33beb91cec83469c98ff9f346556f, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &729844494
 Prefab:
   m_ObjectHideFlags: 0
@@ -946,6 +988,10 @@ Prefab:
     - target: {fileID: 100238, guid: 4b0dfcfec6cbe3c428c2479dc54e0a98, type: 3}
       propertyPath: m_TagString
       value: Basket
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4b0dfcfec6cbe3c428c2479dc54e0a98, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b0dfcfec6cbe3c428c2479dc54e0a98, type: 3}
