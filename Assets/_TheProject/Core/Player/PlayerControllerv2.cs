@@ -148,7 +148,7 @@ public class PlayerControllerv2 : MonoBehaviour
 		if(!jumping){
 			body.AddForce (new Vector3 (0, GameManager.Instance.obstacleForceAddUp, 0), ForceMode.VelocityChange);
 			jumping = true;
-			body.AddForce (new Vector3 (0, 0,GameManager.Instance.obstacleBrakeForce), ForceMode.VelocityChange);
+			body.AddForce (new Vector3 (0, 0, -GameManager.Instance.obstacleBrakeForce), ForceMode.VelocityChange);
 		}
 	}
 
