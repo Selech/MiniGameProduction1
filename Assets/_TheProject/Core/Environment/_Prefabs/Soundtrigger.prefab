@@ -24,7 +24,6 @@ GameObject:
   - 23: {fileID: 23000014203059836}
   - 114: {fileID: 114000012242680876}
   - 114: {fileID: 114000012454760498}
-  - 114: {fileID: 114000012020531270}
   m_Layer: 0
   m_Name: Soundtrigger
   m_TagString: Untagged
@@ -93,24 +92,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114000012020531270
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012988473958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ecd73a2d745e6e42af1f509cbbc6190, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyOnCollision: 1
-  jumpForce: 0
-  brakeForce: 0
-  nodgeDirection: 0
-  nodgeForce: 0
-  nodgeCooldown: 0
-  particle: {fileID: 0}
 --- !u!114 &114000012242680876
 MonoBehaviour:
   m_ObjectHideFlags: 1
