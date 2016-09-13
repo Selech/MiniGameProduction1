@@ -17,7 +17,7 @@ public class CamMove : MonoBehaviour {
 		EventManager.StartListening (GameManager.Instance._eventsContainer.shakeCamera, ShakeCamera);
 		if(target == null)
 		{
-			target = GameObject.FindGameObjectWithTag ("Player").transform;
+			target = GameObject.FindGameObjectWithTag ("Basket").transform;
 			EventManager.TriggerEvent (GameManager.Instance._eventsContainer.shakeCamera);
 		}
 
@@ -49,7 +49,7 @@ public class CamMove : MonoBehaviour {
 		prevPosition = transform.position;
 		transform.position = Vector3.MoveTowards(transform.position, wantedPosition, 5.0f* Time.deltaTime);
 		transform.LookAt (target, target.up);
-		offset = transform.position - target.transform.position;
+		offset = transform.position - target.transform.position; 
 	}
 
 	void Follow()

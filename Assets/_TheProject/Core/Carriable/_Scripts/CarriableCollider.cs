@@ -18,6 +18,14 @@ public class CarriableCollider : MonoBehaviour {
 		breakTorque = GetComponent<FixedJoint>().breakTorque;
 	}
 
+	public void ChangeBreakForce(float breakFor, float breakTor){
+		breakForce = breakFor;
+		breakTorque = breakTor;
+
+		this.GetComponent<FixedJoint>().breakForce = breakFor;
+		this.GetComponent<FixedJoint>().breakTorque = breakTor;
+	}
+
 	/// <summary>
 	/// Raises the collision enter event for the Carriable prefab. 
 	/// Ignores all collisions except for collisions with the ground, and triggers the LoseCarriableEvent.
@@ -74,11 +82,7 @@ public class CarriableCollider : MonoBehaviour {
 		//after seconds are passed
 		var joint = GetComponent<FixedJoint>();
 
-		attachedObject.GetComponent<FixedJoint>().breakForce = breakForce * nextBreakForce;
-		attachedObject.GetComponent<FixedJoint>().breakTorque = breakTorque * nextBreakTorque;
-		attachedObject.GetComponent<CarriableCollider>().breakForce = breakForce * nextBreakForce;
-		attachedObject.GetComponent<CarriableCollider>().breakTorque = breakTorque * nextBreakTorque;
-
+		attachedObject.GetComponent<CarriableCollider> ().ChangeBreakForce (breakForce * nextBreakForce, breakTorque * nextBreakTorque);
 
 		//print(Time.time);
 	}
