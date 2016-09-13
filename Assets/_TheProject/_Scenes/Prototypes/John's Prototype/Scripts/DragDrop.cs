@@ -52,7 +52,7 @@ public class DragDrop : MonoBehaviour {
 
 		testhit = Physics.RaycastAll (transform.position, Vector3.forward, 100f);
 
-		if (testhit.Length > 0) {
+		if (testhit.Length > 0 && obd.CollectedCarriables.Count < 4) {
 			bool hitted = false;
 
 			foreach (var hit in testhit) {
@@ -72,9 +72,6 @@ public class DragDrop : MonoBehaviour {
 		} else {
 			MoveToInitialPosition ();
 		}
-			
-//		CheckIfInside ();
-//		CheckForBasket();
 	}
 
 	void MoveToInitialPosition() {
@@ -95,7 +92,6 @@ public class DragDrop : MonoBehaviour {
 
 			while (distance > 0.1f) {
 				transThis.position = Vector3.MoveTowards (transThis.position, newPosition, Time.deltaTime * 10);
-				Debug.Log ("rot: " + transThis.rotation + "       rot bike: " + MiddleofBike.rotation);
 				transThis.rotation = Quaternion.RotateTowards (transThis.rotation, MiddleofBike.rotation, Time.deltaTime * 500);
 				distance = Vector3.Distance (transThis.position, newPosition);
 				yield return null;
@@ -120,38 +116,4 @@ public class DragDrop : MonoBehaviour {
 			transThis.position = initPosition;
 		}
 	}
-
-	void CheckForBasket(){
-		RaycastHit hit;
-
-		if (Physics.Raycast (transform.position, -Vector3.up, out hit, 100)) {
-			if (hit.collider.tag == "Basket") {
-				StartCoroutine ("EndMoveObject", this.transform);
-			} else {
-				print ("something " + hit.collider.tag);
-			}
-		}
-	}
-
-	IEnumerator EndMoveObject(Transform t){
-		if (t != null) {
-			Vector3 newPosition = new Vector3 (MiddleofBike.position.x, MiddleofBike.position.y + 0.5f * t.localScale.y, MiddleofBike.position.z);
-			float distance = Vector3.Distance (t.position, newPosition);
-			while (distance > 0.1f) {
-				t.position = Vector3.MoveTowards (t.position, newPosition, Time.deltaTime * LerpSpeed);
-				distance = Vector3.Distance (t.position, newPosition);
-				yield return null;
-			}
-			t.position = newPosition;
-		}
-	}
-		
-	void OnTriggerExit(Collider other){
-		if (other.CompareTag ("CarraibleCollector") && GetComponent<Collider>().isTrigger) {
-			//	insideCollider = false;
-
-
-		}
-	}
-		
 }
