@@ -21,11 +21,11 @@ GameObject:
   - 4: {fileID: 4000012077268830}
   - 33: {fileID: 33000013166793226}
   - 23: {fileID: 23000010993334418}
-  - 64: {fileID: 64000010479828294}
-  - 114: {fileID: 114000011366170568}
+  - 65: {fileID: 65000012905545646}
+  - 114: {fileID: 114000013741516018}
   m_Layer: 0
   m_Name: Prop_Couch
-  m_TagString: Untagged
+  m_TagString: CarriableDragNDrop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012400079594}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.0277097, y: 0, z: 0.18379124}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalPosition: {x: -5.27, y: 0, z: 0.52}
+  m_LocalScale: {x: 0.0033, y: 0.0033, z: 0.0033}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: bcd663f339d7e1f448850b40a3f2bd8d, type: 2}
+  - {fileID: 2100000, guid: cdccd300fc847664e9443fa6502c5834, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -78,9 +78,9 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012400079594}
-  m_Mesh: {fileID: 4300008, guid: 84807753fd641aa43b3a4e0bdb68a8f6, type: 3}
---- !u!64 &64000010479828294
-MeshCollider:
+  m_Mesh: {fileID: 4300006, guid: 1f93ba3be8375cf4f8e2a193bd4f6d13, type: 3}
+--- !u!65 &65000012905545646
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -89,9 +89,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 4300008, guid: 84807753fd641aa43b3a4e0bdb68a8f6, type: 3}
---- !u!114 &114000011366170568
+  m_Size: {x: 300.10724, y: 174.12631, z: 176.95433}
+  m_Center: {x: -0.43376923, y: 87.063156, z: 10.182159}
+--- !u!114 &114000013741516018
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -99,7 +99,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000012400079594}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc9a7f6df049ac346a56042631d35aa0, type: 3}
+  m_Script: {fileID: 11500000, guid: 33d969d16bc547d41b7bde4bdb9195da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsToDestroy: 2
+  MiddleofBike: {fileID: 0}
+  LerpSpeed: 2
+  translateSpeed: 0.1
+  heightOfObject: 0.6
