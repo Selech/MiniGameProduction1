@@ -622,8 +622,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: loadScene
+      - m_Target: {fileID: 1426544540}
+        m_MethodName: OpenScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1182,6 +1182,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 43409a65d558b744c8dbdaa08b1f9e30, type: 2}
+    - target: {fileID: 100000, guid: fea2ad684c1e8cf49a1c99b55a99ab5d, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fea2ad684c1e8cf49a1c99b55a99ab5d, type: 3}
   m_IsPrefabParent: 0
@@ -1309,6 +1313,89 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1308732514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1308732516}
+  - 114: {fileID: 1308732515}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1308732515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308732514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85ab583e69a9cfb47b83f51d03bd8b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _GameState: 0
+  playerPrefab: {fileID: 0}
+  playerCamera: {fileID: 0}
+  carriablesFromScene1: []
+  loseCanvas: {fileID: 0}
+  menuCanvas: {fileID: 0}
+  mainCanvas: {fileID: 0}
+  _eventsContainer:
+    beginGame: BeginGame
+    obstacleHit: ObstacleHitEvent
+    brakeEvent: BrakeEvent
+    resetGame: ResetGame
+    loseCarriable: LoseCarriableEvent
+    pauseGame: PauseGame
+    resumeGame: ResumeGame
+    winGame: WinGame
+    shakeCamera: ShakeCamera
+    curbHit: CurbHit
+  _soundEventsContainer:
+    _voiceOver_Collection: {fileID: 0}
+    _soundItems_Collection: {fileID: 0}
+    beginGame: BeginGame
+    obstacleHit: ObstacleHitEvent
+    resetGame: ResetGame
+    loseCarriable: LoseCarriableEvent
+    pauseGame: PauseGame
+    resumeGame: ResumeGame
+    winGame: WinGame
+    shakeCamera: ShakeCamera
+  currentTime: 0
+  maxTimeCompletion: 10
+  startCarriablesAmount: 4
+  currentCarriablesAmount: 0
+  startPositionSpawn: {fileID: 0}
+  isPaused: 0
+  hasGameStarted: 0
+  HUD_TimeText: {fileID: 0}
+  pauseGameButton: Cancel
+  obstacleForceAddUp: 0
+  obstacleBrakeForce: 0
+  nodgeDirection: 0
+  nodgeForce: 0
+  nodgeActive: 1
+--- !u!4 &1308732516
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308732514}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.755, y: 0.000000029802322, z: -0.731}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
 --- !u!1 &1394718917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,7 +1420,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1394718917}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.53, y: -6.36358, z: 9.030001}
+  m_LocalPosition: {x: 9.66, y: 0, z: -7.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1432,7 +1519,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1426544538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.92, z: -8.72}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1451,6 +1538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfc68bbc4c8642b469e0d0574f4723cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  swipe: 0
 --- !u!1 &1499668457
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,13 +2172,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: loadScene
-        m_Mode: 1
+      - m_Target: {fileID: 1426544540}
+        m_MethodName: OpenScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: prototypelevel1
           m_BoolArgument: 0
