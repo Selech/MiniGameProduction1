@@ -129,61 +129,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 1000012400079594, guid: 8e8f79940e43a794ca9982f0131cc34f, type: 2}
-      propertyPath: m_TagString
-      value: CarriableDragNDrop
-      objectReference: {fileID: 0}
-    - target: {fileID: 64000010479828294, guid: 8e8f79940e43a794ca9982f0131cc34f,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23000010993334418, guid: 8e8f79940e43a794ca9982f0131cc34f,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000012400079594, guid: 8e8f79940e43a794ca9982f0131cc34f, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 64000010479828294, guid: 8e8f79940e43a794ca9982f0131cc34f, type: 2}
-    - {fileID: 114000011366170568, guid: 8e8f79940e43a794ca9982f0131cc34f, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e8f79940e43a794ca9982f0131cc34f, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &162991004 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000012400079594, guid: 8e8f79940e43a794ca9982f0131cc34f,
-    type: 2}
-  m_PrefabInternal: {fileID: 162991003}
---- !u!114 &162991005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 162991004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33d969d16bc547d41b7bde4bdb9195da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MiddleofBike: {fileID: 0}
-  LerpSpeed: 2
-  translateSpeed: 0.1
-  heightOfObject: 1.8
---- !u!65 &162991006
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 162991004}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 300.10724, y: 174.12631, z: 176.95433}
-  m_Center: {x: -0.43376923, y: 87.063156, z: 10.182159}
 --- !u!1001 &174731254
 Prefab:
   m_ObjectHideFlags: 0
@@ -223,38 +171,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 1000010575893272, guid: 243ffdaf8c9f4ed42be7943b5d3e12e5, type: 2}
-      propertyPath: m_TagString
-      value: CarriableDragNDrop
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000010575893272, guid: 243ffdaf8c9f4ed42be7943b5d3e12e5, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114000011235530086, guid: 243ffdaf8c9f4ed42be7943b5d3e12e5, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 243ffdaf8c9f4ed42be7943b5d3e12e5, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &174731255 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000010575893272, guid: 243ffdaf8c9f4ed42be7943b5d3e12e5,
-    type: 2}
-  m_PrefabInternal: {fileID: 174731254}
---- !u!114 &174731256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 174731255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33d969d16bc547d41b7bde4bdb9195da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MiddleofBike: {fileID: 0}
-  LerpSpeed: 2
-  translateSpeed: 0.1
-  heightOfObject: 1.2
 --- !u!1001 &283624307
 Prefab:
   m_ObjectHideFlags: 0
@@ -294,60 +213,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 1000013527918486, guid: cbda38f2948e5e241be0eceb60eb37d6, type: 2}
-      propertyPath: m_TagString
-      value: CarriableDragNDrop
-      objectReference: {fileID: 0}
-    - target: {fileID: 65000011065497594, guid: cbda38f2948e5e241be0eceb60eb37d6,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 18.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 65000011065497594, guid: cbda38f2948e5e241be0eceb60eb37d6,
-        type: 2}
-      propertyPath: m_Center.y
-      value: 8.99
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000013527918486, guid: cbda38f2948e5e241be0eceb60eb37d6, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011611197744, guid: cbda38f2948e5e241be0eceb60eb37d6, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.015
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011611197744, guid: cbda38f2948e5e241be0eceb60eb37d6, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.015
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011611197744, guid: cbda38f2948e5e241be0eceb60eb37d6, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.015
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114000013665152004, guid: cbda38f2948e5e241be0eceb60eb37d6, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbda38f2948e5e241be0eceb60eb37d6, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &283624308 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000013527918486, guid: cbda38f2948e5e241be0eceb60eb37d6,
-    type: 2}
-  m_PrefabInternal: {fileID: 283624307}
---- !u!114 &283624309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 283624308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33d969d16bc547d41b7bde4bdb9195da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MiddleofBike: {fileID: 0}
-  LerpSpeed: 2
-  translateSpeed: 0.1
-  heightOfObject: 0.1
 --- !u!1 &646927144
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,51 +330,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 1000010968575288, guid: d5ba07e7836dc5840be3dd9cc55df31e, type: 2}
-      propertyPath: m_TagString
-      value: CarriableDragNDrop
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000010968575288, guid: d5ba07e7836dc5840be3dd9cc55df31e, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 64000010155938822, guid: d5ba07e7836dc5840be3dd9cc55df31e, type: 2}
-    - {fileID: 114000013418287520, guid: d5ba07e7836dc5840be3dd9cc55df31e, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d5ba07e7836dc5840be3dd9cc55df31e, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &898911440 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000010968575288, guid: d5ba07e7836dc5840be3dd9cc55df31e,
-    type: 2}
-  m_PrefabInternal: {fileID: 898911439}
---- !u!114 &898911441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 898911440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33d969d16bc547d41b7bde4bdb9195da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MiddleofBike: {fileID: 0}
-  LerpSpeed: 2
-  translateSpeed: 0.1
-  heightOfObject: 2.8
---- !u!65 &898911442
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 898911440}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 121.53308, y: 235.77515, z: 111.11936}
-  m_Center: {x: -1.589817, y: 113.70094, z: -1.6942024}
 --- !u!1 &1069500014
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,50 +514,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 1000011510119144, guid: 312584e8dd33eda4db0c08baf55fa38a, type: 2}
-      propertyPath: m_TagString
-      value: CarriableDragNDrop
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000011510119144, guid: 312584e8dd33eda4db0c08baf55fa38a, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114000011231858386, guid: 312584e8dd33eda4db0c08baf55fa38a, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 312584e8dd33eda4db0c08baf55fa38a, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1383694533 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000011510119144, guid: 312584e8dd33eda4db0c08baf55fa38a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1383694532}
---- !u!114 &1383694534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1383694533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33d969d16bc547d41b7bde4bdb9195da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MiddleofBike: {fileID: 0}
-  LerpSpeed: 2
-  translateSpeed: 0.1
-  heightOfObject: 2.2
---- !u!65 &1383694535
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1383694533}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 35.266747, y: 115.28652, z: 39.820686}
-  m_Center: {x: 0, y: 56.15257, z: 0}
 --- !u!1 &1654288360
 GameObject:
   m_ObjectHideFlags: 0
