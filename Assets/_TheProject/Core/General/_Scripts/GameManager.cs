@@ -55,6 +55,9 @@ public class GameManager : MonoBehaviour {
 	GameObject loseCanvas;
 
 	[SerializeField]
+	GameObject gameplayCanvas;
+
+	[SerializeField]
 	GameObject menuCanvas;
 
 	[SerializeField]
@@ -174,7 +177,7 @@ public class GameManager : MonoBehaviour {
 	void StartGame()
 	{
 		currentCarriablesAmount = startCarriablesAmount;
-//		gameplayCanvas.SetActive (true);
+		gameplayCanvas.SetActive (true);
 		EventManager.TriggerEvent (_eventsContainer.beginGame);
 		hasGameStarted = true;
 		InitGamePlayResume ();
