@@ -10,6 +10,12 @@ public enum GameState
 	Paused
 }
 
+public enum NodgeDirection {
+	Disabled,
+	Left,
+	Right
+}
+
 [System.Serializable]
 public class EventsContainer
 {
@@ -79,6 +85,8 @@ public class GameManager : MonoBehaviour {
 
 	public float obstacleForceAddUp;
 	public float obstacleBrakeForce;
+	public NodgeDirection nodgeDirection;
+	public float nodgeForce;
 
 	#endregion
 
@@ -112,13 +120,19 @@ public class GameManager : MonoBehaviour {
 	void OnEnable()
 	{
 		EventManager.StartListening (_eventsContainer.loseCarriable, LoseCarriable);
+		EventManager.StartListening (_eventsContainer.loseCarriable, LoseItemSound);
 		EventManager.StartListening (_eventsContainer.winGame, WinGame);
+		EventManager.StartListening (_eventsContainer.obstacleHit, JumpCollisionSound);
+		EventManager.StartListening (_eventsContainer.brakeEvent, BrakeSound);
 	}
 
 	void OnDisable()
 	{
 		EventManager.StopListening (_eventsContainer.loseCarriable,LoseCarriable);
 		EventManager.StopListening (_eventsContainer.winGame, WinGame);
+		EventManager.StopListening (_eventsContainer.obstacleHit, JumpCollisionSound);
+		EventManager.StopListening (_eventsContainer.brakeEvent, BrakeSound);
+		EventManager.StopListening (_eventsContainer.loseCarriable, LoseItemSound);
 	}
 
 	// Use this for initialization
@@ -157,6 +171,10 @@ public class GameManager : MonoBehaviour {
 		hasGameStarted = true;
 		InitGamePlayResume ();
 		SpawnPlayer ();
+
+		PlayGameMusic ();
+		PlayAmbience ();
+		PlayPedal ();
 	}
 
 	public void RestartGame()
@@ -169,6 +187,10 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void WinGame() {
+		StopPedalSound ();
+		StopAmbience ();
+		//StopGameMusic ();
+		PlayWinGameSound ();
 		RestartGame ();
 	}
 
@@ -194,12 +216,16 @@ public class GameManager : MonoBehaviour {
 	{
 		EventManager.TriggerEvent (_eventsContainer.pauseGame);
 		InitGamePlayPause ();
+		StopPedalSound ();
+		StopAmbience ();
 	}
 
 	void ResumeGame()
 	{
 		EventManager.TriggerEvent (_eventsContainer.resumeGame);
 		InitGamePlayResume ();
+		PlayAmbience ();
+		PlayPedal ();
 	}
 
 	//reset settings on player spawn
@@ -296,11 +322,125 @@ public class GameManager : MonoBehaviour {
 		{
 			PauseGame ();
 			currentCarriablesAmount = 0;
+
+			StopAmbience ();
+			//StopGameMusic ();
+			StopPedalSound ();
+			//StopAllSound ();
 			loseCanvas.SetActive (true);
+			PlayLoseGameSound ();
 		}
 	}
 	#endregion
 
+	#region Audio Methods
+	void PlayLoseGameSound()
+	{
+		PlaySound ("Music_Lose");
+
+	}
+
+	void PlayWinGameSound()
+	{
+		PlaySound ("Music_Win");
+	}
+
+	void PlayGameMusic()
+	{
+		PlaySound ("Music_Drive");
+	}
+
+	void StopGameMusic()
+	{
+		//PlaySound ("StopAll");
+	}
+
+	void StopAllSound()
+	{
+		PlaySound ("StopAll");
+	}
+
+	void PlayAmbience()
+	{
+		PlaySound ("Play_Ambience");
+	}
+
+	void StopAmbience()
+	{
+		PlaySound ("Stop_Ambience");
+	}
+
+	// collision sound
+	void JumpCollisionSound()
+	{
+		PlaySound ("Play_Collision");
+	}
+
+	// brake sound
+	void BrakeSound()
+	{
+		PlaySound ("Play_Brake");
+
+	}
+
+	//void SideWalkSound()
+//	{
+//		PlaySound ("Play_Sidewalk");
+//	}
+
+	void PlayPedal()
+	{
+		PlaySound ("Play_Pedal");
+	}
+
+	void StopPedalSound()
+	{
+		PlaySound ("Stop_Pedal");
+	}
+
+	void LoseItemSound()
+	{
+		PlaySound ("Play_ItemLose");
+	}
+
+	public void PlayMenuMusic()
+	{
+		PlaySound ("Play_menuMusic");
+	}
+
+	public void StopMenuMusic()
+	{
+		PlaySound ("Stop_menuMusic");
+	}
+
+	public void PlayUIClick()
+	{
+		PlaySound ("Play_UI_Click");
+	}
+
+	public void PlayUISnap()
+	{
+		PlaySound ("Play_UI_Snap");
+	}
+
+	//generic method for playing sound
+	public void PlaySound(string s)
+	{
+		if(!string.IsNullOrEmpty(s))
+		{
+			AkSoundEngine.PostEvent (s, this.gameObject);
+		}
+	}
+
+	//play sound from other object
+	public void PlaySound(string s,GameObject b)
+	{
+		if(!string.IsNullOrEmpty(s) && b != null )
+		{
+			AkSoundEngine.PostEvent (s, b);
+		}
+	}
+	#endregion
 
 	#endregion
 }

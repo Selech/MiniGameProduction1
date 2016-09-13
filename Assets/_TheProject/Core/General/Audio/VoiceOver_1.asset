@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7bf9918992fd848bba542aa06b2bd3, type: 3}
   m_Name: VoiceOver_1
   m_EditorClassIdentifier: 
-  soundIndex: 0
-  soundEventName: 
+  soundIndex: 1
+  soundEventName: Play_VO_Intro_EN
   soundDuration: 0
