@@ -902,6 +902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carriablefromscene1: []
+  isEnglish: 0
 --- !u!4 &599618007
 Transform:
   m_ObjectHideFlags: 0

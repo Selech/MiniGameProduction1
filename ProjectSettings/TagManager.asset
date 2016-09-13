@@ -11,6 +11,7 @@ TagManager:
   - MiddleOfBike
   - Basket
   - CarriableDragNDrop
+  - Animator
   layers:
   - Default
   - TransparentFX

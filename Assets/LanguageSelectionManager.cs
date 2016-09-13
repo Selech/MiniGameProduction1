@@ -18,7 +18,7 @@ public class LanguageSelectionManager : MonoBehaviour {
 	}
 
 	public void SelectEnglish(){
-		GameManager.Instance._soundEventsContainer.isEnglish = true;
+		CarriableManager.Instance.isEnglish = true;
 		languageSelected = false;
 		GameManager.Instance.PlayUIClick();
 		highlight.GetComponent<Image> ().enabled = true;
@@ -33,7 +33,7 @@ public class LanguageSelectionManager : MonoBehaviour {
 
 	public void SelectDanish(){
 		GameManager.Instance.PlayUIClick();
-		GameManager.Instance._soundEventsContainer.isEnglish = false;
+		CarriableManager.Instance.isEnglish = false;
 		languageSelected = true;
 		highlight.GetComponent<Image> ().enabled = true;
 		highlight.localPosition = new Vector3 (160,0,0);
@@ -49,7 +49,7 @@ public class LanguageSelectionManager : MonoBehaviour {
 		this.gameObject.SetActive (false);
 		animator.SetTrigger ("Intro");
 
-		if(GameManager.Instance._soundEventsContainer.isEnglish)
+		if(CarriableManager.Instance.isEnglish)
 			GameManager.Instance.PlaySound ("Play_VO_Intro_EN");
 		else
 			GameManager.Instance.PlaySound ("Play_VO_Intro_DA");

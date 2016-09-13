@@ -410,7 +410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000013072759318
 GameObject:
   m_ObjectHideFlags: 1
@@ -1433,7 +1433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _GameState: 1
-  playerPrefab: {fileID: 1000011137807098, guid: 2f5983657d1c0b1468719673048515a7,
+  playerPrefab: {fileID: 1000010492580516, guid: c5d65d0526abd294f84600aa04dcbb38,
     type: 2}
   playerCamera: {fileID: 1000012462158176, guid: 1f77012443e972a48a0f5a12013ca3b9,
     type: 2}
@@ -2111,8 +2111,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 569, y: 291}
+  m_AnchoredPosition: {x: 0, y: 160}
+  m_SizeDelta: {x: 536, y: 291}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000010479378752
 RectTransform:
@@ -2523,8 +2523,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 569, y: 291}
+  m_AnchoredPosition: {x: 0, y: 160}
+  m_SizeDelta: {x: 536, y: 291}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000013936009588
 RectTransform:

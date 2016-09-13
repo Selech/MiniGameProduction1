@@ -6,6 +6,8 @@ public class CarriableManager : MonoBehaviour {
 	
 	public string[] carriablefromscene1; 
 
+	public bool isEnglish;
+
 	private static CarriableManager _instance;
 	public static CarriableManager Instance
 	{

@@ -82,7 +82,7 @@ public class IntroSceneManager : MonoBehaviour {
 		startBike = true;
 		animator.SetTrigger ("StartBiking");
 
-		if(GameManager.Instance._soundEventsContainer.isEnglish)
+		if(CarriableManager.Instance.isEnglish)
 			AkSoundEngine.ExecuteActionOnEvent ("Play_VO_Intro_EN", AkActionOnEventType.AkActionOnEventType_Stop);
 		else
 			AkSoundEngine.ExecuteActionOnEvent ("Play_VO_Intro_DA", AkActionOnEventType.AkActionOnEventType_Stop);
