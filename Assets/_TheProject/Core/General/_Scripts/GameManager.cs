@@ -36,16 +36,7 @@ public class EventsContainer
 public class SoundEventsContainer
 {
 	public SoundItems_Collection _voiceOver_Collection;
-	public SoundItems_Collection _soundItems_Collection;
-	[Space(10)]
-	public string beginGame = "BeginGame";	
-	public string obstacleHit = "ObstacleHitEvent";
-	public string resetGame = "ResetGame";
-	public string loseCarriable = "LoseCarriableEvent";
-	public string pauseGame = "PauseGame";
-	public string resumeGame = "ResumeGame";
-	public string winGame = "WinGame";
-	public string shakeCamera = "ShakeCamera";
+	public bool isEnglish = true;
 }
 
 
@@ -64,6 +55,9 @@ public class GameManager : MonoBehaviour {
 	GameObject loseCanvas;
 
 	[SerializeField]
+	GameObject gameplayCanvas;
+
+	[SerializeField]
 	GameObject menuCanvas;
 
 	[SerializeField]
@@ -74,7 +68,7 @@ public class GameManager : MonoBehaviour {
 	[SerializeField]
 	public EventsContainer _eventsContainer = new EventsContainer();
 
-	[SerializeField]
+
 	public SoundEventsContainer _soundEventsContainer  = new SoundEventsContainer();
 
 	[HideInInspector] public float currentTime;
@@ -183,7 +177,7 @@ public class GameManager : MonoBehaviour {
 	void StartGame()
 	{
 		currentCarriablesAmount = startCarriablesAmount;
-//		gameplayCanvas.SetActive (true);
+		gameplayCanvas.SetActive (true);
 		EventManager.TriggerEvent (_eventsContainer.beginGame);
 		hasGameStarted = true;
 		InitGamePlayResume ();
@@ -450,6 +444,26 @@ public class GameManager : MonoBehaviour {
 	}
 
 	//generic method for playing sound
+	public void PlaySoundVO(int index)
+	{
+		
+		foreach (Sound_Item v in _soundEventsContainer._voiceOver_Collection.soundsCollection) 
+		{
+			if (GameManager.Instance._soundEventsContainer.isEnglish) {
+				if (v.soundIndex == index && v._Language == Language.English) {
+					PlaySound (v.soundEventName);
+					break;
+				}
+			} else {
+				if (v.soundIndex == index && v._Language == Language.Danish) {
+					PlaySound (v.soundEventName);
+					break;
+				}
+			}
+
+		}
+	}
+
 	public void PlaySound(string s)
 	{
 		if(!string.IsNullOrEmpty(s))

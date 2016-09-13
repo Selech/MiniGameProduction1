@@ -3,6 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{87D29447-7F09-4F52-AFEF-5A1025333CFD}">
 			<PropertyList>
+				<Property Name="ControlSurfaceBindingCtrl\{AA358250-04E2-4892-BEBA-FA4ABC9BD21F}\Expand States" Type="string" Value="qHrNHV2UZkmxaNgaS1smaQ=="/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Windows"></Value>

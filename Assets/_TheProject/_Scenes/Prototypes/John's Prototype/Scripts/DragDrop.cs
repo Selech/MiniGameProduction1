@@ -18,9 +18,13 @@ public class DragDrop : MonoBehaviour {
 
 	public float heightOfObject;
 
+	public bool inDragScene = false;
+
 	void OnEnable(){
-		MiddleofBike = GameObject.FindGameObjectWithTag ("MiddleOfBike").transform;
-		obd = GameObject.FindGameObjectWithTag("CarriableDetector").GetComponent<OnBikeDetector> ();
+		if (inDragScene) {
+			MiddleofBike = GameObject.FindGameObjectWithTag ("MiddleOfBike").transform;
+			obd = GameObject.FindGameObjectWithTag ("CarriableDetector").GetComponent<OnBikeDetector> ();
+		}
 	}
 
 	void Start() {
