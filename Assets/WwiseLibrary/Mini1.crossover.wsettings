@@ -20,7 +20,7 @@
 				<Property Name="General\LatestPlatform" Type="string" Value="Android"/>
 				<Property Name="GenerateSoundBanks\ListMode" Type="string" Value="Tree"/>
 				<Property Name="GenerateSoundBanks\SelectedLanguages" Type="string" Value="DAAAAA=="/>
-				<Property Name="GenerateSoundBanks\SelectedPlatforms" Type="string" Value="w6UBJ5n0PEKq531asifdZw=="/>
+				<Property Name="GenerateSoundBanks\SelectedPlatforms" Type="string" Value="w6UBJ5n0PEKq531asifdZ11g6ZR++dRBul9PPNFExss="/>
 				<Property Name="GenerateSoundBanks\SelectedSoundBanks" Type="string" Value="xqYRB+avxEqqq2sttx3uMQ=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{AA358250-04E2-4892-BEBA-FA4ABC9BD21F}"/>
 				<Property Name="HardwareController\{AA358250-04E2-4892-BEBA-FA4ABC9BD21F}\ActiveGroups" Type="string" Value="4i4GxWPEiEGDKraHuZNgegEAQgH/////qHrNHV2UZkmxaNgaS1smaQEAQgH/////"/>
@@ -52,7 +52,7 @@
 				<Property Name="PluginUserAcknowledge\ConvolutionReverb" Type="bool" Value="True"/>
 				<Property Name="ProjectExplorer\Expanded_10_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\Expanded_11_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\Expanded_12_1" Type="string" Value="7uJCJOTpN0O9iOlCTG1mbaJbcNf09qBLsMHu8EYFBUw="/>
+				<Property Name="ProjectExplorer\Expanded_12_1" Type="string" Value="7uJCJOTpN0O9iOlCTG1mbWY801eu+fdJoTv7F/T8RLKiW3DX9PagS7DB7vBGBQVM"/>
 				<Property Name="ProjectExplorer\Expanded_13_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\Expanded_14_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\Expanded_15_1" Type="string" Value=""/>

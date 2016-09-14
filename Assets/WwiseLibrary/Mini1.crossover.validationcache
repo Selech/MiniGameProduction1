@@ -38,7 +38,7 @@
 	<ValidationCacheItem File="Y:\Music\Logic\DADIU\MiniGame1\Wwise\Mini1\States\Default Work Unit.wwu" DateLow="3908645888" DateHigh="30542247"/>
 	<ValidationCacheItem File="Y:\Music\Logic\DADIU\MiniGame1\Wwise\Mini1\Switches\Default Work Unit.wwu" DateLow="3908645888" DateHigh="30542247"/>
 	<ValidationCacheItem File="Y:\Music\Logic\DADIU\MiniGame1\Wwise\Mini1\Triggers\Default Work Unit.wwu" DateLow="3908645888" DateHigh="30542247"/>
-	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1159718400" DateHigh="30543350"/>
+	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3580568704" DateHigh="30543376"/>
 	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Attenuations\Default Work Unit.wwu" DateLow="195709952" DateHigh="30542463"/>
 	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Audio Devices\Default Work Unit.wwu" DateLow="195709952" DateHigh="30542463"/>
 	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Control Surface Sessions\Default Work Unit.wwu" DateLow="2203573760" DateHigh="30543315"/>
@@ -61,9 +61,9 @@
 	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Events\Default Work Unit.wwu" DateLow="3536644224" DateHigh="30543256"/>
 	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Game Parameters\Default Work Unit.wwu" DateLow="195709952" DateHigh="30542463"/>
 	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="195709952" DateHigh="30542463"/>
-	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="2868933504" DateHigh="30543326"/>
-	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="583966208" DateHigh="30543327"/>
-	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Mini1.crossover.wsettings" DateLow="1559718400" DateHigh="30543350"/>
+	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="2109914624" DateHigh="30543356"/>
+	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="699914624" DateHigh="30543356"/>
+	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Mini1.crossover.wsettings" DateLow="3637956096" DateHigh="30543449"/>
 	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Mini1.wproj" DateLow="195709952" DateHigh="30542463"/>
 	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Mixing Sessions\Default Work Unit.wwu" DateLow="195709952" DateHigh="30542463"/>
 	<ValidationCacheItem File="Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\Modulators\Default Work Unit.wwu" DateLow="195709952" DateHigh="30542463"/>
