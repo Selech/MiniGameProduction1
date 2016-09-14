@@ -5,6 +5,11 @@
 			<ChildrenList>
 				<MusicPlaylistContainer Name="MenuMusic" ID="{2442E2EE-E9E4-4337-BD88-E9424C6D666D}" ShortID="543805988">
 					<PropertyList>
+						<Property Name="OutputBusLowpass" Type="int16">
+							<ValueList>
+								<Value>16</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-4</Value>
@@ -122,7 +127,7 @@
 						<Property Name="Tempo" Type="Real64" Value="97"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-2</Value>
+								<Value>-3</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

@@ -366,7 +366,7 @@
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>1</Value>
+								<Value>-3</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
@@ -739,6 +739,11 @@
 				<Sound Name="Cycling" ID="{82AD191B-CA9B-4C99-9E2F-2E5582B537BA}" ShortID="262688816" Type="SoundFX">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -823,11 +828,6 @@
 									</Modifier>
 								</ModifierInfo>
 							</ModifierList>
-						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>3</Value>
-							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -1094,6 +1094,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="VO_13_DA" ID="{14B646AF-1DB7-44EA-9A8B-1FC45D73A0E5}" ShortID="259589838" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.08</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
@@ -1398,6 +1405,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="VO_Intro_DA" ID="{DCDAFC0F-2EE3-436E-8BDA-749B0796583C}" ShortID="750419587" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.417</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
@@ -1417,6 +1431,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="VO_MadeIt_DA" ID="{06BCF13A-A890-4679-A8EB-362AD009CDCD}" ShortID="276485594" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.208</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
@@ -1436,6 +1457,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="VO_Ready_DA" ID="{6BC7579B-EF1F-4304-B611-18499EA09EE2}" ShortID="552189687" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.208</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
@@ -1883,6 +1911,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="VO_13_EN" ID="{6EDB2233-B0D2-45BD-9063-5E77F325D0FB}" ShortID="643178409" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.08</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
@@ -2215,6 +2250,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="VO_MadeIt_EN" ID="{0A18AE43-07F2-450C-99D4-0DB250EEE5E8}" ShortID="1056871848" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.208</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
@@ -2237,6 +2279,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="VO_Ready_EN" ID="{299D858B-0E3C-4E81-9A20-2EBD883BC840}" ShortID="483066738" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.208</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
@@ -2281,6 +2330,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="VO_Intro_EN" ID="{D1EB7BBB-526B-430B-AC2E-1605A3151637}" ShortID="1033294147" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.416</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>

@@ -1,0 +1,203 @@
+Event	ID	Name			Wwise Object Path	Notes
+	18059541	Play_VO_18_DA			\Default Work Unit\VO_DA\Play_VO_18_DA	
+	34837353	Play_VO_18_EN			\Default Work Unit\VO_EN\Play_VO_18_EN	
+	217092778	Play_VO_11_EN			\Default Work Unit\VO_EN\Play_VO_11_EN	
+	233870390	Play_VO_11_DA			\Default Work Unit\VO_DA\Play_VO_11_DA	
+	261335799	Play_VO_9_DA			\Default Work Unit\VO_DA\Play_VO_9_DA	
+	278113351	Play_VO_9_EN			\Default Work Unit\VO_EN\Play_VO_9_EN	
+	278617630	Play_Ambience			\Default Work Unit\Play_Ambience	
+	341874214	Play_VO_Return_EN			\Default Work Unit\VO_EN\Play_VO_Return_EN	
+	358651834	Play_VO_Return_DA			\Default Work Unit\VO_DA\Play_VO_Return_DA	
+	388408145	Play_VO_7_DA			\Default Work Unit\VO_DA\Play_VO_7_DA	
+	405185709	Play_VO_7_EN			\Default Work Unit\VO_EN\Play_VO_7_EN	
+	618721897	Play_VO_25_DA			\Default Work Unit\VO_DA\Play_VO_25_DA	
+	635499509	Play_VO_25_EN			\Default Work Unit\VO_EN\Play_VO_25_EN	
+	645831303	Play_UI_Snap			\Default Work Unit\Play_UI_Snap	
+	690579408	Play_VO_22_EN			\Default Work Unit\VO_EN\Play_VO_22_EN	
+	707356976	Play_VO_22_DA			\Default Work Unit\VO_DA\Play_VO_22_DA	
+	997914754	Play_VO_20_EN			\Default Work Unit\VO_EN\Play_VO_20_EN	
+	1014692382	Play_VO_20_DA			\Default Work Unit\VO_DA\Play_VO_20_DA	
+	1064128182	Play_VO_Intro_EN			\Default Work Unit\VO_EN\Play_VO_Intro_EN	
+	1080905738	Play_VO_Intro_DA			\Default Work Unit\VO_DA\Play_VO_Intro_DA	
+	1088622957	Play_VO_29_DA			\Default Work Unit\VO_DA\Play_VO_29_DA	
+	1105400561	Play_VO_29_EN			\Default Work Unit\VO_EN\Play_VO_29_EN	
+	1463871860	Play_VO_17_EN			\Default Work Unit\VO_EN\Play_VO_17_EN	
+	1476743487	Play_VO_12_DA			\Default Work Unit\VO_DA\Play_VO_12_DA	
+	1480649420	Play_VO_17_DA			\Default Work Unit\VO_DA\Play_VO_17_DA	
+	1493521055	Play_VO_12_EN			\Default Work Unit\VO_EN\Play_VO_12_EN	
+	1523450614	Play_VO_15_EN			\Default Work Unit\VO_EN\Play_VO_15_EN	
+	1540228170	Play_VO_15_DA			\Default Work Unit\VO_DA\Play_VO_15_DA	
+	1553219250	Play_Collision			\Default Work Unit\Play_Collision	
+	1703610434	Play_VO_19_EN			\Default Work Unit\VO_EN\Play_VO_19_EN	
+	1720388062	Play_VO_19_DA			\Default Work Unit\VO_DA\Play_VO_19_DA	
+	1731467220	Stop_Pedal			\Default Work Unit\Stop_Pedal	
+	1749424733	Play_UI_Click			\Default Work Unit\Play_UI_Click	
+	1752741677	Play_VO_10_DA			\Default Work Unit\VO_DA\Play_VO_10_DA	
+	1769519281	Play_VO_10_EN			\Default Work Unit\VO_EN\Play_VO_10_EN	
+	1872499834	Play_VO_2_EN			\Default Work Unit\VO_EN\Play_VO_2_EN	
+	1889277382	Play_VO_2_DA			\Default Work Unit\VO_DA\Play_VO_2_DA	
+	1945722105	Play_Bell			\Default Work Unit\Play_Bell	
+	2024825924	Play_VO_4_EN			\Default Work Unit\VO_EN\Play_VO_4_EN	
+	2041603548	Play_VO_4_DA			\Default Work Unit\VO_DA\Play_VO_4_DA	
+	2074304215	Play_VO_30_DA			\Default Work Unit\VO_DA\Play_VO_30_DA	
+	2091081767	Play_VO_30_EN			\Default Work Unit\VO_EN\Play_VO_30_EN	
+	2226331431	Play_VO_23_DA			\Default Work Unit\VO_DA\Play_VO_23_DA	
+	2243109047	Play_VO_23_EN			\Default Work Unit\VO_EN\Play_VO_23_EN	
+	2255036524	Play_VO_26_EN			\Default Work Unit\VO_EN\Play_VO_26_EN	
+	2271814132	Play_VO_26_DA			\Default Work Unit\VO_DA\Play_VO_26_DA	
+	2273038574	Play_VO_24_EN			\Default Work Unit\VO_EN\Play_VO_24_EN	
+	2289816178	Play_VO_24_DA			\Default Work Unit\VO_DA\Play_VO_24_DA	
+	2477713992	Stop_Ambience			\Default Work Unit\Stop_Ambience	
+	2570041344	Play_menuMusic			\Default Work Unit\Music\Play_menuMusic	
+	2599818666	Play_Pedal			\Default Work Unit\Play_Pedal	
+	2638365503	Music_Drive			\Default Work Unit\Music\Music_Drive	
+	2682680661	Music_Win			\Default Work Unit\Music\Music_Win	
+	2730303704	Play_ItemLose			\Default Work Unit\Play_ItemLose	
+	2753202630	Stop_menuMusic			\Default Work Unit\Music\Stop_menuMusic	
+	2999520707	Play_VO_16_DA			\Default Work Unit\VO_DA\Play_VO_16_DA	
+	3010208288	Play_VO_8_EN			\Default Work Unit\VO_EN\Play_VO_8_EN	
+	3016298331	Play_VO_16_EN			\Default Work Unit\VO_EN\Play_VO_16_EN	
+	3026985856	Play_VO_8_DA			\Default Work Unit\VO_DA\Play_VO_8_DA	
+	3059202625	Play_VO_14_DA			\Default Work Unit\VO_DA\Play_VO_14_DA	
+	3075980253	Play_VO_14_EN			\Default Work Unit\VO_EN\Play_VO_14_EN	
+	3086540886	StopAll			\Default Work Unit\StopAll	
+	3090573775	Play_VO_1_DA			\Default Work Unit\VO_DA\Play_VO_1_DA	
+	3107351343	Play_VO_1_EN			\Default Work Unit\VO_EN\Play_VO_1_EN	
+	3137383814	Play_VO_6_EN			\Default Work Unit\VO_EN\Play_VO_6_EN	
+	3154161434	Play_VO_6_DA			\Default Work Unit\VO_DA\Play_VO_6_DA	
+	3418594365	Play_VO_3_DA			\Default Work Unit\VO_DA\Play_VO_3_DA	
+	3435371905	Play_VO_3_EN			\Default Work Unit\VO_EN\Play_VO_3_EN	
+	3535499264	Play_Sidewalk			\Default Work Unit\Play_Sidewalk	
+	3573679764	Play_VO_MadeIt_EN			\Default Work Unit\VO_EN\Play_VO_MadeIt_EN	
+	3590457580	Play_VO_MadeIt_DA			\Default Work Unit\VO_DA\Play_VO_MadeIt_DA	
+	3591605651	Play_VO_5_DA			\Default Work Unit\VO_DA\Play_VO_5_DA	
+	3607331413	Play_VO_21_DA			\Default Work Unit\VO_DA\Play_VO_21_DA	
+	3608383467	Play_VO_5_EN			\Default Work Unit\VO_EN\Play_VO_5_EN	
+	3624108969	Play_VO_21_EN			\Default Work Unit\VO_EN\Play_VO_21_EN	
+	3672906123	Play_Brake			\Default Work Unit\Play_Brake	
+	3736367630	Music_Lose			\Default Work Unit\Music\Music_Lose	
+	3801131051	Play_VO_27_DA			\Default Work Unit\VO_DA\Play_VO_27_DA	
+	3817908659	Play_VO_27_EN			\Default Work Unit\VO_EN\Play_VO_27_EN	
+	3847941354	Play_VO_28_EN			\Default Work Unit\VO_EN\Play_VO_28_EN	
+	3864718966	Play_VO_28_DA			\Default Work Unit\VO_DA\Play_VO_28_DA	
+	4211111327	Play_VO_Ready_DA			\Default Work Unit\VO_DA\Play_VO_Ready_DA	
+	4225616248	Play_VO_13_EN			\Default Work Unit\VO_EN\Play_VO_13_EN	
+	4227889151	Play_VO_Ready_EN			\Default Work Unit\VO_EN\Play_VO_Ready_EN	
+	4242393800	Play_VO_13_DA			\Default Work Unit\VO_DA\Play_VO_13_DA	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2195965022	WinLose			\Default Work Unit\WinLose	
+
+State	ID	Name	State Group			Notes
+	221232726	Lose	WinLose			
+	748895195	None	WinLose			
+	979765101	Win	WinLose			
+	3317037866	Driving	WinLose			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	640949982	Speed			\Default Work Unit\Speed	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1865172355	New_Wwise_Gain	Wwise Gain			
+	1924437044	New_Wwise_Gain_02	Wwise Gain			
+	1924437045	New_Wwise_Gain_03	Wwise Gain			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	9059610	VO_MadeIt_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_MadeIt_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_MadeIt_EN		32458
+	24799722	36-26 Landrover--Safari Diesel_Horn,3	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\36-26 Landrover--Safari Diesel_Horn,3_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\horns1\Horns1\36-26 Landrover--Safari Diesel_Horn,3		125662
+	56102947	VO_10_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_10_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_10_EN		27286
+	57491296	VO_27_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_27_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_27_EN		33078
+	69790071	pedal1	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\pedal1_59900C5B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal1		8571
+	98646268	14 Car, Interior, Horn--4 Blasts	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\14 Car, Interior, Horn--4 Blasts_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\horns1\Horns1\14 Car, Interior, Horn--4 Blasts		150462
+	104483556	VO_27_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_27_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_27_DA		25624
+	109563332	VO_29_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_29_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_29_DA		6388
+	112600336	VO_17_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_17_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_17_EN		32794
+	134070531	VO_11_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_11_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_11_EN		14334
+	159362932	VO_12_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_12_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_12_DA		18865
+	163405176	VO_11_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_11_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_11_DA		16517
+	167958815	VO_Ready_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_Ready_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_Ready_EN		42258
+	168403748	VO_30_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_30_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_30_DA		3641
+	170967349	VO_16_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_16_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_16_EN		29594
+	173287185	VO_Return_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_Return_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_Return_EN		118156
+	173706623	VO_15_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_15_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_15_EN		25291
+	173734436	VO_26_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_26_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_26_DA		39522
+	177556905	VO_28_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_28_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_28_DA		24444
+	187524640	Collision2	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Collision2_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collision\Collision2		7714
+	188645246	VO_26_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_26_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_26_EN		40464
+	216305355	pedal4	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\pedal4_049728C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal4		9102
+	225384672	UI_Snap	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\UI_Snap_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI_Snap		1059
+	228629949	VO_10_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_10_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_10_DA		20611
+	233114623	Ambience2	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Ambience2_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience2		843073
+	235785812	VO_14_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_14_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_14_EN		19418
+	265004707	pedal3	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\pedal3_13567CBD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal3		10058
+	266087746	VO_6_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_6_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_6_EN		18421
+	275340123	VO_29_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_29_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_29_EN		4926
+	275471936	VO_18_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_18_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_18_EN		53104
+	286321199	VO_Intro_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_Intro_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_Intro_EN		146474
+	307491067	09 Horn, Angry Motorist	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\09 Horn, Angry Motorist_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\horns1\Horns1\09 Horn, Angry Motorist		40653
+	308239113	VO_2_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_2_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_2_DA		40638
+	310972626	VO_24_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_24_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_24_DA		27092
+	334703236	Cycling	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Cycling_63DD582A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cycling		200123
+	339908215	Sidewalk	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Sidewalk_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sidewalk		4116
+	413907037	VO_20_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_20_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_20_EN		17738
+	432744538	VO_4_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_4_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_4_DA		34405
+	442966560	VO_22_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_22_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_22_DA		36341
+	467571691	VO_13_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_13_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_13_DA		55043
+	483919717	VO_30_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_30_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_30_EN		6615
+	487764026	VO_3_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_3_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_3_EN		25869
+	490991733	VO_5_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_5_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_5_DA		15428
+	514326861	LoseItem1	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\LoseItem1_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\ItemLose\LoseItem1		18051
+	528757210	pedal6	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\pedal6_5386E4FC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal6		10156
+	534771917	VO_23_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_23_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_23_DA		28903
+	537057367	VO_21_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_21_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_21_EN		58781
+	539893431	VO_Ready_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_Ready_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_Ready_DA		38956
+	550247255	LoseItem3	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\LoseItem3_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\ItemLose\LoseItem3		15178
+	552529954	VO_24_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_24_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_24_EN		27432
+	568708346	pedal5	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\pedal5_A5BBEEF9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal5		10668
+	569046176	MusicLose	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\MusicLose_63DD582A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MusicLose\MusicLose\MusicLose		88285
+	574831306	VO_20_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_20_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_20_DA		17837
+	584650142	VO_MadeIt_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_MadeIt_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_MadeIt_DA		37346
+	611704546	VO_21_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_21_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_21_DA		41048
+	616934956	VO_Intro_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_Intro_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_Intro_DA		147006
+	621392757	VO_17_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_17_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_17_DA		35653
+	625892720	VO_Return_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_Return_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_Return_DA		127270
+	644800556	VO_2_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_2_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_2_EN		44732
+	655176926	Brake	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Brake_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Brake		8835
+	659991130	VO_4_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_4_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_4_EN		33638
+	664707725	VO_16_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_16_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_16_DA		24868
+	668167092	VO_14_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_14_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_14_DA		17542
+	672722289	LoseItem2	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\LoseItem2_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\ItemLose\LoseItem2		14330
+	681824584	VO_1_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_1_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_1_DA		22372
+	693020111	VO_5_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_5_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_5_EN		12798
+	705759586	VO_15_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_15_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_15_DA		29022
+	714787881	MenuMusic	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\MenuMusic_63DD582A.wem		\Interactive Music Hierarchy\Default Work Unit\MenuMusic\MenuMusic\MenuMusic		643285
+	716992926	VO_12_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_12_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_12_EN		14545
+	736967630	VO_25_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_25_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_25_DA		36833
+	757463396	VO_6_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_6_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_6_DA		9379
+	767286869	VO_28_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_28_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_28_EN		16683
+	777078391	Music1	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Music1_63DD582A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Drive\Music1\Music1		572599
+	793267656	VO_3_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_3_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_3_DA		26014
+	798122069	VO_7_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_7_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_7_EN		7881
+	801295534	VO_8_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_8_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_8_DA		22405
+	811011108	VO_9_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_9_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_9_DA		36278
+	814477509	VO_19_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_19_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_19_DA		30319
+	816433338	VO_8_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_8_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_8_EN		17261
+	825684298	UI_Click	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\UI_Click_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI_Click		1003
+	828043336	VO_22_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_22_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_22_EN		32207
+	861037606	VO_19_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_19_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_19_EN		25476
+	866149939	VO_13_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_13_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_13_EN		51171
+	868637415	36-25 Landrover--Safari Diesel_Horn,	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\36-25 Landrover--Safari Diesel_Horn,_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\horns1\Horns1\36-25 Landrover--Safari Diesel_Horn,		97174
+	881668295	Ambience3	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Ambience3_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience3		817225
+	883776519	Collision1	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Collision1_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collision\Collision1		7703
+	902126579	VO_1_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_1_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_1_EN		26766
+	904269707	MusicWin	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\MusicWin_63DD582A.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MusicWin\MusicWin\MusicWin		83671
+	927626301	VO_9_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_9_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_9_EN		32597
+	941939495	VO_23_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_23_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_23_EN		37422
+	942912805	08 Horn--Sounded Twice	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\08 Horn--Sounded Twice_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\horns1\Horns1\08 Horn--Sounded Twice		106441
+	946732094	pedal2	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\pedal2_14480D96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pedal\pedal2		8803
+	950642698	VO_7_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_7_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_7_DA		11929
+	1020873154	VO_25_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_25_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_25_EN		46410
+	1051219406	VO_18_DA	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_18_DA_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\VO_18_DA		48397
+	1052367920	Bell	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Bell_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bell		10711
+	1057270782	Ambience1	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\Ambience1_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience1		851010
+

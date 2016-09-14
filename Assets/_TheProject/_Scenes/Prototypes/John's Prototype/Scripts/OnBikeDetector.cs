@@ -11,6 +11,7 @@ public class OnBikeDetector : MonoBehaviour {
 	private Vector3 target;
 	private float extraHeight = 0.3f;
 	private float extraDepth = 0.15f;
+	public bool stackingDone = false;
 
 	public void addObject(GameObject go, float height) {
 		CurrentCarriable = go;
@@ -33,7 +34,9 @@ public class OnBikeDetector : MonoBehaviour {
 	}
 
 	void Update(){
-		Camera.main.transform.position = Vector3.Slerp(Camera.main.transform.position, target, 0.02f);
+		if(!stackingDone){
+			Camera.main.transform.position = Vector3.Slerp(Camera.main.transform.position, target, 0.02f);
+		}
 	}
 
 	public void removeObject(GameObject go, float height) {

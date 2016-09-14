@@ -89,8 +89,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 67.32526, y: 79.54739, z: 65.1769}
-  m_Center: {x: 0.8060088, y: 40.97787, z: -0.565211}
+  m_Size: {x: 55.6, y: 69.6, z: 55.6}
+  m_Center: {x: 0.8060088, y: 40.4, z: -0.565211}
 --- !u!114 &114000014236310284
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,8 +103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyOnCollision: 1
-  jumpForce: 1.15
-  brakeForce: 3
+  jumpForce: 2
+  brakeForce: 5
   nodgeDirection: 0
   nodgeForce: 0
   nodgeCooldown: 0
