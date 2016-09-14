@@ -9,6 +9,7 @@ public class IntroSceneManager : MonoBehaviour {
 	Vector2 secondPressPos;
 	int carriablesAmount = 0;
 	public bool startBike = false;
+
 	public GameObject runButton;
 	public LanguageSelectionManager languageScript;
 
@@ -17,10 +18,10 @@ public class IntroSceneManager : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		Swipe ();
-		if (startBike) {
-			startBike = false;
-			Swipe ();
-		}
+//		if (startBike) {
+//			startBike = false;
+//			Swipe ();
+//		}
 
 		if (carriablesAmount >= 1 && !startBike) {
 			runButton.SetActive (true);
