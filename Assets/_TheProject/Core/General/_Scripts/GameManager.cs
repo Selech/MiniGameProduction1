@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour {
 	[Space(10)]
 	public float maxTimeCompletion = 10f;
 
-	[Range(0,10)] public int startCarriablesAmount = 4;
+	private int startCarriablesAmount = 4;
 	public int currentCarriablesAmount;
 	public Transform startPositionSpawn;
 
@@ -178,7 +178,7 @@ public class GameManager : MonoBehaviour {
 	// begin game once all references have been made
 	void StartGame()
 	{
-		currentCarriablesAmount = startCarriablesAmount;
+		currentCarriablesAmount = CarriableManager.Instance.carriablefromscene1.Length;
 		gameplayCanvas.SetActive (true);
 		EventManager.TriggerEvent (_eventsContainer.beginGame);
 		hasGameStarted = true;
@@ -193,15 +193,17 @@ public class GameManager : MonoBehaviour {
 	public void RestartGame()
 	{
 		SceneManager.LoadScene (SceneManager.GetActiveScene().name);
-		loseCanvas.SetActive (false);
-		ResetSettings ();
+//		loseCanvas.SetActive (false);
+//		ResetSettings ();
 		Time.timeScale = 1;
-		hasGameStarted = true;
+//		hasGameStarted = true;
 		EventManager.TriggerEvent (_eventsContainer.resetGame);
 	}
 
 	public void RestackGame()
 	{
+		Destroy(GameObject.Find("CarriableManager"));
+		Time.timeScale = 1;
 		SceneManager.LoadScene (0);
 		EventManager.TriggerEvent (_eventsContainer.resetGame);
 	}
@@ -211,6 +213,10 @@ public class GameManager : MonoBehaviour {
 		StopAmbience ();
 		//StopGameMusic ();
 		PlayWinGameSound ();
+		GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerControllerv2> ().forwardSpeed = 0f;
+		GameObject.FindGameObjectWithTag ("Player").GetComponent<Rigidbody> ().velocity = new Vector3 ();
+		GameObject.FindGameObjectWithTag ("Animator").GetComponent<Animator> ().SetTrigger ("WinAnimation");
+		menuCanvas.SetActive (true);
 	}
 
 	//toggle paused game on input
@@ -292,7 +298,7 @@ public class GameManager : MonoBehaviour {
 	//change game state
 	void InitGamePlayPause(){
 		_GameState = GameState.Paused;
-		Time.timeScale = Mathf.Epsilon;
+//		Time.timeScale = Mathf.Epsilon;
 	}
 
 	//change game state
@@ -359,6 +365,9 @@ public class GameManager : MonoBehaviour {
 			//StopAllSound ();
 			loseCanvas.SetActive (true);
 			PlayLoseGameSound ();
+			GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerControllerv2> ().forwardSpeed = 0f;
+			GameObject.FindGameObjectWithTag ("Player").GetComponent<Rigidbody> ().velocity = new Vector3 ();
+			GameObject.FindGameObjectWithTag ("Animator").GetComponent<Animator> ().SetTrigger ("LoseAnimation");
 		}
 	}
 	#endregion
@@ -366,7 +375,7 @@ public class GameManager : MonoBehaviour {
 	#region Audio Methods
 	public void PlayLoseGameSound()
 	{
-		if(_soundEventsContainer.isEnglish)
+		if(CarriableManager.Instance.isEnglish)
 			PlaySound ("Play_VO_13_EN");
 		else
 			PlaySound ("Play_VO_13_DA");
@@ -375,7 +384,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void PlayLostCarriable(){
-		if(_soundEventsContainer.isEnglish)
+		if(CarriableManager.Instance.isEnglish)
 			PlaySound ("Play_VO_30_EN");
 		else
 			PlaySound ("Play_VO_30_DA");
@@ -385,7 +394,7 @@ public class GameManager : MonoBehaviour {
 
 	public void PlayWinGameSound()
 	{
-		if(_soundEventsContainer.isEnglish)
+		if(CarriableManager.Instance.isEnglish)
 			PlaySound ("Play_VO_MadeIt_EN");
 		else
 			PlaySound ("Play_VO_MadeIt_DA");
@@ -476,7 +485,7 @@ public class GameManager : MonoBehaviour {
 		
 		foreach (Sound_Item v in _soundEventsContainer._voiceOver_Collection.soundsCollection) 
 		{
-			if (GameManager.Instance._soundEventsContainer.isEnglish) {
+			if (CarriableManager.Instance.isEnglish) {
 				if (v.soundIndex == index && v._Language == Language.English) {
 					PlaySound (v.soundEventName);
 					break;

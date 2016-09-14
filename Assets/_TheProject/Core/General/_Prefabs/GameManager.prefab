@@ -90,7 +90,6 @@ GameObject:
   - 4: {fileID: 4000010684476688}
   - 114: {fileID: 114000013894266116}
   - 114: {fileID: 114000013032287518}
-  - 114: {fileID: 114000012860534140}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -411,7 +410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000013072759318
 GameObject:
   m_ObjectHideFlags: 1
@@ -499,7 +498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4000010684476688
 Transform:
   m_ObjectHideFlags: 1
@@ -1110,7 +1109,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000013032287518}
-        m_MethodName: 
+        m_MethodName: RestackGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1390,25 +1389,6 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
---- !u!114 &114000012860534140
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011131761750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e8ab12987949a7479760b790f64329b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  valueGuid: c6a61107e6afc44aaaab6b2db71dee31
-  bankName: UnitySB
-  loadAsynchronous: 0
-  decodeBank: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
 --- !u!114 &114000012914568550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1453,7 +1433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _GameState: 1
-  playerPrefab: {fileID: 1000011137807098, guid: 2f5983657d1c0b1468719673048515a7,
+  playerPrefab: {fileID: 1000010492580516, guid: c5d65d0526abd294f84600aa04dcbb38,
     type: 2}
   playerCamera: {fileID: 1000012462158176, guid: 1f77012443e972a48a0f5a12013ca3b9,
     type: 2}
@@ -1479,7 +1459,6 @@ MonoBehaviour:
     isEnglish: 1
   currentTime: 0
   maxTimeCompletion: 1000
-  startCarriablesAmount: 4
   currentCarriablesAmount: 0
   startPositionSpawn: {fileID: 4000011805176620}
   isPaused: 0
@@ -2132,8 +2111,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 569, y: 291}
+  m_AnchoredPosition: {x: 0, y: 160}
+  m_SizeDelta: {x: 536, y: 291}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000010479378752
 RectTransform:
@@ -2544,8 +2523,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 569, y: 291}
+  m_AnchoredPosition: {x: 0, y: 160}
+  m_SizeDelta: {x: 536, y: 291}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000013936009588
 RectTransform:

@@ -1,3 +1,12 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2195965022	WinLose			\Default Work Unit\WinLose	
+
+State	ID	Name	State Group			Notes
+	221232726	Lose	WinLose			
+	748895195	None	WinLose			
+	979765101	Win	WinLose			
+	3317037866	Driving	WinLose			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
 	1534528548	VO			\Default Work Unit\Master Audio Bus\VO	
