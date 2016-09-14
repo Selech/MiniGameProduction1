@@ -50,7 +50,7 @@ public class DragDrop : MonoBehaviour {
 	}
 
 	void OnMouseUp() {
-
+		GameManager.Instance.PlayUISnap();
 		RaycastHit[] testhit;
 		Vector3 fwd = transform.TransformDirection (Vector3.forward);
 
@@ -63,6 +63,7 @@ public class DragDrop : MonoBehaviour {
 				if (hit.collider.gameObject.tag == "CarriableDetector") {
 					hitted = true;
 					StartCoroutine (MoveToFinalPosition(this.transform));
+
 					if (obd != null) {
 						obd.addObject (this.gameObject, heightOfObject);
 					}

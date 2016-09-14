@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour {
 	[Space(10)]
 	public float maxTimeCompletion = 10f;
 
-	[Range(0,10)] public int startCarriablesAmount = 4;
+	private int startCarriablesAmount = 4;
 	public int currentCarriablesAmount;
 	public Transform startPositionSpawn;
 
@@ -178,7 +178,7 @@ public class GameManager : MonoBehaviour {
 	// begin game once all references have been made
 	void StartGame()
 	{
-		currentCarriablesAmount = startCarriablesAmount;
+		currentCarriablesAmount = CarriableManager.Instance.carriablefromscene1.Length;
 		gameplayCanvas.SetActive (true);
 		EventManager.TriggerEvent (_eventsContainer.beginGame);
 		hasGameStarted = true;
@@ -193,15 +193,17 @@ public class GameManager : MonoBehaviour {
 	public void RestartGame()
 	{
 		SceneManager.LoadScene (SceneManager.GetActiveScene().name);
-		loseCanvas.SetActive (false);
-		ResetSettings ();
+//		loseCanvas.SetActive (false);
+//		ResetSettings ();
 		Time.timeScale = 1;
-		hasGameStarted = true;
+//		hasGameStarted = true;
 		EventManager.TriggerEvent (_eventsContainer.resetGame);
 	}
 
 	public void RestackGame()
 	{
+		Destroy(GameObject.Find("CarriableManager"));
+		Time.timeScale = 1;
 		SceneManager.LoadScene (0);
 		EventManager.TriggerEvent (_eventsContainer.resetGame);
 	}
@@ -211,7 +213,10 @@ public class GameManager : MonoBehaviour {
 		StopAmbience ();
 		//StopGameMusic ();
 		PlayWinGameSound ();
-		RestartGame ();
+		GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerControllerv2> ().forwardSpeed = 0f;
+		GameObject.FindGameObjectWithTag ("Player").GetComponent<Rigidbody> ().velocity = new Vector3 ();
+		GameObject.FindGameObjectWithTag ("Animator").GetComponent<Animator> ().SetTrigger ("WinAnimation");
+		menuCanvas.SetActive (true);
 	}
 
 	//toggle paused game on input
@@ -293,7 +298,7 @@ public class GameManager : MonoBehaviour {
 	//change game state
 	void InitGamePlayPause(){
 		_GameState = GameState.Paused;
-		Time.timeScale = Mathf.Epsilon;
+//		Time.timeScale = Mathf.Epsilon;
 	}
 
 	//change game state
@@ -339,6 +344,8 @@ public class GameManager : MonoBehaviour {
 	//decrement carriable counter
 	public void LoseCarriable()
 	{
+		var ran = Random.Range (0,3);
+		if(ran == 1) PlayLostCarriable ();
 		currentCarriablesAmount--;
 		CheckForEndGame ();
 
@@ -358,55 +365,75 @@ public class GameManager : MonoBehaviour {
 			//StopAllSound ();
 			loseCanvas.SetActive (true);
 			PlayLoseGameSound ();
+			GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerControllerv2> ().forwardSpeed = 0f;
+			GameObject.FindGameObjectWithTag ("Player").GetComponent<Rigidbody> ().velocity = new Vector3 ();
+			GameObject.FindGameObjectWithTag ("Animator").GetComponent<Animator> ().SetTrigger ("LoseAnimation");
 		}
 	}
 	#endregion
 
 	#region Audio Methods
-	void PlayLoseGameSound()
+	public void PlayLoseGameSound()
 	{
+		if(CarriableManager.Instance.isEnglish)
+			PlaySound ("Play_VO_13_EN");
+		else
+			PlaySound ("Play_VO_13_DA");
+
 		PlaySound ("Music_Lose");
+	}
+
+	public void PlayLostCarriable(){
+		if(CarriableManager.Instance.isEnglish)
+			PlaySound ("Play_VO_30_EN");
+		else
+			PlaySound ("Play_VO_30_DA");
+
 
 	}
 
-	void PlayWinGameSound()
+	public void PlayWinGameSound()
 	{
+		if(CarriableManager.Instance.isEnglish)
+			PlaySound ("Play_VO_MadeIt_EN");
+		else
+			PlaySound ("Play_VO_MadeIt_DA");
 		PlaySound ("Music_Win");
 	}
 
-	void PlayGameMusic()
+	public void PlayGameMusic()
 	{
 		PlaySound ("Music_Drive");
 	}
 
-	void StopGameMusic()
+	public void StopGameMusic()
 	{
 		//PlaySound ("StopAll");
 	}
 
-	void StopAllSound()
+	public void StopAllSound()
 	{
 		PlaySound ("StopAll");
 	}
 
-	void PlayAmbience()
+	public void PlayAmbience()
 	{
 		PlaySound ("Play_Ambience");
 	}
 
-	void StopAmbience()
+	public void StopAmbience()
 	{
 		PlaySound ("Stop_Ambience");
 	}
 
 	// collision sound
-	void JumpCollisionSound()
+	public void JumpCollisionSound()
 	{
 		PlaySound ("Play_Collision");
 	}
 
 	// brake sound
-	void BrakeSound()
+	public void BrakeSound()
 	{
 		PlaySound ("Play_Brake");
 
@@ -417,17 +444,17 @@ public class GameManager : MonoBehaviour {
 //		PlaySound ("Play_Sidewalk");
 //	}
 
-	void PlayPedal()
+	public void PlayPedal()
 	{
 		PlaySound ("Play_Pedal");
 	}
 
-	void StopPedalSound()
+	public void StopPedalSound()
 	{
 		PlaySound ("Stop_Pedal");
 	}
 
-	void LoseItemSound()
+	public void LoseItemSound()
 	{
 		PlaySound ("Play_ItemLose");
 	}
@@ -458,7 +485,7 @@ public class GameManager : MonoBehaviour {
 		
 		foreach (Sound_Item v in _soundEventsContainer._voiceOver_Collection.soundsCollection) 
 		{
-			if (GameManager.Instance._soundEventsContainer.isEnglish) {
+			if (CarriableManager.Instance.isEnglish) {
 				if (v.soundIndex == index && v._Language == Language.English) {
 					PlaySound (v.soundEventName);
 					break;

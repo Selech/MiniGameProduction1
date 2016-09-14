@@ -33,7 +33,7 @@ public class CamMove : MonoBehaviour
 
 	void SetUpCamera ()
 	{
-		var positionTarget = (target.position - 6 * (destination.position - target.position).normalized) + new Vector3 (0, 1.5f, 0);
+		var positionTarget = (target.position - 4 * (destination.position - target.position).normalized) + new Vector3 (0, 1.9f, 0);
 		transform.position = Vector3.MoveTowards (transform.position, positionTarget, 2f * Time.deltaTime);
 
 		Quaternion wantedRotation = Quaternion.LookRotation ((target.position + new Vector3(0,2f,0)) - transform.position);

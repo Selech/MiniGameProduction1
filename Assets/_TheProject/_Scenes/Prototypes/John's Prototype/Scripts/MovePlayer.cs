@@ -24,7 +24,7 @@ public class MovePlayer : MonoBehaviour {
 
 		StartCoroutine (rotateBike());
 
-		if(Vector3.Distance (transform.position, destination.position) == 0.0){
+		if(Vector3.Distance (transform.position, destination.position) <= 0.2f){
 			levels = GameObject.Find("Canvas").transform.FindChild("Levels").gameObject;
 			if (levels != null) {
 				levels.SetActive (true);
