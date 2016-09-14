@@ -9,17 +9,23 @@ public class OnBikeDetector : MonoBehaviour {
 	public float currentHeight = 0.0f;
 
 	private Vector3 target;
+	private float extraHeight = 0.3f;
+	private float extraDepth = 0.15f;
+	public bool stackingDone = false;
 
 	public void addObject(GameObject go, float height) {
 		CurrentCarriable = go;
 
-		if (!CollectedCarriables.Contains (go)) {
-			CollectedCarriables.Add (go);
-			currentHeight += height;
+		if (CollectedCarriables.Count < 4) { 
+			if (!CollectedCarriables.Contains (go)) {
+				CollectedCarriables.Add (go);
+				currentHeight += height;
 
-			target = new Vector3(0,6.92f + (currentHeight * 0.3f),-8.72f -(currentHeight * 0.4f));
-		} else {
-			sortObjects ();
+				target = new Vector3 (-0.01047623f,2.315246f + (currentHeight * extraHeight), -4.2356f - (currentHeight * extraDepth));
+			} else {
+				sortObjects ();
+			}
+			CarriableManager.Instance.convertToStringArray (CollectedCarriables);
 		}
 	}
 
@@ -28,7 +34,9 @@ public class OnBikeDetector : MonoBehaviour {
 	}
 
 	void Update(){
-		Camera.main.transform.position = Vector3.Slerp(Camera.main.transform.position, target, 0.02f);
+		if(!stackingDone){
+			Camera.main.transform.position = Vector3.Slerp(Camera.main.transform.position, target, 0.02f);
+		}
 	}
 
 	public void removeObject(GameObject go, float height) {
@@ -41,7 +49,8 @@ public class OnBikeDetector : MonoBehaviour {
 				break;
 			}
 		}
-		target = new Vector3(0,6.92f + (currentHeight * 0.3f),-8.72f -(currentHeight * 0.4f));
+		CarriableManager.Instance.convertToStringArray (CollectedCarriables);
+		target = new Vector3 (-0.01047623f,2.315246f + (currentHeight * extraHeight), -4.2356f - (currentHeight * extraDepth));
 		CurrentCarriable = null;
 	}
 

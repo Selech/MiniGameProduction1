@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012462158176}
   m_LocalRotation: {x: 0.13052596, y: -0, z: -0, w: 0.99144495}
-  m_LocalPosition: {x: 0.06778377, y: 4.185029, z: 158.41971}
+  m_LocalPosition: {x: 0.06778377, y: 4.185029, z: -5.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -158,13 +158,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  distance: 10.35
-  height: 2.04
-  damping: 3.6
+  distance: 15.83
+  height: 4.94
+  damping: 14.7
   rotationDamping: 7.5
-  smoothRotation: 0
+  smoothRotation: 1
   followBehind: 1
+  canFollow: 1
   shakeForce: 0.1
+  xRotOffset: 0
 --- !u!124 &124000011668623094
 Behaviour:
   m_ObjectHideFlags: 1

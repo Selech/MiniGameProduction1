@@ -3,16 +3,40 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class CarriableManager : MonoBehaviour {
-
-
-
-	// Use this for initialization
-	void Start () {
 	
+	public string[] carriablefromscene1; 
+
+	public bool isEnglish;
+
+	private static CarriableManager _instance;
+	public static CarriableManager Instance
+	{
+		get
+		{ 
+			if(_instance == null)
+			{
+				GameObject go = new GameObject ("CarriableManager");
+				go.AddComponent<CarriableManager> ();
+			}
+			return _instance;
+		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void Awake()
+	{
+		_instance = this;
+		DontDestroyOnLoad (this);
+	}
+
+	public void convertToStringArray(List<GameObject> carriables) {
+
+		carriablefromscene1 = new string[carriables.Count];
+		var index = 0;
+
+		foreach (var obj in carriables) {
+			carriablefromscene1 [index] = obj.name;
+			index++;
+		}
+
 	}
 }

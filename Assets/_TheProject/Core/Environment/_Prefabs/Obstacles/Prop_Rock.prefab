@@ -37,9 +37,9 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013020968850}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3.4767892, y: -2.1856719e-17, z: 1.504339}
   m_LocalScale: {x: 0.00500432, y: 0.0050043208, z: 0.0050043208}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -182.982, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -56,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: bcd663f339d7e1f448850b40a3f2bd8d, type: 2}
+  - {fileID: 2100000, guid: c08ab07f00b935644886e8c67ee81a62, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -78,7 +78,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013020968850}
-  m_Mesh: {fileID: 4300010, guid: 84807753fd641aa43b3a4e0bdb68a8f6, type: 3}
+  m_Mesh: {fileID: 4300008, guid: 1f93ba3be8375cf4f8e2a193bd4f6d13, type: 3}
 --- !u!65 &65000013654139028
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -89,8 +89,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 95.5853, y: 39.434082, z: 86.29911}
-  m_Center: {x: 0.6341935, y: 19.717041, z: -2.3911796}
+  m_Size: {x: 75.4, y: 20.5, z: 73.7}
+  m_Center: {x: 0.6341935, y: 19.3, z: -2.3911796}
 --- !u!114 &114000010369241860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,8 +103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyOnCollision: 1
-  jumpForce: 2
-  brakeForce: 5
+  jumpForce: 3.5
+  brakeForce: 10
   nodgeDirection: 0
   nodgeForce: 0
   nodgeCooldown: 0
