@@ -213,9 +213,7 @@ public class GameManager : MonoBehaviour {
 		StopAmbience ();
 		//StopGameMusic ();
 		PlayWinGameSound ();
-		GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerControllerv2> ().forwardSpeed = 0f;
-		GameObject.FindGameObjectWithTag ("Player").GetComponent<Rigidbody> ().velocity = new Vector3 ();
-		GameObject.FindGameObjectWithTag ("Animator").GetComponent<Animator> ().SetTrigger ("WinAnimation");
+
 		menuCanvas.SetActive (true);
 	}
 
@@ -252,6 +250,7 @@ public class GameManager : MonoBehaviour {
 		InitGamePlayPause ();
 		StopPedalSound ();
 		StopAmbience ();
+		Time.timeScale = 0;
 	}
 
 	void ResumeGame()
@@ -260,6 +259,7 @@ public class GameManager : MonoBehaviour {
 		InitGamePlayResume ();
 		PlayAmbience ();
 		PlayPedal ();
+		Time.timeScale = 1;
 	}
 
 	//reset settings on player spawn
@@ -356,7 +356,7 @@ public class GameManager : MonoBehaviour {
 	{
 		if(currentCarriablesAmount<=0)
 		{
-			PauseGame ();
+//			PauseGame ();
 			currentCarriablesAmount = 0;
 
 			StopAmbience ();
@@ -366,7 +366,7 @@ public class GameManager : MonoBehaviour {
 			loseCanvas.SetActive (true);
 			PlayLoseGameSound ();
 			GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerControllerv2> ().forwardSpeed = 0f;
-			GameObject.FindGameObjectWithTag ("Player").GetComponent<Rigidbody> ().velocity = new Vector3 ();
+			//GameObject.FindGameObjectWithTag ("Player").GetComponent<Rigidbody> ().velocity = new Vector3 ();
 			GameObject.FindGameObjectWithTag ("Animator").GetComponent<Animator> ().SetTrigger ("LoseAnimation");
 		}
 	}
