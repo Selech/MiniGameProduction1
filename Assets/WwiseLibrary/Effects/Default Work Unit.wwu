@@ -23,6 +23,22 @@
 						<Property Name="FullBandGain" Type="Real32" Value="10"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="New_Wwise_Parametric_EQ" ID="{B1E40315-91F1-4C5A-8A54-FA2FD5F9F6F6}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand2" Type="int32" Value="5"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="447"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="2077"/>
+						<Property Name="GainBand1" Type="Real32" Value="-3.5"/>
+						<Property Name="GainBand2" Type="Real32" Value="4"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Wwise_Parametric_EQ_01" ID="{BC519105-9D3B-432C-8D82-4EA85D533A49}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand2" Type="Real32" Value="2651"/>
+						<Property Name="GainBand1" Type="Real32" Value="-3"/>
+						<Property Name="GainBand2" Type="Real32" Value="2"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

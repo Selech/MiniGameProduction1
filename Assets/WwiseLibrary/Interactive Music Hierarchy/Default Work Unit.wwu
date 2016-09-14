@@ -135,6 +135,9 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F1A6CF6-701E-469F-ABC8-005A844E90E5}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+							<ObjectRef Name="New_Wwise_Parametric_EQ_01" ID="{BC519105-9D3B-432C-8D82-4EA85D533A49}" WorkUnitID="{892D244E-D540-4566-BFD4-6D589BDF64EA}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A87B0AA2-0A26-4C81-8733-BD6991D79D7A}"/>
 						</Reference>

@@ -926,6 +926,13 @@
 					<ChildrenList>
 						<Event Name="Music_Drive" ID="{055EB12A-1029-4725-9CB3-E7542612EAC8}">
 							<ChildrenList>
+								<Action Name="Stop" ID="{EA769DF1-4EF8-42BE-9175-5B78D4F089C4}" ShortID="7343497" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{DA204A7B-6C11-4BA7-BA35-05C2D780CE96}" Global="true">
+											<ObjectRef Name="Music" ID="{9CB54A0E-C267-4FF0-90F9-D2E3EDA59B6C}" WorkUnitID="{D7705BA2-F6F4-4BA0-B0C1-EEF04605054C}"/>
+										</Element>
+									</ElementList>
+								</Action>
 								<Action Name="Set State" ID="{71E7171E-FA71-4D33-A13E-88F6054EC173}" ShortID="50299780" Type="SetState" Scope="All" Global="true">
 									<SetItemParam>
 										<Group Name="WinLose" ID="{0BD2CE67-064A-4B09-8361-DD5F05D289FE}"/>
@@ -988,6 +995,45 @@
 				<Event Name="StopAll" ID="{28D6BA71-95FB-4C48-9A32-96CC57A20412}">
 					<ChildrenList>
 						<Action Name="Stop All" ID="{C88B8920-6B44-4F07-B60F-8BDD5FEB3457}" ShortID="244863010" Type="Stop" Scope="All" Global="false"/>
+					</ChildrenList>
+				</Event>
+				<Event Name="Test" ID="{DC212677-E413-4412-B179-9ED66951E89A}">
+					<ChildrenList>
+						<Action Name="Play" ID="{329B6A46-63F0-4893-B776-784CDA63728F}" ShortID="801282575" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{718EEB01-9097-40C4-960A-E6A089645ACE}" Global="false">
+									<ObjectRef Name="Music" ID="{9CB54A0E-C267-4FF0-90F9-D2E3EDA59B6C}" WorkUnitID="{D7705BA2-F6F4-4BA0-B0C1-EEF04605054C}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{8FC84147-43B2-471D-8544-D2F4C59D822D}" ShortID="1022614671" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{A1C32571-059F-4996-8A11-F9133744FA32}" Global="false">
+									<ObjectRef Name="VO_18_EN" ID="{D41A3719-2EE9-44C0-9059-AE260AC7AC7C}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{76EB317E-2FD7-4952-8CB9-BD32C8A276BE}" ShortID="251749322" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{416E6554-929D-4DE3-8D99-CF6F87550983}" Global="false">
+									<ObjectRef Name="Ambience" ID="{E2E1FB06-C7A1-432B-965B-FFC304242A2D}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{9B68B109-471C-4259-A46B-F3613601D5A6}" ShortID="974452516" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{D44EA3EA-4B62-4FF5-BC2D-03977E184216}" Global="false">
+									<ObjectRef Name="Pedal" ID="{8C8DA58D-9019-4C8E-BF15-F3FF49CA17D9}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{2E2FE6CF-C4A5-41B5-AB63-3F6AACEF9BD9}" ShortID="696004658" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{7DE796D2-4D1C-47A0-98A2-FBBD1E953CC7}" Global="false">
+									<ObjectRef Name="Cycling" ID="{82AD191B-CA9B-4C99-9E2F-2E5582B537BA}" WorkUnitID="{6992B1C2-40A0-49EA-8448-A17710A4C386}"/>
+								</Element>
+							</ElementList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>

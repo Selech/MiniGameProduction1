@@ -12,3 +12,6 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1534528548	VO			\Default Work Unit\Master Audio Bus\VO	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
+Effect plug-ins	ID	Name	Type				Notes
+	4180247629	New_Wwise_Parametric_EQ	Wwise Parametric EQ			
+

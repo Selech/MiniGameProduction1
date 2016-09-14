@@ -101,6 +101,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	1865172355	New_Wwise_Gain	Wwise Gain			
 	1924437044	New_Wwise_Gain_02	Wwise Gain			
 	1924437045	New_Wwise_Gain_03	Wwise Gain			
+	2689776681	New_Wwise_Parametric_EQ_01	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	9059610	VO_MadeIt_EN	Z:\Volumes\Macintosh HD\DADIU\GIT\Minigame1\Assets\WwiseLibrary\.cache\Windows\SFX\VO_MadeIt_EN_844E6D30.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO_ENG\VO_MadeIt_EN		32458
