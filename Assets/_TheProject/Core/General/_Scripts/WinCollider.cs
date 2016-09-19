@@ -9,6 +9,9 @@ public class WinCollider : MonoBehaviour {
 			//collision.gameObject.GetComponent<Rigidbody> ().velocity = new Vector3 ();
 			collision.gameObject.GetComponentInChildren<Animator> ().SetTrigger ("WinAnimation");
 
+			var col = this.GetComponent<BoxCollider> ();
+			Destroy (col);
+
 			EventManager.TriggerEvent (GameManager.Instance._eventsContainer.winGame);
 		}
 	}
